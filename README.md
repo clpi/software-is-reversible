@@ -17,7 +17,8 @@ actions all the way backwards on fresh observed state.
 - recursive.md — the recursive algorithm families, with their
   theorem obligations and empirical states.
 - reversibility.md — the validation system and its per-action
-  verdicts.
+  verdicts. Its harness is validate.py in this repo, with the
+  first pass's full output in validation-results.md.
 
 Foundation, cited not rebuilt: the canonical hypergraph is the
 total equivalence terms graph (ruling of 2026-11-19 15:43 PST),

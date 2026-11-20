@@ -64,7 +64,31 @@ observation implemented as a re-read of the state through an
 observe function at each protocol step, and one negative control
 (a deliberately wrong inverse) that the harness must catch.
 
-<!-- LANE4-RESULTS -->
+The harness is validate.py in this repo (standard library
+only); its full run output is validation-results.md in this
+repo. Two consecutive runs were byte-identical. Every case ran
+from the same pre-state (snapshot hash 735466e2a7707b9e):
+
+| Action | Verdict | Differing component |
+|---|---|---|
+| set | PASS | — |
+| check | PASS | — |
+| uncheck | PASS | — |
+| toggle | PASS | — |
+| navigate | PASS | — |
+| click | REFUSED-BY-NAME | — (refusal R-NOINVERSE, at qualification; no effect delivered) |
+| negative control: set with a deliberately wrong prior | MISMATCH | the name field (restored value differs from the pre-action value) |
+| negative control: toggle inverse applied twice from a stale observation | MISMATCH | the newsletter checkbox (restored state differs) |
+
+Both negative controls were detected with the differing
+component named, so the PASS verdicts are not vacuous: the
+harness can and does fail a wrong inverse. One design note from
+the pass: for navigation, the harness program's inverse target
+is the prior place carried by the post-action observation,
+cross-checked against the pre-action current place, while the
+other four inverses derive from the pre-action observation —
+that asymmetry is the harness program's own rule, recorded
+here because the validation followed it exactly.
 
 Scope honesty: this pass validates the protocol against the
 harness's state model. It does not validate a live desktop: the
@@ -73,7 +97,7 @@ or display exists on the measuring machine, and the native
 dispatcher is gap G2. The live pass is owed on an owned desktop
 through the executor's own faces. Until it runs, the execution
 layer claim stays premise P5 / UNMEASURED, and the per-action
-verdicts below are model verdicts, labeled as such wherever they
+verdicts above are model verdicts, labeled as such wherever they
 are cited.
 
 ## What closes the claim
