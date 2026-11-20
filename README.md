@@ -26,3 +26,7 @@ home the redundancy is equivalence repo at 37514fb7. The candidate
 space core is the frontier is solvable repo at 60f33193. The
 pipeline model proofs are the derivation to action proof lane's
 module at its local pin bf814c1.
+- meta.md — the meta-search level: weighting configurations
+  as candidates, their weight-free meta-frontier, and the
+  recursion discipline. Its harness is meta.py in this repo,
+  with the first pass's full output in meta-results.md.

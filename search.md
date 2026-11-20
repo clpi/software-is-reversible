@@ -371,3 +371,17 @@ relaying side. Owner: the deterministic decoding line.
   certification shape). Gaps appended: L-gen and L-close
   (census.md), the live reversibility pass, the matched
   computer-use campaign, the threshold instance set (gap S14).
+- 2026-11-20, meta-search lane 1 append: the meta level of
+  meta.md — weighting configurations as candidates over this
+  space, their measure vectors, their weight-free
+  meta-frontier, and an executed first pass (meta.py;
+  results in meta-results.md). Executed: 13 of 39 enumerated
+  configurations select the middle frontier member on all
+  three of the pass's instances (the two frontier selection
+  scales and the deterministic decoding fixture), members no
+  hand-set weighting in this record selects; the
+  meta-frontier holds 6 of the 39. Gaps appended, owners in
+  meta.md: the meta level over this file's guidance vector
+  space, the meta level over the decoding system (not the
+  fixture), a Lean form of the meta level, and sampling
+  beyond the enumerated space — all UNMEASURED.
