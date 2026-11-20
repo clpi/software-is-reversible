@@ -1,0 +1,935 @@
+{
+ "held_out_seed_range": "71000-79999 (allocations in this file's docstring)",
+ "lane3_p1_decoding": {
+  "frontier_recomputed": [
+   "bestfirst",
+   "canonical"
+  ],
+  "results": {
+   "bestfirst": {
+    "cert_sound": true,
+    "certified": 4,
+    "gap_milli": 0,
+    "ops": 114,
+    "permutation_invariant_new_seeds": true,
+    "storage": 4488,
+    "unresolved_carried": true
+   },
+   "canonical": {
+    "cert_sound": true,
+    "certified": 0,
+    "gap_milli": 1700,
+    "ops": 24,
+    "permutation_invariant_new_seeds": true,
+    "storage": 4488,
+    "unresolved_carried": true
+   },
+   "factored": {
+    "cert_sound": true,
+    "certified": 0,
+    "gap_milli": 1700,
+    "ops": 24,
+    "permutation_invariant_new_seeds": true,
+    "storage": 4971,
+    "unresolved_carried": true
+   },
+   "greedy": {
+    "cert_sound": true,
+    "certified": 0,
+    "gap_milli": 1700,
+    "ops": 24,
+    "permutation_invariant_new_seeds": false,
+    "storage": 4488,
+    "unresolved_carried": true
+   }
+  }
+ },
+ "lane3_p2_matrix_resolution": {
+  "lane5a": {
+   "checkpoints": 3,
+   "equal": 3,
+   "final_equal_across_permutations": true,
+   "full_work": 3647,
+   "incr_work": 2435,
+   "onthefly_covered_equal": true,
+   "onthefly_uncovered_are_nulls": true,
+   "onthefly_work": 2435,
+   "permutations_equal": true
+  },
+  "lane5b": {
+   "checkpoints": 10,
+   "equal": 10,
+   "final_equal_across_permutations": true,
+   "full_work": 217169,
+   "incr_work": 39473,
+   "onthefly_covered_equal": true,
+   "onthefly_uncovered_are_nulls": true,
+   "onthefly_work": 9860,
+   "permutations_equal": true
+  }
+ },
+ "lane3_p3_tensor_loop": {
+  "certification": "4/4",
+  "digest": "ca46229572007e598cb5aac3832ea2a6b7eaac5d3ce41aaf29f885a24f1bb5a2",
+  "held_out_controls": {
+   "phantom_diff_coords": [
+    13
+   ],
+   "tied_split_group_13_14": "R-TIED-SPLIT"
+  },
+  "lane3_controls": {
+   "base_intact": true,
+   "phantom_refused": true,
+   "tied_refusal": "R-TIED-SPLIT"
+  },
+  "protected": true,
+  "roundtrip": true,
+  "stream": [
+   4,
+   0,
+   46,
+   19,
+   43,
+   48,
+   0
+  ]
+ },
+ "lane4_action_combination": {
+  "frontier_recomputed": [
+   "combination",
+   "explicit"
+  ],
+  "per_family_rival": {
+   "automate/combination": {
+    "failures": {
+     "step[0].premise": 1
+    },
+    "n": 60,
+    "probes_avg": 3.7,
+    "wins": 59
+   },
+   "automate/explicit": {
+    "failures": {
+     "step[0].premise": 4,
+     "step[1].premise": 3,
+     "step[2].premise": 1,
+     "step[3].premise": 3
+    },
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 49
+   },
+   "automate/naive": {
+    "failures": {
+     "step[0].premise": 3,
+     "step[1].premise": 15,
+     "step[2].premise": 13,
+     "step[3].premise": 11,
+     "step[4].premise": 11,
+     "step[5].premise": 4
+    },
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 3
+   },
+   "automate/obscurity": {
+    "failures": {
+     "step[0].premise": 1
+    },
+    "n": 60,
+    "probes_avg": 6.0,
+    "wins": 59
+   },
+   "drive/combination": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 60
+   },
+   "drive/explicit": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 60
+   },
+   "drive/naive": {
+    "failures": {
+     "waypoint[0]": 52,
+     "waypoint[1]": 7
+    },
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 1
+   },
+   "drive/obscurity": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 570.0,
+    "wins": 60
+   },
+   "jump/combination": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 60
+   },
+   "jump/explicit": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 60
+   },
+   "jump/naive": {
+    "failures": {
+     "height.apex": 59
+    },
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 1
+   },
+   "jump/obscurity": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 6.1,
+    "wins": 60
+   },
+   "jumpover/combination": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 60
+   },
+   "jumpover/explicit": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 60
+   },
+   "jumpover/naive": {
+    "failures": {
+     "landing.position": 2,
+     "trajectory.clearance": 40
+    },
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 18
+   },
+   "jumpover/obscurity": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 12.5,
+    "wins": 60
+   },
+   "move/combination": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 60
+   },
+   "move/explicit": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 60
+   },
+   "move/naive": {
+    "failures": {
+     "position.x": 29,
+     "position.y": 30
+    },
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 1
+   },
+   "move/obscurity": {
+    "failures": {
+     "position.x": 1
+    },
+    "n": 60,
+    "probes_avg": 48.7,
+    "wins": 59
+   },
+   "touch/combination": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 1.0,
+    "wins": 60
+   },
+   "touch/explicit": {
+    "failures": {
+     "target.occlusion": 26
+    },
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 34
+   },
+   "touch/naive": {
+    "failures": {
+     "target.identity": 56
+    },
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 4
+   },
+   "touch/obscurity": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 2.4,
+    "wins": 60
+   },
+   "type/combination": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 60
+   },
+   "type/explicit": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 60
+   },
+   "type/naive": {
+    "failures": {
+     "buffer.position[0]": 21,
+     "buffer.position[15]": 1,
+     "buffer.position[1]": 16,
+     "buffer.position[2]": 4,
+     "buffer.position[3]": 4,
+     "buffer.position[4]": 6,
+     "buffer.position[5]": 2,
+     "buffer.position[6]": 2,
+     "buffer.position[7]": 1,
+     "buffer.position[8]": 1
+    },
+    "n": 60,
+    "probes_avg": 0.0,
+    "wins": 2
+   },
+   "type/obscurity": {
+    "failures": {},
+    "n": 60,
+    "probes_avg": 228.5,
+    "wins": 60
+   }
+  },
+  "probes_totals": {
+   "combination": 285,
+   "explicit": 0,
+   "naive": 0,
+   "obscurity": 52449
+  },
+  "totals": {
+   "combination": 419,
+   "explicit": 383,
+   "naive": 30,
+   "obscurity": 418
+  }
+ },
+ "meta_layer": {
+  "built_form": "meta layer selecting max weights (1, 1)",
+  "configurations_run": 39,
+  "full_set_reaching_all_held_out": 13,
+  "full_set_reaching_all_selecting_instances": 13,
+  "meta_frontier_size": 6,
+  "no_linear_reaches_any_held_out_middle": true,
+  "selected_held_out_picks": [
+   "plan b3",
+   "mid"
+  ],
+  "selected_in_full_set_reachers": true,
+  "selected_reaches_all_held_out": true
+ },
+ "p1_frontier_first": {
+  "built_recovery": 734,
+  "frontier_members": 734,
+  "perm_agree": 900,
+  "perm_checks": 900,
+  "trials": 300,
+  "weight_first_loss_members": 108,
+  "weight_first_recovery": 626
+ },
+ "p2_two_face_stop": {
+  "results": {
+   "budget3": {
+    "acceptable_correct": 351,
+    "examined": 1200,
+    "false_optimal": 195,
+    "optimal_claims": 400
+   },
+   "optimal": {
+    "acceptable_correct": 0,
+    "examined": 2727,
+    "false_optimal": 0,
+    "optimal_claims": 400
+   },
+   "threshold": {
+    "acceptable_correct": 393,
+    "examined": 766,
+    "false_optimal": 0,
+    "optimal_claims": 0
+   },
+   "twoface": {
+    "acceptable_correct": 393,
+    "examined": 2727,
+    "false_optimal": 0,
+    "optimal_claims": 400
+   }
+  },
+  "trials": 400
+ },
+ "p3_cone_scoped_repair": {
+  "agree": {
+   "inc": 941,
+   "seminaive": 941
+  },
+  "cases": 200,
+  "contract": "append or weight-decrease epochs only",
+  "executed_epochs": 941,
+  "relaxations": {
+   "inc": 2193,
+   "scratch": 18781,
+   "seminaive": 36968
+  }
+ },
+ "p4_distinct_count_worklist": {
+  "checks": {
+   "naive": 45421,
+   "seminaive": 51815,
+   "worklist": 9765
+  },
+  "mismatch": {
+   "dupblind": 147,
+   "seminaive": 0,
+   "worklist": 0
+  },
+  "prefix_checks": 3124,
+  "systems": 300
+ },
+ "p5_hybrid_break_even": {
+  "built": {
+   "dense_per_query": 3184.89,
+   "factored_per_query": 16.27,
+   "fixed_full_cost": 46186,
+   "form": "factored",
+   "predicted_break_even_q": 15,
+   "rows": 6561
+  },
+  "empirical_crossover_q": 15,
+  "predicted_minus_empirical": 0,
+  "regimes": {
+   "2": {
+    "at_q1": "dense",
+    "at_q2000": "factored",
+    "predicted": 159,
+    "rows": 9
+   },
+   "3": {
+    "at_q1": "dense",
+    "at_q2000": "factored",
+    "predicted": 39,
+    "rows": 27
+   },
+   "4": {
+    "at_q1": "dense",
+    "at_q2000": "factored",
+    "predicted": 27,
+    "rows": 81
+   },
+   "6": {
+    "at_q1": "dense",
+    "at_q2000": "factored",
+    "predicted": 17,
+    "rows": 729
+   },
+   "8": {
+    "at_q1": "dense",
+    "at_q2000": "factored",
+    "predicted": 15,
+    "rows": 6561
+   }
+  }
+ },
+ "verdicts": {
+  "lane3_p1_decoding": {
+   "detail": {
+    "frontier_recomputed": [
+     "bestfirst",
+     "canonical"
+    ],
+    "results": {
+     "bestfirst": {
+      "cert_sound": true,
+      "certified": 4,
+      "gap_milli": 0,
+      "ops": 114,
+      "permutation_invariant_new_seeds": true,
+      "storage": 4488,
+      "unresolved_carried": true
+     },
+     "canonical": {
+      "cert_sound": true,
+      "certified": 0,
+      "gap_milli": 1700,
+      "ops": 24,
+      "permutation_invariant_new_seeds": true,
+      "storage": 4488,
+      "unresolved_carried": true
+     },
+     "factored": {
+      "cert_sound": true,
+      "certified": 0,
+      "gap_milli": 1700,
+      "ops": 24,
+      "permutation_invariant_new_seeds": true,
+      "storage": 4971,
+      "unresolved_carried": true
+     },
+     "greedy": {
+      "cert_sound": true,
+      "certified": 0,
+      "gap_milli": 1700,
+      "ops": 24,
+      "permutation_invariant_new_seeds": false,
+      "storage": 4488,
+      "unresolved_carried": true
+     }
+    }
+   },
+   "verdict": "PASS"
+  },
+  "lane3_p2_matrix_resolution": {
+   "detail": {
+    "lane5a": {
+     "checkpoints": 3,
+     "equal": 3,
+     "final_equal_across_permutations": true,
+     "full_work": 3647,
+     "incr_work": 2435,
+     "onthefly_covered_equal": true,
+     "onthefly_uncovered_are_nulls": true,
+     "onthefly_work": 2435,
+     "permutations_equal": true
+    },
+    "lane5b": {
+     "checkpoints": 10,
+     "equal": 10,
+     "final_equal_across_permutations": true,
+     "full_work": 217169,
+     "incr_work": 39473,
+     "onthefly_covered_equal": true,
+     "onthefly_uncovered_are_nulls": true,
+     "onthefly_work": 9860,
+     "permutations_equal": true
+    }
+   },
+   "verdict": "PASS"
+  },
+  "lane3_p3_tensor_loop": {
+   "detail": {
+    "certification": "4/4",
+    "digest": "ca46229572007e598cb5aac3832ea2a6b7eaac5d3ce41aaf29f885a24f1bb5a2",
+    "held_out_controls": {
+     "phantom_diff_coords": [
+      13
+     ],
+     "tied_split_group_13_14": "R-TIED-SPLIT"
+    },
+    "lane3_controls": {
+     "base_intact": true,
+     "phantom_refused": true,
+     "tied_refusal": "R-TIED-SPLIT"
+    },
+    "protected": true,
+    "roundtrip": true,
+    "stream": [
+     4,
+     0,
+     46,
+     19,
+     43,
+     48,
+     0
+    ]
+   },
+   "verdict": "PASS"
+  },
+  "lane4_action_combination": {
+   "detail": {
+    "frontier_recomputed": [
+     "combination",
+     "explicit"
+    ],
+    "per_family_rival": {
+     "automate/combination": {
+      "failures": {
+       "step[0].premise": 1
+      },
+      "n": 60,
+      "probes_avg": 3.7,
+      "wins": 59
+     },
+     "automate/explicit": {
+      "failures": {
+       "step[0].premise": 4,
+       "step[1].premise": 3,
+       "step[2].premise": 1,
+       "step[3].premise": 3
+      },
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 49
+     },
+     "automate/naive": {
+      "failures": {
+       "step[0].premise": 3,
+       "step[1].premise": 15,
+       "step[2].premise": 13,
+       "step[3].premise": 11,
+       "step[4].premise": 11,
+       "step[5].premise": 4
+      },
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 3
+     },
+     "automate/obscurity": {
+      "failures": {
+       "step[0].premise": 1
+      },
+      "n": 60,
+      "probes_avg": 6.0,
+      "wins": 59
+     },
+     "drive/combination": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 60
+     },
+     "drive/explicit": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 60
+     },
+     "drive/naive": {
+      "failures": {
+       "waypoint[0]": 52,
+       "waypoint[1]": 7
+      },
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 1
+     },
+     "drive/obscurity": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 570.0,
+      "wins": 60
+     },
+     "jump/combination": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 60
+     },
+     "jump/explicit": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 60
+     },
+     "jump/naive": {
+      "failures": {
+       "height.apex": 59
+      },
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 1
+     },
+     "jump/obscurity": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 6.1,
+      "wins": 60
+     },
+     "jumpover/combination": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 60
+     },
+     "jumpover/explicit": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 60
+     },
+     "jumpover/naive": {
+      "failures": {
+       "landing.position": 2,
+       "trajectory.clearance": 40
+      },
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 18
+     },
+     "jumpover/obscurity": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 12.5,
+      "wins": 60
+     },
+     "move/combination": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 60
+     },
+     "move/explicit": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 60
+     },
+     "move/naive": {
+      "failures": {
+       "position.x": 29,
+       "position.y": 30
+      },
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 1
+     },
+     "move/obscurity": {
+      "failures": {
+       "position.x": 1
+      },
+      "n": 60,
+      "probes_avg": 48.7,
+      "wins": 59
+     },
+     "touch/combination": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 1.0,
+      "wins": 60
+     },
+     "touch/explicit": {
+      "failures": {
+       "target.occlusion": 26
+      },
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 34
+     },
+     "touch/naive": {
+      "failures": {
+       "target.identity": 56
+      },
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 4
+     },
+     "touch/obscurity": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 2.4,
+      "wins": 60
+     },
+     "type/combination": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 60
+     },
+     "type/explicit": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 60
+     },
+     "type/naive": {
+      "failures": {
+       "buffer.position[0]": 21,
+       "buffer.position[15]": 1,
+       "buffer.position[1]": 16,
+       "buffer.position[2]": 4,
+       "buffer.position[3]": 4,
+       "buffer.position[4]": 6,
+       "buffer.position[5]": 2,
+       "buffer.position[6]": 2,
+       "buffer.position[7]": 1,
+       "buffer.position[8]": 1
+      },
+      "n": 60,
+      "probes_avg": 0.0,
+      "wins": 2
+     },
+     "type/obscurity": {
+      "failures": {},
+      "n": 60,
+      "probes_avg": 228.5,
+      "wins": 60
+     }
+    },
+    "probes_totals": {
+     "combination": 285,
+     "explicit": 0,
+     "naive": 0,
+     "obscurity": 52449
+    },
+    "totals": {
+     "combination": 419,
+     "explicit": 383,
+     "naive": 30,
+     "obscurity": 418
+    }
+   },
+   "verdict": "PASS"
+  },
+  "meta_layer": {
+   "detail": {
+    "built_form": "meta layer selecting max weights (1, 1)",
+    "configurations_run": 39,
+    "full_set_reaching_all_held_out": 13,
+    "full_set_reaching_all_selecting_instances": 13,
+    "meta_frontier_size": 6,
+    "no_linear_reaches_any_held_out_middle": true,
+    "selected_held_out_picks": [
+     "plan b3",
+     "mid"
+    ],
+    "selected_in_full_set_reachers": true,
+    "selected_reaches_all_held_out": true
+   },
+   "verdict": "PASS"
+  },
+  "p1_frontier_first": {
+   "detail": {
+    "built_recovery": 734,
+    "frontier_members": 734,
+    "perm_agree": 900,
+    "perm_checks": 900,
+    "trials": 300,
+    "weight_first_loss_members": 108,
+    "weight_first_recovery": 626
+   },
+   "verdict": "PASS"
+  },
+  "p2_two_face_stop": {
+   "detail": {
+    "results": {
+     "budget3": {
+      "acceptable_correct": 351,
+      "examined": 1200,
+      "false_optimal": 195,
+      "optimal_claims": 400
+     },
+     "optimal": {
+      "acceptable_correct": 0,
+      "examined": 2727,
+      "false_optimal": 0,
+      "optimal_claims": 400
+     },
+     "threshold": {
+      "acceptable_correct": 393,
+      "examined": 766,
+      "false_optimal": 0,
+      "optimal_claims": 0
+     },
+     "twoface": {
+      "acceptable_correct": 393,
+      "examined": 2727,
+      "false_optimal": 0,
+      "optimal_claims": 400
+     }
+    },
+    "trials": 400
+   },
+   "verdict": "PASS"
+  },
+  "p3_cone_scoped_repair": {
+   "detail": {
+    "agree": {
+     "inc": 941,
+     "seminaive": 941
+    },
+    "cases": 200,
+    "contract": "append or weight-decrease epochs only",
+    "executed_epochs": 941,
+    "relaxations": {
+     "inc": 2193,
+     "scratch": 18781,
+     "seminaive": 36968
+    }
+   },
+   "verdict": "PASS"
+  },
+  "p4_distinct_count_worklist": {
+   "detail": {
+    "checks": {
+     "naive": 45421,
+     "seminaive": 51815,
+     "worklist": 9765
+    },
+    "mismatch": {
+     "dupblind": 147,
+     "seminaive": 0,
+     "worklist": 0
+    },
+    "prefix_checks": 3124,
+    "systems": 300
+   },
+   "verdict": "PASS"
+  },
+  "p5_hybrid_break_even": {
+   "detail": {
+    "built": {
+     "dense_per_query": 3184.89,
+     "factored_per_query": 16.27,
+     "fixed_full_cost": 46186,
+     "form": "factored",
+     "predicted_break_even_q": 15,
+     "rows": 6561
+    },
+    "empirical_crossover_q": 15,
+    "predicted_minus_empirical": 0,
+    "regimes": {
+     "2": {
+      "at_q1": "dense",
+      "at_q2000": "factored",
+      "predicted": 159,
+      "rows": 9
+     },
+     "3": {
+      "at_q1": "dense",
+      "at_q2000": "factored",
+      "predicted": 39,
+      "rows": 27
+     },
+     "4": {
+      "at_q1": "dense",
+      "at_q2000": "factored",
+      "predicted": 27,
+      "rows": 81
+     },
+     "6": {
+      "at_q1": "dense",
+      "at_q2000": "factored",
+      "predicted": 17,
+      "rows": 729
+     },
+     "8": {
+      "at_q1": "dense",
+      "at_q2000": "factored",
+      "predicted": 15,
+      "rows": 6561
+     }
+    }
+   },
+   "verdict": "PASS"
+  }
+ }
+}

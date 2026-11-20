@@ -38,3 +38,10 @@ module at its local pin bf814c1.
   with the first pass's full output in meta-results.md.
 
 - [Scoped reversal and exact reconstruction results](scoped-reversal/README.md) — constructive finite inverses, residual lower bounds, and reproducible empirical frontiers. Run `sh scoped-reversal/check.sh`.
+- lane5.md — the build-out and re-validation lane: the
+  down-selected winners of lanes 1-4 consolidated into one
+  built stack (stack.py, single entry point, demonstration
+  output in stack-results.json), and every winner
+  re-validated against its full candidate set and held-out
+  permutations at a disjoint seed range (revalidate5.py,
+  results in revalidation-lane5-results.json).

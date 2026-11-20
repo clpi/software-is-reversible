@@ -1,0 +1,292 @@
+{
+ "action_combination": {
+  "automate": {
+   "component": "-",
+   "probes": 1,
+   "repaired": true,
+   "success": true
+  },
+  "drive": {
+   "component": "-",
+   "probes": 0,
+   "repaired": false,
+   "success": true
+  },
+  "jump": {
+   "component": "-",
+   "probes": 0,
+   "repaired": false,
+   "success": true
+  },
+  "jumpover": {
+   "component": "-",
+   "probes": 0,
+   "repaired": false,
+   "success": true
+  },
+  "move": {
+   "component": "-",
+   "probes": 0,
+   "repaired": false,
+   "success": true
+  },
+  "touch": {
+   "component": "-",
+   "probes": 1,
+   "repaired": true,
+   "success": true
+  },
+  "type": {
+   "component": "-",
+   "probes": 0,
+   "repaired": false,
+   "success": true
+  }
+ },
+ "cone_scoped_repair": {
+  "distances": [
+   0,
+   2,
+   1,
+   4
+  ],
+  "relaxations": 1
+ },
+ "decoding": {
+  "branch": {
+   "bestfirst": {
+    "cert": {
+     "certified": true,
+     "heap_max_at_cert": -784,
+     "unresolved_bounds": []
+    },
+    "ops": 99,
+    "status": "complete",
+    "stream": [
+     46,
+     19,
+     43,
+     48
+    ],
+    "total": -782
+   },
+   "canonical": {
+    "cert": null,
+    "ops": 13,
+    "status": "complete",
+    "stream": [
+     46,
+     19,
+     43,
+     48
+    ],
+    "total": -782
+   },
+   "oracle": -782
+  },
+  "chain": {
+   "bestfirst": {
+    "cert": {
+     "certified": true,
+     "heap_max_at_cert": null,
+     "unresolved_bounds": []
+    },
+    "ops": 3,
+    "status": "complete",
+    "stream": [
+     1,
+     2
+    ],
+    "total": -300
+   },
+   "canonical": {
+    "cert": null,
+    "ops": 3,
+    "status": "complete",
+    "stream": [
+     1,
+     2
+    ],
+    "total": -300
+   },
+   "oracle": -300
+  },
+  "missing": {
+   "bestfirst": {
+    "cert": {
+     "certified": false,
+     "unresolved_bounds": [
+      -300
+     ]
+    },
+    "ops": 1,
+    "status": "unresolved",
+    "stream": [],
+    "total": null
+   },
+   "canonical": {
+    "cert": null,
+    "ops": 1,
+    "status": "unresolved",
+    "stream": [
+     7
+    ],
+    "total": -300
+   },
+   "oracle": null
+  },
+  "tie": {
+   "bestfirst": {
+    "cert": {
+     "certified": true,
+     "heap_max_at_cert": -600,
+     "unresolved_bounds": []
+    },
+    "ops": 6,
+    "status": "complete",
+    "stream": [
+     1
+    ],
+    "total": -600
+   },
+   "canonical": {
+    "cert": null,
+    "ops": 4,
+    "status": "complete",
+    "stream": [
+     1
+    ],
+    "total": -600
+   },
+   "oracle": -600
+  },
+  "trap": {
+   "bestfirst": {
+    "cert": {
+     "certified": true,
+     "heap_max_at_cert": -2100,
+     "unresolved_bounds": []
+    },
+    "ops": 5,
+    "status": "complete",
+    "stream": [
+     5,
+     6
+    ],
+    "total": -400
+   },
+   "canonical": {
+    "cert": null,
+    "ops": 3,
+    "status": "complete",
+    "stream": [
+     4
+    ],
+    "total": -2100
+   },
+   "oracle": -400
+  }
+ },
+ "distinct_count_worklist": {
+  "checks": 6,
+  "derived": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "frontier_first": {
+  "frontier": [
+   [
+    0,
+    10
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    10,
+    0
+   ]
+  ],
+  "selection_under_selected_configuration": [
+   3,
+   4
+  ]
+ },
+ "hybrid_break_even": {
+  "dense_per_query": 34.28,
+  "factored_per_query": 7.47,
+  "fixed_full_cost": 721,
+  "form": "factored",
+  "predicted_break_even_q": 27,
+  "rows": 81
+ },
+ "matrix_resolution": {
+  "checkpoints": 3,
+  "equal": 3,
+  "full_work": 3652,
+  "incremental_work": 2448
+ },
+ "meta_layer": {
+  "configurations": 39,
+  "meta_frontier": 6,
+  "selected": "max (1, 1)",
+  "selected_label": "max weights (1, 1)"
+ },
+ "tensor_loop": {
+  "certification": "4/4",
+  "edits": [
+   {
+    "after": 160,
+    "coords": [
+     5
+    ],
+    "step": 1
+   },
+   {
+    "after": 150,
+    "coords": [
+     0
+    ],
+    "step": 3
+   },
+   {
+    "after": 195,
+    "coords": [
+     13,
+     14
+    ],
+    "step": 4
+   },
+   {
+    "after": 350,
+    "coords": [
+     3,
+     4
+    ],
+    "step": 6
+   }
+  ],
+  "protected": true,
+  "roundtrip": true,
+  "stream": [
+   4,
+   0,
+   46,
+   19,
+   43,
+   48,
+   0
+  ]
+ },
+ "two_face_stop": {
+  "acceptable": 9,
+  "examined_for_optimal": 4,
+  "optimal": 2
+ }
+}
+stack verdict: OK

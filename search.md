@@ -430,6 +430,26 @@ its scenario families are the matched campaign's source).
   candidate (finer probe grid, or scroll and reprobe),
   owner the action model family's successor lane.
 
+- 2026-11-20, lane 5 build-out and re-validation: the
+  down-selected winners of lanes 1-4 consolidated into one
+  built stack (stack.py; meta level as the weighting-selection
+  layer over frontier-first selection, the two-face stop,
+  cone-scoped repair, the distinct-count worklist, the hybrid
+  break-even rule, canonical and best-first certified
+  decoding, incremental and on-the-fly budgeted matrix
+  resolution, the recomputed-projection tensor loop, and the
+  action combination route with the obscurity route retained
+  as fallback). Every winner re-validated against its full
+  candidate set and held-out permutations at the disjoint
+  seed range 71000-79999 (revalidate5.py): all ten
+  propositions PASS, no winner returned as a loss, no
+  down-selection re-run. Record: lane5.md; results:
+  revalidation-lane5-results.json. The steering hold below
+  was honoured: no reach-based ranking ordered the build-out
+  queue. Spectrum coverage per algorithm is recorded in
+  stack.py (route 5, the terminal compressed tensor form,
+  UNMEASURED across the board; owner lane 6).
+
 ## Steering hold appended 2026-11-20 (C relay via Chris, 02:01 PST)
 
 HOLD: the candidate-space round-2 ranking — jq n first, and the
