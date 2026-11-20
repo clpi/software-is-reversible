@@ -361,6 +361,45 @@ The loop as a system is UNMEASURED; the fixture figures are
 reported, with the standalone repo blocked on access on the
 relaying side. Owner: the deterministic decoding line.
 
+### Candidate family: the basic action model (lane 4, 2026-11-20)
+
+Appended by composition of the F families above with the
+reversibility protocol: the seven basic actions (move by a
+pixel delta, jump, jump over an object, drive, touch, type,
+automate a process step) as one candidate family whose
+members are rival selection algorithms, not designs — the
+explicit planner (route 1), the obscurity construction
+(route 2, the action constructed from the obscurity vector
+above threshold where no explicit algorithm names it), the
+combination (route 3), and a greedy nearest-target control
+(route 0). The spec is the action model file in this repo;
+the harness is its actions file; the executed results are
+its action results file.
+
+Comparison state, executed in simulation at the stated
+fidelity (60 paired permutations per family per rival, base
+seed 20261120, two runs byte-identical): combination and
+obscurity tie on the frontier at 419 of 420 selections and
+dominate the explicit route at 391 of 420; the control is
+refuted at 46 of 420. The combination route is down-selected
+on the probe-cost axis (zero probes wherever the observed
+model is complete; the obscurity route pays up to a mean of
+525.2 probes per drive selection). Reversibility per
+primitive is executed in the same run: move, drive, type,
+and automate over setting steps pass the fresh-observation
+round trip; jump, jump over, and touch are refused by name;
+automate with a submission step is refused by name with the
+step named. Live-surface execution of the whole family is
+UNMEASURED; owner the idol-eyes line, closing route the
+matched campaign. Guidance: novelty high (selection as a
+competition of derivation routes over one scenario
+distribution is not an incumbent form), not pre-existing per
+the computer-use row's census, much improved measured only
+inside the family (against its own control), unique by the
+route record each selection carries, compositional potential
+high (the family is F1 to F3 instantiated per primitive, and
+its scenario families are the matched campaign's source).
+
 ## Expansion log
 
 - 2026-11-20, epoch zero: this file. Rows entered: the domains
@@ -385,3 +424,8 @@ relaying side. Owner: the deterministic decoding line.
   space, the meta level over the decoding system (not the
   fixture), a Lean form of the meta level, and sampling
   beyond the enumerated space — all UNMEASURED.
+- 2026-11-20, lane 4: the basic action model candidate family
+  appended and executed in simulation (the family entry
+  above). Gap appended: the shared touch failure's closing
+  candidate (finer probe grid, or scroll and reprobe),
+  owner the action model family's successor lane.

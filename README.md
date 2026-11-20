@@ -19,6 +19,12 @@ actions all the way backwards on fresh observed state.
 - reversibility.md — the validation system and its per-action
   verdicts. Its harness is validate.py in this repo, with the
   first pass's full output in validation-results.md.
+- action-model.md — the basic action model: seven primitives
+  (move, jump, jump over, drive, touch, type, automate) as a
+  candidate family of four rival selection algorithms.
+  Its harness is the actions file in this repo; its executed
+  generalization table, frontier, and down-selection are in
+  action-results.md.
 
 Foundation, cited not rebuilt: the canonical hypergraph is the
 total equivalence terms graph (ruling of 2026-11-19 15:43 PST),
