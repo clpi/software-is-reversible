@@ -1,0 +1,395 @@
+{
+  "node": "v24.22.3",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "scope": "single-host systematic pair order; cold local query, preconstructed inputs; native includes packet writes and outputs; JS performs full enumeration then returns same requested page; excludes interning, input encode and browser DOM",
+  "summary": {
+    "shared": {
+      "support": 4095,
+      "suffixRows": 12,
+      "expandedRows": 4095,
+      "suffixInputBytes": 128,
+      "expandedInputBytes": 94205,
+      "medianMillis": {
+        "exhaustive": 0.05331998999999996,
+        "nativePage": 0.003089960000000076
+      },
+      "samplesMillis": [
+        {
+          "nativePage": 0.003759369999999933,
+          "exhaustive": 0.12219392
+        },
+        {
+          "exhaustive": 0.09084384999999998,
+          "nativePage": 0.0032338799999999425
+        },
+        {
+          "nativePage": 0.002927819999999883,
+          "exhaustive": 0.04870684000000011
+        },
+        {
+          "exhaustive": 0.04747246999999987,
+          "nativePage": 0.0031555600000001504
+        },
+        {
+          "nativePage": 0.00661467000000016,
+          "exhaustive": 0.04423348000000004
+        },
+        {
+          "exhaustive": 0.04371280000000013,
+          "nativePage": 0.0030310700000001135
+        },
+        {
+          "nativePage": 0.0034920600000000945,
+          "exhaustive": 0.041476329999999846
+        },
+        {
+          "exhaustive": 0.04139680999999996,
+          "nativePage": 0.003071029999999837
+        },
+        {
+          "nativePage": 0.0033438400000000003,
+          "exhaustive": 0.08073360999999978
+        },
+        {
+          "exhaustive": 0.06608943999999979,
+          "nativePage": 0.004117909999999938
+        },
+        {
+          "nativePage": 0.0030348699999998984,
+          "exhaustive": 0.0641673400000002
+        },
+        {
+          "exhaustive": 0.0577855199999999,
+          "nativePage": 0.0030635200000000396
+        },
+        {
+          "nativePage": 0.0034983800000000544,
+          "exhaustive": 0.04616489999999999
+        },
+        {
+          "exhaustive": 0.045933750000000086,
+          "nativePage": 0.003089960000000076
+        },
+        {
+          "nativePage": 0.003729730000000018,
+          "exhaustive": 0.04543810000000008
+        },
+        {
+          "exhaustive": 0.04463719999999995,
+          "nativePage": 0.0034364800000000174
+        },
+        {
+          "nativePage": 0.0028340700000001108,
+          "exhaustive": 0.05971412000000015
+        },
+        {
+          "exhaustive": 0.06683004999999981,
+          "nativePage": 0.0019719800000001443
+        },
+        {
+          "nativePage": 0.001658909999999878,
+          "exhaustive": 0.05331998999999996
+        },
+        {
+          "exhaustive": 0.05564188999999999,
+          "nativePage": 0.0018966600000004518
+        },
+        {
+          "nativePage": 0.0025308200000000625,
+          "exhaustive": 0.07242539000000021
+        }
+      ]
+    },
+    "local": {
+      "support": 4064,
+      "suffixRows": 18,
+      "expandedRows": 4064,
+      "suffixInputBytes": 200,
+      "expandedInputBytes": 93487,
+      "medianMillis": {
+        "exhaustive": 0.04623831999999993,
+        "nativePage": 0.00204037000000028
+      },
+      "samplesMillis": [
+        {
+          "nativePage": 0.0020551999999997863,
+          "exhaustive": 0.04798755000000028
+        },
+        {
+          "exhaustive": 0.05360029999999995,
+          "nativePage": 0.0029922099999998863
+        },
+        {
+          "nativePage": 0.0018317600000000312,
+          "exhaustive": 0.05111206000000038
+        },
+        {
+          "exhaustive": 0.04623831999999993,
+          "nativePage": 0.00204037000000028
+        },
+        {
+          "nativePage": 0.0018153300000000171,
+          "exhaustive": 0.04726966000000005
+        },
+        {
+          "exhaustive": 0.05173058000000026,
+          "nativePage": 0.002022150000000238
+        },
+        {
+          "nativePage": 0.001808229999999753,
+          "exhaustive": 0.040330900000000156
+        },
+        {
+          "exhaustive": 0.039894449999999894,
+          "nativePage": 0.0023049700000001396
+        },
+        {
+          "nativePage": 0.001845079999999939,
+          "exhaustive": 0.04179380999999978
+        },
+        {
+          "exhaustive": 0.04057877000000019,
+          "nativePage": 0.0031318199999998343
+        },
+        {
+          "nativePage": 0.002297659999999837,
+          "exhaustive": 0.055722099999999844
+        },
+        {
+          "exhaustive": 0.043252410000000054,
+          "nativePage": 0.0019578500000000075
+        },
+        {
+          "nativePage": 0.0018093299999998181,
+          "exhaustive": 0.04259951999999998
+        },
+        {
+          "exhaustive": 0.04213002000000017,
+          "nativePage": 0.0033401399999996783
+        },
+        {
+          "nativePage": 0.0029602699999998093,
+          "exhaustive": 0.0604520500000001
+        },
+        {
+          "exhaustive": 0.04248694999999998,
+          "nativePage": 0.004471940000000245
+        },
+        {
+          "nativePage": 0.0018172399999997423,
+          "exhaustive": 0.05243154000000004
+        },
+        {
+          "exhaustive": 0.04185068999999999,
+          "nativePage": 0.0022981600000002798
+        },
+        {
+          "nativePage": 0.0018305599999996502,
+          "exhaustive": 0.04252671000000021
+        },
+        {
+          "exhaustive": 0.046973810000000074,
+          "nativePage": 0.0036454900000001088
+        },
+        {
+          "nativePage": 0.001848889999999983,
+          "exhaustive": 0.05703589000000022
+        }
+      ]
+    },
+    "rootish": {
+      "support": 3072,
+      "suffixRows": 13,
+      "expandedRows": 3072,
+      "suffixInputBytes": 140,
+      "expandedInputBytes": 70665,
+      "medianMillis": {
+        "exhaustive": 0.04199271000000067,
+        "nativePage": 0.001980989999999565
+      },
+      "samplesMillis": [
+        {
+          "nativePage": 0.008557200000000193,
+          "exhaustive": 0.1654971999999998
+        },
+        {
+          "exhaustive": 0.043686160000000314,
+          "nativePage": 0.002262810000000286
+        },
+        {
+          "nativePage": 0.001900669999999991,
+          "exhaustive": 0.03945058000000017
+        },
+        {
+          "exhaustive": 0.04433354000000009,
+          "nativePage": 0.0026202499999999416
+        },
+        {
+          "nativePage": 0.0016535899999996673,
+          "exhaustive": 0.03853509999999972
+        },
+        {
+          "exhaustive": 0.039939410000000064,
+          "nativePage": 0.001818749999999909
+        },
+        {
+          "nativePage": 0.0025395300000002406,
+          "exhaustive": 0.04260722999999984
+        },
+        {
+          "exhaustive": 0.03725296000000014,
+          "nativePage": 0.00201184000000012
+        },
+        {
+          "nativePage": 0.002113289999999779,
+          "exhaustive": 0.03783084000000031
+        },
+        {
+          "exhaustive": 0.0418496899999991,
+          "nativePage": 0.002090650000000096
+        },
+        {
+          "nativePage": 0.0017587600000001657,
+          "exhaustive": 0.03796884999999975
+        },
+        {
+          "exhaustive": 0.04103907000000049,
+          "nativePage": 0.002395209999999679
+        },
+        {
+          "nativePage": 0.0021431299999994735,
+          "exhaustive": 0.04199271000000067
+        },
+        {
+          "exhaustive": 0.037336080000000035,
+          "nativePage": 0.002632869999999912
+        },
+        {
+          "nativePage": 0.0016558000000009088,
+          "exhaustive": 0.04695208999999977
+        },
+        {
+          "exhaustive": 0.04178238999999962,
+          "nativePage": 0.0018729199999995671
+        },
+        {
+          "nativePage": 0.0016712200000006305,
+          "exhaustive": 0.04463820000000055
+        },
+        {
+          "exhaustive": 0.042208530000000334,
+          "nativePage": 0.001878239999999778
+        },
+        {
+          "nativePage": 0.0016517899999996643,
+          "exhaustive": 0.06123206999999979
+        },
+        {
+          "exhaustive": 0.05805070999999998,
+          "nativePage": 0.0019218000000000757
+        },
+        {
+          "nativePage": 0.001980989999999565,
+          "exhaustive": 0.0453422599999999
+        }
+      ]
+    },
+    "end": {
+      "support": 4094,
+      "suffixRows": 22,
+      "expandedRows": 4094,
+      "suffixInputBytes": 240,
+      "expandedInputBytes": 94181,
+      "medianMillis": {
+        "exhaustive": 0.049815600000000584,
+        "nativePage": 0.002302870000000894
+      },
+      "samplesMillis": [
+        {
+          "nativePage": 0.003381200000000035,
+          "exhaustive": 0.052186269999999695
+        },
+        {
+          "exhaustive": 0.05008671000000049,
+          "nativePage": 0.0033344300000010207
+        },
+        {
+          "nativePage": 0.0019477299999994101,
+          "exhaustive": 0.05014420000000087
+        },
+        {
+          "exhaustive": 0.04947719000000007,
+          "nativePage": 0.002838169999999991
+        },
+        {
+          "nativePage": 0.003755659999999352,
+          "exhaustive": 0.04823311999999987
+        },
+        {
+          "exhaustive": 0.06294318999999973,
+          "nativePage": 0.002865320000000793
+        },
+        {
+          "nativePage": 0.0020006100000000515,
+          "exhaustive": 0.05038156000000072
+        },
+        {
+          "exhaustive": 0.04807466999999974,
+          "nativePage": 0.003754759999999351
+        },
+        {
+          "nativePage": 0.0024279599999999847,
+          "exhaustive": 0.05018186000000014
+        },
+        {
+          "exhaustive": 0.04734036999999944,
+          "nativePage": 0.0023876000000007027
+        },
+        {
+          "nativePage": 0.00195775000000026,
+          "exhaustive": 0.06091213000000039
+        },
+        {
+          "exhaustive": 0.051094930000000434,
+          "nativePage": 0.002302870000000894
+        },
+        {
+          "nativePage": 0.0019545399999992695,
+          "exhaustive": 0.06974033999999961
+        },
+        {
+          "exhaustive": 0.046075959999999444,
+          "nativePage": 0.0022868500000004133
+        },
+        {
+          "nativePage": 0.001995209999998906,
+          "exhaustive": 0.051691529999999375
+        },
+        {
+          "exhaustive": 0.046037109999999756,
+          "nativePage": 0.005306100000000242
+        },
+        {
+          "nativePage": 0.001942229999999654,
+          "exhaustive": 0.049815600000000584
+        },
+        {
+          "exhaustive": 0.0470913900000005,
+          "nativePage": 0.002119699999999511
+        },
+        {
+          "nativePage": 0.0025735800000006746,
+          "exhaustive": 0.04857913999999937
+        },
+        {
+          "exhaustive": 0.04535027000000014,
+          "nativePage": 0.002112489999999525
+        },
+        {
+          "nativePage": 0.0022462899999993622,
+          "exhaustive": 0.047874870000000555
+        }
+      ]
+    }
+  }
+}
