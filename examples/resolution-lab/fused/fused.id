@@ -1,0 +1,32 @@
+dominates: i32 = (mask: i32, left: i32, next: i32, third: i32, fourth: i32, last: i32, right: i32, other: i32, target: i32, prior: i32, final: i32)
+    if mask < 1
+        return -1
+    if mask > 31
+        return -1
+    better = 0
+    if mask & 1 != 0
+        if left > right
+            return 0
+        if left < right
+            better = 1
+    if mask & 2 != 0
+        if next > other
+            return 0
+        if next < other
+            better = 1
+    if mask & 4 != 0
+        if third > target
+            return 0
+        if third < target
+            better = 1
+    if mask & 8 != 0
+        if fourth > prior
+            return 0
+        if fourth < prior
+            better = 1
+    if mask & 16 != 0
+        if last > final
+            return 0
+        if last < final
+            better = 1
+    better

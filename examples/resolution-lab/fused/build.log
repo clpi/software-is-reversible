@@ -1,0 +1,3 @@
+  > compile (fused.id) …
+  ok compile (29 ms — fused.wasm)
+✓ fused.wasm
