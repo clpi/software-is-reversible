@@ -1,0 +1,3 @@
+  > compile (chat.id) …
+  ok compile (32 ms — chat.wasm)
+✓ chat.wasm

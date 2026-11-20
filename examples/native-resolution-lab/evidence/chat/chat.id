@@ -1,0 +1,129 @@
+total: i64 = (row: i64)
+    (row % 4) + ((row >> 2) % 4) + (row >> 4)
+
+validrow: i64 = (row: i64)
+    if row == -1
+        return 1
+    if row < 1
+        return 0
+    if row > 63
+        return 0
+    1
+
+successor: i64 = (row: i64, token: i64)
+    if token == 0
+        return row % 4
+    (row >> 2) % 4
+
+decision: i64 = (root: i64, zero: i64, one: i64, firststop: i64, horizon: i64, field: i64)
+    if validrow(root) == 0
+        return -1
+    if validrow(zero) == 0
+        return -1
+    if validrow(one) == 0
+        return -1
+    if firststop < 1
+        return -1
+    if horizon < firststop
+        return -1
+    if horizon > 4
+        return -1
+    if field < 0
+        return -1
+    if field > 8
+        return -1
+    bestn = 0
+    bestd = 1
+    bestrank = 0
+    path = 0
+    uppern = 0
+    upperd = 1
+    known = 0
+    unknown = 0
+    depth = 0
+    width = 1
+    while depth < horizon
+        index = 0
+        while index < width
+            n = 1
+            d = 1
+            row = root
+            rank = 0
+            divisor = width >> 1
+            while divisor > 0
+                if row == -1
+                    n = 0
+                if n != 0
+                    token = 0
+                    if index & divisor != 0
+                        token = 1
+                    n = n * successor(row, token)
+                    d = d * total(row)
+                    rank = rank * 4 + token
+                    if token == 0
+                        row = zero
+                    if token == 1
+                        row = one
+                divisor = divisor >> 1
+            if n > 0
+                if row == -1
+                    unknown = unknown + 1
+                    if n * upperd > uppern * d
+                        uppern = n
+                        upperd = d
+                if row != -1
+                    known = known + 1
+                    if depth + 1 >= firststop
+                        stop = row >> 4
+                        if stop > 0
+                            rn = n * stop
+                            rd = d * total(row)
+                            rank = rank * 4 + 2
+                            pad = horizon - depth - 1
+                            while pad > 0
+                                rank = rank * 4
+                                pad = pad - 1
+                            better = 0
+                            if rn * bestd > bestn * rd
+                                better = 1
+                            if rn * bestd == bestn * rd
+                                if rank < bestrank
+                                    better = 1
+                            if better == 1
+                                bestn = rn
+                                bestd = rd
+                                bestrank = rank
+                                path = width + index
+            index = index + 1
+        width = width * 2
+        depth = depth + 1
+    status = 4
+    if path == 0
+        if unknown > 0
+            status = 0
+    if path > 0
+        status = 1
+        if bestn * upperd == uppern * bestd
+            status = 2
+        if bestn * upperd > uppern * bestd
+            status = 3
+    if bestn * upperd > uppern * bestd
+        uppern = bestn
+        upperd = bestd
+    if field == 8
+        return status | (path << 3) | (bestn << 7) | (bestd << 14) | (uppern << 27) | (upperd << 34) | (known << 47) | (unknown << 51)
+    if field == 0
+        return status
+    if field == 1
+        return path
+    if field == 2
+        return bestn
+    if field == 3
+        return bestd
+    if field == 4
+        return uppern
+    if field == 5
+        return upperd
+    if field == 6
+        return known
+    unknown

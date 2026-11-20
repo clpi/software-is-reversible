@@ -1,0 +1,237 @@
+offset: i64 = (row: i64)
+    (row - 1) * 9
+
+allows: i64 = (data: *i64, row: i64, facts: i64, mode: i64)
+    at: i64 = offset(row)
+    flag: i64 = data[at + 4]
+    if (flag & 1) == 0
+        return 0
+    if mode == 0
+        if (flag & 2) != 0
+            return 0
+    need: i64 = data[at + 2]
+    if (facts & need) != need
+        return 0
+    1
+
+bases: i64 = (data: *i64, row: i64, facts: i64)
+    facts | data[offset(row) + 3]
+
+candidate: i64 = (data: *i64, work: *i64, count: i64, front: i64, middle: i64, check: i64, seal: i64)
+    at: i64 = offset(count)
+    work[at + 1] = front
+    work[at + 2] = middle
+    work[at + 3] = check
+    work[at + 4] = seal
+    axis: i64 = 5
+    while axis <= 9
+        work[at + axis] = data[offset(front) + axis] + data[offset(middle) + axis] + data[offset(check) + axis] + data[offset(seal) + axis]
+        axis += 1
+    1
+
+precedes: i64 = (work: *i64, left: i64, right: i64, mask: i64, maximum: i64)
+    bit: i64 = 1
+    axis: i64 = 5
+    strict: i64 = 0
+    while axis <= 9
+        if (mask & bit) != 0
+            a: i64 = work[offset(left) + axis]
+            b: i64 = work[offset(right) + axis]
+            if (maximum & bit) != 0
+                if a < b
+                    return 0
+                if a > b
+                    strict = 1
+            else
+                if a > b
+                    return 0
+                if a < b
+                    strict = 1
+        bit *= 2
+        axis += 1
+    if strict == 1
+        return 1
+    if left < right
+        return 1
+    0
+
+cost: i64 = (work: *i64, row: i64, weight: *i64, mask: i64, maximum: i64)
+    bit: i64 = 1
+    axis: i64 = 1
+    result: i64 = 0
+    while axis <= 5
+        if (mask & bit) != 0
+            value: i64 = work[offset(row) + axis + 4] * weight[axis]
+            if (maximum & bit) == 0
+                result += value
+            else
+                result -= value
+        bit *= 2
+        axis += 1
+    result
+
+plan: i64 = (data: *i64, rows: i64, initial: i64, required: i64, mode: i64, mask: i64, maximum: i64, weight: *i64, work: *i64, capacity: i64, output: *i64, limit: i64)
+    if rows < 0
+        return -1
+    if rows > 32
+        return -1
+    if initial < 0
+        return -1
+    if initial > 65535
+        return -1
+    if required <= 0
+        return -1
+    if required > 65535
+        return -1
+    if mode < 0
+        return -1
+    if mode > 1
+        return -1
+    if mask < 1
+        return -1
+    if mask > 31
+        return -1
+    if maximum < 0
+        return -1
+    if maximum > 31
+        return -1
+    if capacity < 0
+        return -1
+    if capacity > 4096
+        return -1
+    if limit < 0
+        return -1
+    if limit > 4096
+        return -1
+    bit: i64 = 1
+    w: i64 = 1
+    positive: i64 = 0
+    while w <= 5
+        v: i64 = weight[w]
+        if v < 0
+            return -2
+        if v > 1000000
+            return -2
+        if (mask & bit) != 0
+            if v > 0
+                positive = 1
+        bit *= 2
+        w += 1
+    if positive == 0
+        return -2
+    row: i64 = 1
+    former: i64 = 0
+    width: i64 = 0
+    first: i64 = 0
+    second: i64 = 0
+    third: i64 = 0
+    fourth: i64 = 0
+    while row <= rows
+        at: i64 = offset(row)
+        stage: i64 = data[at + 1]
+        if stage < 1
+            return -2
+        if stage > 4
+            return -2
+        if stage < former
+            return -2
+        if stage != former
+            width = 0
+            former = stage
+        width += 1
+        if width > 8
+            return -2
+        if stage == 1
+            first += 1
+        if stage == 2
+            second += 1
+        if stage == 3
+            third += 1
+        if stage == 4
+            fourth += 1
+        need: i64 = data[at + 2]
+        give: i64 = data[at + 3]
+        flag: i64 = data[at + 4]
+        if need < 0
+            return -2
+        if need > 65535
+            return -2
+        if give <= 0
+            return -2
+        if give > 65535
+            return -2
+        if flag < 0
+            return -2
+        if flag > 3
+            return -2
+        axis: i64 = 5
+        while axis <= 9
+            raw: i64 = data[at + axis]
+            if raw < 0
+                return -2
+            if raw > 1000000
+                return -2
+            axis += 1
+        row += 1
+    six: i64 = first + second
+    nine: i64 = six + third
+    count: i64 = 0
+    a: i64 = 1
+    while a <= first
+        if allows(data, a, initial, mode) == 1
+            af: i64 = bases(data, a, initial)
+            b: i64 = first + 1
+            while b <= six
+                if allows(data, b, af, mode) == 1
+                    bf: i64 = bases(data, b, af)
+                    c: i64 = six + 1
+                    while c <= nine
+                        if allows(data, c, bf, mode) == 1
+                            cf: i64 = bases(data, c, bf)
+                            d: i64 = nine + 1
+                            while d <= rows
+                                if allows(data, d, cf, mode) == 1
+                                    df: i64 = bases(data, d, cf)
+                                    if (df & required) == required
+                                        if count >= capacity
+                                            return -3
+                                        count += 1
+                                        candidate(data, work, count, a, b, c, d)
+                                d += 1
+                        c += 1
+                b += 1
+        a += 1
+    if count > limit
+        return -3
+    picked: i64 = 0
+    best: i64 = 0
+    score: i64 = 0
+    left: i64 = 1
+    while left <= count
+        right: i64 = 1
+        drop: i64 = 0
+        while right <= count
+            if left != right
+                if precedes(work, right, left, mask, maximum) == 1
+                    drop = 1
+                    break
+            right += 1
+        if drop == 0
+            picked += 1
+            column: i64 = 1
+            while column <= 9
+                output[3 + offset(picked) + column] = work[offset(left) + column]
+                column += 1
+            value: i64 = cost(work, left, weight, mask, maximum)
+            if best == 0
+                score = value
+                best = picked
+            else
+                if value < score
+                    score = value
+                    best = picked
+        left += 1
+    output[1] = count
+    output[2] = picked
+    output[3] = best
+    picked

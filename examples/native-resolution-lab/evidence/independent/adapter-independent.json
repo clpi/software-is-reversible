@@ -1,0 +1,20 @@
+{
+  "loaderReadbacks": 3,
+  "digestRefusals": 9,
+  "foreignImportRefusals": 1,
+  "structuralInputRefusals": 9,
+  "structuralOutputRefusals": 4,
+  "signedClarityControls": "pass",
+  "pristineAfterRefusalAndMutation": "pass",
+  "forgedFlag": {
+    "baselineResolved": 40,
+    "forgedResolved": 62,
+    "affectedFrontier": 10
+  },
+  "syntheticUntrustedExport": {
+    "invalidResolvedCount": "refused-by-transport",
+    "negativeMetric": "refused-by-transport"
+  },
+  "exactTransportDigest": "290446bd4337d5eac7f6158f232195933c3b4e5124f5cf059f83429f23b69ff0",
+  "scope": "offline transport control; source fixture is trusted input; not a publication or evidence-admission policy"
+}

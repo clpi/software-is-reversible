@@ -1,0 +1,258 @@
+{
+  "qualifier": "finite modeled last-token tensor; no model inference",
+  "exactOracleFixtures": 18362,
+  "scalarVsPackedFields": 80,
+  "statusCounts": [
+    1340,
+    455,
+    238,
+    13560,
+    2769
+  ],
+  "refusalCount": 13,
+  "hostImportCalls": 0,
+  "abi": {
+    "import": [
+      {
+        "module": "wasi_snapshot_preview1",
+        "name": "fd_write",
+        "kind": "function"
+      },
+      {
+        "module": "wasi_snapshot_preview1",
+        "name": "proc_exit",
+        "kind": "function"
+      },
+      {
+        "module": "wasi_snapshot_preview1",
+        "name": "fd_read",
+        "kind": "function"
+      },
+      {
+        "module": "wasi_snapshot_preview1",
+        "name": "args_sizes_get",
+        "kind": "function"
+      },
+      {
+        "module": "wasi_snapshot_preview1",
+        "name": "args_get",
+        "kind": "function"
+      }
+    ],
+    "export": [
+      {
+        "name": "memory",
+        "kind": "memory"
+      },
+      {
+        "name": "idol_chat__successor",
+        "kind": "function"
+      },
+      {
+        "name": "idol_chat__validrow",
+        "kind": "function"
+      },
+      {
+        "name": "idol_chat__total",
+        "kind": "function"
+      },
+      {
+        "name": "idol_chat__decision",
+        "kind": "function"
+      }
+    ]
+  },
+  "wasmSHA256": "85f5fe9ec358562573b1d08f774442a77eab6482f9d0b1b9190c98e33129dd94",
+  "cases": [
+    {
+      "rows": [
+        35,
+        49,
+        58
+      ],
+      "minStop": 1,
+      "horizon": 3,
+      "fields": [
+        3,
+        2,
+        9,
+        20,
+        9,
+        20,
+        3,
+        0
+      ]
+    },
+    {
+      "rows": [
+        5,
+        16,
+        16
+      ],
+      "minStop": 1,
+      "horizon": 3,
+      "fields": [
+        3,
+        2,
+        1,
+        2,
+        1,
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "rows": [
+        21,
+        21,
+        21
+      ],
+      "minStop": 2,
+      "horizon": 4,
+      "fields": [
+        3,
+        2,
+        1,
+        9,
+        1,
+        9,
+        15,
+        0
+      ]
+    },
+    {
+      "rows": [
+        20,
+        -1,
+        -1
+      ],
+      "minStop": 1,
+      "horizon": 4,
+      "fields": [
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "rows": [
+        24,
+        -1,
+        -1
+      ],
+      "minStop": 1,
+      "horizon": 4,
+      "fields": [
+        1,
+        1,
+        1,
+        3,
+        2,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "rows": [
+        4,
+        -1,
+        -1
+      ],
+      "minStop": 1,
+      "horizon": 4,
+      "fields": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "rows": [
+        4,
+        1,
+        4
+      ],
+      "minStop": 1,
+      "horizon": 4,
+      "fields": [
+        4,
+        0,
+        0,
+        1,
+        0,
+        1,
+        4,
+        0
+      ]
+    },
+    {
+      "rows": [
+        4,
+        -1,
+        -1
+      ],
+      "minStop": 1,
+      "horizon": 1,
+      "fields": [
+        4,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "rows": [
+        16,
+        -1,
+        -1
+      ],
+      "minStop": 1,
+      "horizon": 4,
+      "fields": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "rows": [
+        63,
+        63,
+        63
+      ],
+      "minStop": 4,
+      "horizon": 4,
+      "fields": [
+        3,
+        8,
+        81,
+        6561,
+        81,
+        6561,
+        15,
+        0
+      ]
+    }
+  ]
+}

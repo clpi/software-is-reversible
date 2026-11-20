@@ -1,0 +1,2 @@
+SMOKE {"name":"first smoke","mode":1,"mask":31,"w":[1,1,1,1,1],"resolved":62,"front":18,"winner":14}
+PASS 537 native exact planner / JS independent oracle profiles; refusals 10

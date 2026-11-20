@@ -1,0 +1,70 @@
+{
+  "scope": "synthetic exact first-EOS support only; no neural execution or MAP in this module",
+  "reproduced": [
+    {
+      "removedOneChildAt": null,
+      "distinctRealizations": 4095,
+      "suffixClasses": 12
+    },
+    {
+      "removedOneChildAt": "000000",
+      "distinctRealizations": 4064,
+      "suffixClasses": 18
+    },
+    {
+      "removedOneChildAt": "0",
+      "distinctRealizations": 3072,
+      "suffixClasses": 13
+    },
+    {
+      "removedOneChildAt": "1111111111",
+      "distinctRealizations": 4094,
+      "suffixClasses": 22
+    }
+  ],
+  "largeCase": {
+    "states": 30,
+    "support": 1073741823,
+    "first": [
+      536870912
+    ],
+    "lastFour": [
+      15,
+      7,
+      3,
+      1
+    ]
+  },
+  "unknownCases": [
+    {
+      "lower": 1,
+      "upper": 3
+    },
+    {
+      "lower": 2,
+      "upper": 4
+    }
+  ],
+  "randomDags": 384,
+  "randomPages": 1536,
+  "witnessCodesCompared": 2231,
+  "returnsChecked": 1580,
+  "protectedCellsChecked": 1207524,
+  "malformedRefused": 17,
+  "hostImportCalls": 0,
+  "exports": [
+    {
+      "name": "memory",
+      "kind": "memory"
+    },
+    {
+      "name": "idol_suffix__validchild",
+      "kind": "function"
+    },
+    {
+      "name": "idol_suffix__page",
+      "kind": "function"
+    }
+  ],
+  "wasmSHA256": "d111acd53d82af4b1ba5882b4441afef06b3f41ff0691ed7e792bb95f1ff6912"
+}

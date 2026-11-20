@@ -1,0 +1,3 @@
+  > compile (planner.id) …
+  ok compile (58 ms — planner.wasm)
+✓ planner.wasm

@@ -1,0 +1,29 @@
+{
+  "sha256": {
+    "planner": "29ec5ab2b4027d5c37938fdd7af41e13b1136b42545832b053391f355617e417",
+    "chat": "85f5fe9ec358562573b1d08f774442a77eab6482f9d0b1b9190c98e33129dd94",
+    "reversal": "ce57c2131117edb6581a5b2090de9d6d7e15ac500bdb24927d946fadf5cbb0f2"
+  },
+  "planner": {
+    "plannerComparisons": 222,
+    "casesRefusedWithoutOutputWrite": 14,
+    "signedRawExtremes": true,
+    "qualifiedBitsAreTrustBoundary": true
+  },
+  "chat": {
+    "chatCount": 8790,
+    "malformedRefused": 9,
+    "statuses": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "reversal": {
+    "reversalRoundTrips": 2880,
+    "adversarialCases": 17
+  },
+  "hostImportCalls": 0
+}

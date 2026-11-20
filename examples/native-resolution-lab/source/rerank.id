@@ -1,0 +1,102 @@
+before: i64 = (frontier: *i64, former: i64, current: i64)
+    column: i64 = 1
+    while column <= 4
+        left: i64 = frontier[former + column]
+        right: i64 = frontier[current + column]
+        if left < right
+            return 1
+        if left > right
+            return 0
+        column += 1
+    0
+
+winner: i64 = (frontier: *i64, rows: i64, mask: i64, maximum: i64, weight: *i64)
+    if rows < 0
+        return -1
+    if rows > 4096
+        return -1
+    if mask < 1
+        return -1
+    if mask > 31
+        return -1
+    if maximum < 0
+        return -1
+    if maximum > 31
+        return -1
+    count: i64 = frontier[1]
+    admitted: i64 = frontier[2]
+    old: i64 = frontier[3]
+    if count < rows
+        return -2
+    if count > 4096
+        return -2
+    if admitted != rows
+        return -2
+    if rows == 0
+        if old != 0
+            return -2
+    else
+        if old < 1
+            return -2
+        if old > rows
+            return -2
+    bit: i64 = 1
+    axis: i64 = 1
+    positive: i64 = 0
+    while axis <= 5
+        w: i64 = weight[axis]
+        if w < 0
+            return -3
+        if w > 1000000
+            return -3
+        if (mask & bit) != 0
+            if w > 0
+                positive = 1
+        bit *= 2
+        axis += 1
+    if positive == 0
+        return -3
+    row: i64 = 1
+    picked: i64 = 0
+    score: i64 = 0
+    while row <= rows
+        at: i64 = 3 + (row - 1) * 9
+        if row > 1
+            if before(frontier, at - 9, at) == 0
+                return -2
+        item: i64 = 1
+        former: i64 = 0
+        while item <= 4
+            index: i64 = frontier[at + item]
+            if index <= former
+                return -2
+            if index > 32
+                return -2
+            former = index
+            item += 1
+        bit = 1
+        axis = 1
+        value: i64 = 0
+        while axis <= 5
+            raw: i64 = frontier[at + axis + 4]
+            if raw < 0
+                return -2
+            if raw > 4000000
+                return -2
+            if (mask & bit) != 0
+                part: i64 = raw * weight[axis]
+                if (maximum & bit) != 0
+                    value -= part
+                else
+                    value += part
+            bit *= 2
+            axis += 1
+        if picked == 0
+            picked = row
+            score = value
+        else
+            if value < score
+                picked = row
+                score = value
+        row += 1
+    picked

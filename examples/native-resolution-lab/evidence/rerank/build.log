@@ -1,0 +1,3 @@
+  > compile (rerank.id) …
+  ok compile (39 ms — rerank.wasm)
+✓ rerank.wasm

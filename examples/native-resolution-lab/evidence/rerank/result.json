@@ -1,0 +1,58 @@
+{
+  "checks": 2232,
+  "changes": 420,
+  "empty": 558,
+  "refusal": [
+    {
+      "name": "rows-negative",
+      "expected": -1
+    },
+    {
+      "name": "empty mask",
+      "expected": -1
+    },
+    {
+      "name": "invalid maximize",
+      "expected": -1
+    },
+    {
+      "name": "bad crowd",
+      "expected": -2
+    },
+    {
+      "name": "bad frontier count",
+      "expected": -2
+    },
+    {
+      "name": "bad old winner",
+      "expected": -2
+    },
+    {
+      "name": "bad row member",
+      "expected": -2
+    },
+    {
+      "name": "bad metric",
+      "expected": -2
+    },
+    {
+      "name": "duplicate lexical row",
+      "expected": -2
+    },
+    {
+      "name": "none active",
+      "expected": -3
+    },
+    {
+      "name": "weight overflow",
+      "expected": -3
+    }
+  ],
+  "calls": [],
+  "source": "eace32cd7d7457337237f1d53008d7dcb3a171be4a1c7867a7b04a789edb703e",
+  "wasm": "459aad978f8509856582d1f45650ee6b1578f0a158c1cdea3a2e2b0945ed0b1f",
+  "originalPlanner": "29ec5ab2b4027d5c37938fdd7af41e13b1136b42545832b053391f355617e417",
+  "jsOracle": "9110497b4445d60672c11cbddcd469f7610ca8fc93dd77474243e4ea5eb0cc79",
+  "node": "v24.22.3",
+  "v8": "13.6.233.17-node.63"
+}
