@@ -274,3 +274,24 @@ algorithm's 8. UNMEASURED empirical
 cells named: execution layer reversibility (lane 4's first pass
 is its closing route), the break-even figures, the general
 subset agreement over extracts.
+
+## Addendum, 2026-11-20 (left-on-the-table program)
+
+L-close is proved. The proof stands in the frontier home,
+clpi/software-frontier-is-solvable at 307dffca9b7165f4fb92fa30575b940df9613a1a,
+as a bridge module of 10 theorems over a verbatim copy of the canonical
+view file from the expands home at 4da720a7: the predicate bridge between
+the worklist derivation and the canonical derivation, the fixed-view
+equality, the append form (resuming over a grown log from any carried list
+whose membership is exactly the old view's closure computes exactly the
+grown view's derivation, at every append prefix), its instantiation with
+the worklist's own carried set, and a non-vacuity control proved through
+the bridge. Cold gate in a fresh clone at that pin: pass, exit 0, zero
+sorries, axiom universe exactly the standard three. The entries above that
+print L-close as unproved are superseded by this addendum; with L-gen
+proved in section 2, no named unproved lemma from this census remains.
+One finding the proof surfaced about this repo: the census prose calls the
+closure count a distinct-premise count, but the Lean definition counts
+premise occurrences; the proved lemmas are insensitive to the difference
+(the two counts are zero-equivalent, not equal), and the wording stands
+corrected by this note.
