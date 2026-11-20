@@ -45,3 +45,5 @@ module at its local pin bf814c1.
   re-validated against its full candidate set and held-out
   permutations at a disjoint seed range (revalidate5.py,
   results in revalidation-lane5-results.json).
+
+- [Resolution Lab browser demos](examples/resolution-lab/README.md) — scoped action reversal, archive-only inference search, and compositional pruning with an independently checked Lean proof.

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Idol | Resolution Lab</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><span class="wordmark">IDOL</span><span class="status" id="runtime">Reference preview · native build not admitted</span></header>
+<h1>Resolution Lab</h1><p class="deck">One append-only hypergraph. Change what the solver can see, reweight what it values, and inspect why it acts or stops.</p>
+<nav aria-label="Exhibits"><a href="#chat">Deterministic chat</a><a href="#search">Algorithm search</a><a href="#undo">Reversible actions</a><a href="#evidence">Evidence</a></nav>
+<section id="chat"><div class="kicker">01 / TOKEN &amp; ACTION VECTORS</div><h2>Deterministic chat</h2>
+<p>Replay a constructed conditional tensor. This is not live model inference or a general natural-language parser. The prompts below map explicitly to parameters; an unrecognized prompt does not dispatch anything.</p>
+<div class="controls"><button data-prompt="Find the most likely output">Find the most likely output</button><button data-prompt="Show greedy versus exact">Show greedy versus exact</button><button data-prompt="Require stronger evidence">Require stronger evidence</button></div>
+<div class="grid"><label>Token horizon <input id="horizon" type="number" min="1" max="3" value="2"></label><label>Root token 0 weight <input id="tilt" type="number" min="1" max="12" value="1"></label><label>Action confidence <select id="threshold"><option value="1/4" selected>1/4</option><option value="1/2">1/2</option><option value="3/4">3/4</option><option value="1">1</option></select></label><label>Projection resolution <input id="resolution" type="number" min="0" max="3" value="1"></label><label>Maximum fiber size <input id="obscurity-limit" type="number" min="1" max="64" value="1"></label><label>Verification budget <input id="budget" type="number" min="0" max="4096" value="4096"></label><label><span>Refine ambiguous projections</span><input type="checkbox" id="refine" checked></label><label><span>Apply in sandbox</span><input type="checkbox" id="apply" checked></label></div>
+<form id="prompt"><label for="query">Message</label><div class="inputrow"><input id="query" maxlength="120" value="Find the most likely output"><button type="submit">Resolve</button></div></form>
+<ol id="transcript" aria-live="polite"></ol><details><summary>Inspect exact decision and stop data</summary><pre id="token-result"></pre></details></section>
+
+<section id="search"><div class="kicker">02 / META SEARCH</div><h2>Compare algorithms, then downselect</h2>
+<p>Test exhaustive and factored joint planning against the same evidence. Reweight the ranking and change the set of measured axes separately.</p>
+<div class="grid"><label>Candidate generator <select id="profile"><option value="full">Full registered space</option><option value="narrow">Narrowed candidate control</option></select></label><label>Latency weight <input id="latency" type="range" min="1" max="10" value="1"></label><label>Clarity weight <input id="clarity" type="range" min="1" max="10" value="1"></label><label><span>Include storage axis</span><input id="storage" type="checkbox" checked></label></div>
+<div class="controls"><button id="rerank">Solve</button><button id="append">Append witness</button></div><p class="muted" id="graph-state"></p><div aria-live="polite" id="search-result"></div>
+<details><summary>Inspect graph, derived incidence, and weights</summary><pre id="graph-data"></pre></details>
+</section>
+<section id="undo"><div class="kicker">03 / REVERSE A TRACE</div><h2>Restore the information an action destroys</h2><p>Move between sandbox states. Clearing all bits collapses eight past states to one. A three-bit residual restores the exact state, while reversible bit flips need none. Reverse checks the fresh current state as well as the residual.</p>
+<label>Initial state <select id="seed"></select></label><div class="controls"><button id="flip">Flip low bit</button><button id="clear">Clear with residual</button><button id="undo-one">Undo last</button><button id="change">Simulate outside edit</button><button id="reset">Reset sandbox</button></div><pre id="undo-result" aria-live="polite"></pre></section>
+<section id="evidence"><div class="kicker">04 / AUDIT</div><h2>What the evidence supports</h2><dl>
+<dt>Joint prerequisites and stopping</dt><dd><a href="https://github.com/clpi/software-redundant-compute-expands/pull/3">Lean and exhaustive controls</a>. A positive weighted score can miss Pareto points; a threshold can accept a candidate without certifying optimality.</dd>
+<dt>Append-only closure</dt><dd><a href="https://github.com/clpi/software-redundant-compute-expands/pull/4">Canonical closure and worklist replay</a>. On the seeded 512-hop chain, 514 registrations plus 512 waiter visits versus 659,206 cold rule checks (operation counts, not timings).</dd>
+<dt>Convergence, not invisible capture</dt><dd><a href="https://github.com/clpi/software-redundant-compute-expands/pull/5">Named-cut convergence</a>. Matching delivered facts gives matching views. Detecting missing source items requires a source checkpoint.</dd>
+<dt>Reversal and compression</dt><dd><a href="https://github.com/clpi/software-is-reversible">Scoped inversion proofs</a>. The live controls above are synthetic. No global minimum encoding, verified external-system undo, or native speedup is asserted.</dd>
+<dt>Measured cost of keeping the certificate</dt><dd>On two local Node runs, full five-axis cold median was 2.51–2.75 ms exhaustive, 2.27–2.50 ms factored, 2.31–2.71 ms factored with Idol Wasm comparisons. The narrowed control did not reliably get faster. <a href="benchmark-run1.json">Raw run 1</a> · <a href="benchmark-run2.json">Raw run 2</a>.</dd>
+<dt>Native compiler and environment</dt><dd id="native-evidence">This preview runs the reference engine in your browser. Native Idol WASM requires its own build and equivalence receipt. No JavaScript fallback is reported as native.</dd>
+</dl></section>
+<footer>Exact arithmetic where it matters. Explicit refusals where evidence runs out.</footer>
+</main><script type="module" src="app.mjs"></script></body></html>
