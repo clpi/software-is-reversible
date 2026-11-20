@@ -1,0 +1,1208 @@
+{
+ "base": "12047b21f0af62f4dc3272199dec5184d14cfd3a",
+ "battery": {
+  "agree": 900,
+  "grid": 620,
+  "max": 541,
+  "members": 695,
+  "missing": 28,
+  "nonlinear": 545,
+  "overlay": 306,
+  "perms": 900,
+  "squared": 413,
+  "trials": 300,
+  "union": 667
+ },
+ "classes": {
+  "none": 46,
+  "unique": 645,
+  "weak": 4
+ },
+ "controls": {
+  "built": 695,
+  "fidelity": true,
+  "gridbad": 0,
+  "linbad": 0,
+  "metabad": 0,
+  "randbad": 0
+ },
+ "families": {
+  "center": {
+   "configs": "per instance",
+   "ofmissing": 28,
+   "total": 695
+  },
+  "cheby": {
+   "configs": 441,
+   "ofmissing": 28,
+   "total": 695
+  },
+  "eps": {
+   "configs": 42,
+   "ofmissing": 28,
+   "total": 695
+  },
+  "lex": {
+   "configs": 2,
+   "ofmissing": 22,
+   "total": 543
+  },
+  "pmax": {
+   "configs": 1888,
+   "ofmissing": 28,
+   "total": 695
+  },
+  "power": {
+   "configs": 162,
+   "ofmissing": 0,
+   "total": 469
+  },
+  "rand": {
+   "configs": 4000,
+   "ofmissing": 22,
+   "total": 645
+  }
+ },
+ "meta": {
+  "center": 3,
+  "cheby": 3,
+  "eps": 3,
+  "lex": 0,
+  "pmax": 3,
+  "power": 3,
+  "rand": 0
+ },
+ "missingdetail": [
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": false,
+    "pmax": true,
+    "power": false,
+    "rand": false
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     13
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     14,
+     5
+    ]
+   ],
+   "linear": "weak",
+   "point": [
+    1,
+    13
+   ],
+   "span": [
+    "2",
+    "2"
+   ],
+   "squared": "unique",
+   "trial": 9
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     18
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     19,
+     1
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    19,
+    1
+   ],
+   "span": [
+    "0",
+    "1/17"
+   ],
+   "squared": "unique",
+   "trial": 24
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     1,
+     20
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     7,
+     1
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    1,
+    20
+   ],
+   "span": [
+    "18",
+    "inf"
+   ],
+   "squared": "unique",
+   "trial": 56
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     2,
+     11
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    2,
+    11
+   ],
+   "span": [
+    "11",
+    "inf"
+   ],
+   "squared": "unique",
+   "trial": 63
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     10
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     15,
+     2
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    15,
+    2
+   ],
+   "span": [
+    "0",
+    "1/9"
+   ],
+   "squared": "unique",
+   "trial": 83
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     2
+    ],
+    [
+     9,
+     1
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    9,
+    1
+   ],
+   "span": [
+    "0",
+    "1/9"
+   ],
+   "squared": "unique",
+   "trial": 86
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": false,
+    "pmax": true,
+    "power": false,
+    "rand": false
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     15
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "linear": "none",
+   "point": [
+    2,
+    9
+   ],
+   "span": [
+    "5",
+    "3"
+   ],
+   "squared": "unique",
+   "trial": 90
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     1,
+     16
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     18,
+     3
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    18,
+    3
+   ],
+   "span": [
+    "0",
+    "1/15"
+   ],
+   "squared": "unique",
+   "trial": 105
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": false,
+    "pmax": true,
+    "power": false,
+    "rand": false
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     18
+    ],
+    [
+     2,
+     17
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     8,
+     0
+    ]
+   ],
+   "linear": "none",
+   "point": [
+    2,
+    17
+   ],
+   "span": [
+    "11/3",
+    "1/2"
+   ],
+   "squared": "none",
+   "trial": 115
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     18
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    0,
+    18
+   ],
+   "span": [
+    "10",
+    "inf"
+   ],
+   "squared": "unique",
+   "trial": 127
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": false,
+    "pmax": true,
+    "power": false,
+    "rand": false
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     2,
+     8
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     13,
+     2
+    ],
+    [
+     16,
+     0
+    ]
+   ],
+   "linear": "none",
+   "point": [
+    13,
+    2
+   ],
+   "span": [
+    "2/3",
+    "2/9"
+   ],
+   "squared": "unique",
+   "trial": 135
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     3,
+     18
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     7,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    3,
+    18
+   ],
+   "span": [
+    "16",
+    "inf"
+   ],
+   "squared": "unique",
+   "trial": 136
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     2,
+     19
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     16,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    2,
+    19
+   ],
+   "span": [
+    "16",
+    "inf"
+   ],
+   "squared": "unique",
+   "trial": 168
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": false,
+    "pmax": true,
+    "power": false,
+    "rand": false
+   },
+   "centered": true,
+   "cube": "none",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     3,
+     17
+    ],
+    [
+     4,
+     15
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     12,
+     1
+    ]
+   ],
+   "linear": "none",
+   "point": [
+    4,
+    15
+   ],
+   "span": [
+    "13",
+    "2"
+   ],
+   "squared": "none",
+   "trial": 171
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     1,
+     2
+    ],
+    [
+     19,
+     1
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    19,
+    1
+   ],
+   "span": [
+    "0",
+    "1/18"
+   ],
+   "squared": "unique",
+   "trial": 172
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     17
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     5,
+     1
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    0,
+    17
+   ],
+   "span": [
+    "12",
+    "inf"
+   ],
+   "squared": "unique",
+   "trial": 178
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     2,
+     17
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     20,
+     4
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    2,
+    17
+   ],
+   "span": [
+    "11",
+    "inf"
+   ],
+   "squared": "unique",
+   "trial": 186
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     2,
+     17
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     20,
+     4
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    20,
+    4
+   ],
+   "span": [
+    "0",
+    "1/15"
+   ],
+   "squared": "unique",
+   "trial": 186
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     1,
+     12
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     9,
+     1
+    ],
+    [
+     20,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    20,
+    0
+   ],
+   "span": [
+    "0",
+    "1/11"
+   ],
+   "squared": "unique",
+   "trial": 207
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": false,
+    "pmax": true,
+    "power": false,
+    "rand": false
+   },
+   "centered": true,
+   "cube": "none",
+   "fixed": true,
+   "fourth": "none",
+   "front": [
+    [
+     0,
+     17
+    ],
+    [
+     4,
+     15
+    ],
+    [
+     5,
+     1
+    ]
+   ],
+   "linear": "none",
+   "point": [
+    4,
+    15
+   ],
+   "span": [
+    "14",
+    "1/2"
+   ],
+   "squared": "none",
+   "trial": 216
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    0,
+    10
+   ],
+   "span": [
+    "10",
+    "inf"
+   ],
+   "squared": "unique",
+   "trial": 234
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     2,
+     18
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     18,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    18,
+    0
+   ],
+   "span": [
+    "0",
+    "1/11"
+   ],
+   "squared": "unique",
+   "trial": 268
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     3,
+     16
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     8,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    3,
+    16
+   ],
+   "span": [
+    "15",
+    "inf"
+   ],
+   "squared": "unique",
+   "trial": 271
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     1
+    ],
+    [
+     18,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    18,
+    0
+   ],
+   "span": [
+    "0",
+    "1/18"
+   ],
+   "squared": "unique",
+   "trial": 275
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     1
+    ],
+    [
+     19,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    19,
+    0
+   ],
+   "span": [
+    "0",
+    "1/19"
+   ],
+   "squared": "unique",
+   "trial": 276
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     2,
+     4
+    ],
+    [
+     17,
+     3
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    17,
+    3
+   ],
+   "span": [
+    "0",
+    "1/15"
+   ],
+   "squared": "unique",
+   "trial": 280
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     1
+    ],
+    [
+     20,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    20,
+    0
+   ],
+   "span": [
+    "0",
+    "1/20"
+   ],
+   "squared": "unique",
+   "trial": 281
+  },
+  {
+   "by": {
+    "center": true,
+    "cheby": true,
+    "eps": true,
+    "lex": true,
+    "pmax": true,
+    "power": false,
+    "rand": true
+   },
+   "centered": true,
+   "cube": "unique",
+   "fixed": true,
+   "fourth": "unique",
+   "front": [
+    [
+     0,
+     19
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     14,
+     0
+    ]
+   ],
+   "linear": "unique",
+   "point": [
+    0,
+    19
+   ],
+   "span": [
+    "10",
+    "inf"
+   ],
+   "squared": "unique",
+   "trial": 295
+  }
+ ],
+ "union": {
+  "centered": 28,
+  "fixed": 28,
+  "remaining": [],
+  "remainingcentered": []
+ },
+ "verdict": "OK"
+}

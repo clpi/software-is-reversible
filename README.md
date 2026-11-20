@@ -55,3 +55,16 @@ module at its local pin bf814c1.
   equivalence proved, measured, or UNMEASURED with an
   owner. Its harness is spectrum.py in this repo, with its
   full machine output in spectrum-results.json.
+- widen.md — the widening lane: new weighting families
+  (the epsilon form, lexicographic over permuted orders,
+  the achievement form, weighted max with varied
+  exponents and wide weights, power sums beyond the
+  squared family, seeded pseudo-random linear weightings,
+  and the centered form counted apart) run over the
+  spectrum battery, closing the spectrum record's open
+  item of the 28 frontier members no enumerated
+  configuration selected: all 28 are selected by the
+  enlarged fixed space, each classified exactly by its
+  linear and power classes. Its harness is the widen
+  file in this repo, with its executed output in the
+  widen results files.
