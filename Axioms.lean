@@ -8,6 +8,7 @@ import Reversible
 #print axioms Reversible.b_not_dominated_by_c
 #print axioms Reversible.b_on_frontier
 #print axioms Reversible.certified_optimal_sound
+#print axioms Reversible.collapse
 #print axioms Reversible.comp_restores
 #print axioms Reversible.deriv_growth
 #print axioms Reversible.deriv_monotone

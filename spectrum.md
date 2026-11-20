@@ -558,7 +558,10 @@ edits, and final weightings reproduce exactly).
   — is measured here and stated as a lemma for lane 1:
   UNMEASURED as a proof state, owner lane 1, closing route
   the same function-extensionality and case split the round
-  trip proof already uses.
+  trip proof already uses. Closed by the lane 1 successor:
+  proved in the Lean core as the collapse theorem over the
+  stack and flat forms of this section, by that closing
+  route, and audited in the gate's printed axiom list.
 - Equivalence: stream level — measured across all routes
   run (identical stream in every variant). Weighting level —
   route 5 measured equal; routes 1, 2, 3 alone measured
@@ -652,7 +655,10 @@ reason stands in the algorithm's section above.
   overlay apply identically), stated in the tensor loop
   section. Owner: lane 1; the Lean gate was not re-run in
   this lane (no toolchain on this machine) and no Lean file
-  was touched.
+  was touched. Closed by the lane 1 successor: the lemma is
+  proved in the Lean core (the collapse theorem, over the
+  stack and flat forms), and the cold gate passes with it
+  at the landing head.
 - Retraction repair (weight increases, withdrawals) and the
   wall-clock forms of the lane 2 propositions; the general
   matrix resolution (thirteen claims); a Lean form of the

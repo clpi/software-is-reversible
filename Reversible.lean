@@ -412,6 +412,45 @@ theorem edit_roundtrip (ov : Nat → Option Nat) (s : Nat → Nat) :
   | none => simp [applyOv, inverseOv, h]
   | some v => simp [applyOv, inverseOv, h]
 
+/-- A stack of overlays, applied in order: the first overlay in
+    the list runs first, and each later overlay runs on the
+    result of the ones before it. This is the Lean form of the
+    stack application the tensor loop harness executes. -/
+def stack : List (Nat → Option Nat) → (Nat → Nat) → Nat → Nat
+  | [], s => s
+  | ov :: rest, s => stack rest (applyOv ov s)
+
+/-- The collapsed overlay of a stack: at each coordinate, the
+    value of the last overlay in the stack that selects that
+    coordinate, and no selection where no overlay in the stack
+    selects it. This is the terminal tensor form of the stack,
+    the one measured at 51 bytes against the stack's 189. -/
+def flat : List (Nat → Option Nat) → Nat → Option Nat
+  | [] => fun _ => none
+  | ov :: rest => fun i => (flat rest i).elim (ov i) some
+
+/-- The overlay collapse lemma, stated for lane 1 in the tensor
+    loop section of the spectrum record: a stack and its
+    collapsed overlay apply identically, on every state. The
+    proof is the case split the round trip proof already uses,
+    carried through an induction on the stack: at each
+    coordinate the last selecting overlay decides, and where
+    the collapsed tail selects nothing the head overlay and
+    then the state decide, in that order. -/
+theorem collapse (l : List (Nat → Option Nat)) (s : Nat → Nat) :
+    applyOv (flat l) s = stack l s := by
+  induction l generalizing s with
+  | nil => rfl
+  | cons ov rest ih =>
+    funext i
+    have h := congrFun (ih (s := applyOv ov s)) i
+    cases hfr : flat rest i with
+    | none =>
+      cases hov : ov i with
+      | none => simp [applyOv, flat, stack, hfr, hov] at h ⊢; exact h
+      | some v => simp [applyOv, flat, stack, hfr, hov] at h ⊢; exact h
+    | some v => simp [applyOv, flat, stack, hfr] at h ⊢; exact h
+
 theorem tied_preserved {tied : Nat → Nat → Prop}
     {ov : Nat → Option Nat} {s : Nat → Nat}
     (hs : ∀ i j, tied i j → s i = s j)
