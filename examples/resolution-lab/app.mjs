@@ -1,8 +1,9 @@
-import {AXES,appendEvents,canonicalGraph,compareArchitectures,demoEvents,weightCandidates} from './search.mjs';
+import {AXES,DIRECTIONS,appendEvents,canonicalGraph,compareArchitectures,demoEvents,heldOutControl,weightCandidates} from './search.mjs';
 import {analyzeInference,fixture} from './inference.mjs';
 import {apply,reverse} from './reversal.mjs';
 import {loadKernel} from './kernel.mjs';
 import {incidence} from './incidence.mjs';
+import {loadFused} from './fused.mjs';
 const $=id=>document.getElementById(id);
 const text=(id,s)=>{$(id).textContent=s};
 const show=(id,x)=>text(id,JSON.stringify(x,null,2));
@@ -109,3 +110,16 @@ try {
   text('native-evidence','Three action/comparison exports compiled twice identically with retained Idol 5efca0e. Host supplies no WASI authority. Exact reference code builds the search and verifies it independently; the active view reports comparator counts. This is not a fully native port.');
 } catch (e) {text('runtime','Reference only · '+e.message);}
 reportUndo();solve();
+$('fused-check').addEventListener('click',async ()=>{
+  try {
+    const f=await loadFused();
+    const d=axes(), example=heldOutControl(graph,d).example;
+    if(!example){show('fused-result',{verdict:'No strict held-out example on this cut and axes.'});return;}
+    const vector=metrics=>AXES.map(k=>metrics[k]*DIRECTIONS[k]);
+    const mask=d.reduce((n,k)=>n|(1<<AXES.indexOf(k)),0);
+    const a=vector(example.after),b=vector(example.before);
+    const result=f(mask,a,b), reverse=f(mask,b,a), tie=f(mask,a,a);
+    show('fused-result',{axes:d,mask,witness:example,strictDominance:result,reverseDominance:reverse,
+      tieDominates:tie,referenceAgreement:result&&!reverse&&!tie});
+  } catch(e){show('fused-result',{verdict:'Refused: '+e.message});}
+});

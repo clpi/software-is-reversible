@@ -1,0 +1,52 @@
+{
+  "cases": 1830519,
+  "syntheticInputAlphabet": [
+    -1,
+    0,
+    1
+  ],
+  "masks": 31,
+  "equalVectorCases": 7533,
+  "strictDominance": 510543,
+  "heldout32BitCases": 20000,
+  "endpointCalls": 10,
+  "maskRefusals": 5,
+  "exports": [
+    {
+      "name": "memory",
+      "kind": "memory"
+    },
+    {
+      "name": "idol_fused__dominates",
+      "kind": "function"
+    }
+  ],
+  "imports": [
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "fd_write",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "proc_exit",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "fd_read",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "args_sizes_get",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "args_get",
+      "kind": "function"
+    }
+  ],
+  "calledImports": []
+}

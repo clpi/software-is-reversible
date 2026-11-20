@@ -1,0 +1,3 @@
+  > compile (fused.id) …
+  ok compile (6 ms — repeat.wasm)
+✓ repeat.wasm
