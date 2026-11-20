@@ -7,6 +7,7 @@ import Reversible
 #print axioms Reversible.b_not_dominated_by_b
 #print axioms Reversible.b_not_dominated_by_c
 #print axioms Reversible.b_on_frontier
+#print axioms Reversible.canonical
 #print axioms Reversible.certified_optimal_sound
 #print axioms Reversible.collapse
 #print axioms Reversible.comp_restores
@@ -32,7 +33,9 @@ import Reversible
 #print axioms Reversible.powerset_count_eight
 #print axioms Reversible.retract_insert_of_fresh
 #print axioms Reversible.reuse_wins_of_cover
+#print axioms Reversible.segment
 #print axioms Reversible.set_field_restores
+#print axioms Reversible.symmetric
 #print axioms Reversible.threshold_accepts_worse
 #print axioms Reversible.tied_preserved
 #print axioms Reversible.toggle_restores

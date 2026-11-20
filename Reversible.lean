@@ -51,14 +51,88 @@ theorem b_never_selected (w1 w2 : Nat) (_h1 : 0 < w1) (_h2 : 0 < w2) :
 /-- The class is not a one-off: the same shape at a second scale,
     plans (0, 20), (11, 11), (20, 0), is likewise never selected
     by positive weights. The fully general symmetric form is
-    census lemma L-gen in the program record: its proof needs a
-    nonlinear step, and it is carried there as a named lemma with
-    the concrete instances proved here. -/
+    census lemma L-gen: it is proved directly below, by the
+    nonlinear step the census named. -/
 theorem b2_never_selected (w1 w2 : Nat) (_h1 : 0 < w1) (_h2 : 0 < w2) :
     ¬ (w1 * 11 + w2 * 11 < w1 * 0 + w2 * 20 ∧
        w1 * 11 + w2 * 11 < w1 * 20 + w2 * 0) := by
   rintro ⟨ha, hb⟩
   omega
+
+/-- L-gen, first part: the fully general symmetric segment
+    theorem. The rivals (a, b) and (b, a) share the coordinate
+    sum a + b; the symmetric middle plan (m, m) has coordinate
+    sum 2 * m. When the middle sum strictly exceeds the shared
+    rival sum, no pair of positive weights makes the middle
+    plan strictly beat both rivals, so no positive linear
+    weighting selects it. The concrete instances above are
+    the case a = 0, b = 10, m = 6 and the case a = 0, b = 20,
+    m = 11. The proof is the nonlinear step the census named:
+    the two strict inequalities are added, and the product
+    terms are carried explicitly through the distributivity
+    expansions in the two expansion facts below, after which
+    the contradiction with a + b < 2 * m is linear in the
+    product atoms. The linear arithmetic solver alone does
+    not close the general form, because each weighted
+    coordinate is a product of two variables here, not a
+    constant times a variable as in the concrete instances. -/
+theorem segment {a b m w1 w2 : Nat} (hw1 : 0 < w1) (hw2 : 0 < w2)
+    (h : a + b < 2 * m) :
+    ¬ (w1 * m + w2 * m < w1 * a + w2 * b ∧
+       w1 * m + w2 * m < w1 * b + w2 * a) := by
+  rintro ⟨ha, hb⟩
+  have hpos : 0 < w1 + w2 := by omega
+  have hmul : (w1 + w2) * (a + b) < (w1 + w2) * (2 * m) :=
+    Nat.mul_lt_mul_of_pos_left h hpos
+  have e1 : (w1 + w2) * (a + b) = w1 * a + w2 * b + (w1 * b + w2 * a) := by
+    simp only [Nat.add_mul, Nat.mul_add]
+    omega
+  have e2 : (w1 + w2) * (2 * m) = 2 * (w1 * m + w2 * m) := by
+    simp only [Nat.add_mul]
+    have t1 : w1 * (2 * m) = 2 * (w1 * m) := by
+      rw [Nat.mul_comm w1 (2 * m), Nat.mul_assoc, Nat.mul_comm m w1]
+    have t2 : w2 * (2 * m) = 2 * (w2 * m) := by
+      rw [Nat.mul_comm w2 (2 * m), Nat.mul_assoc, Nat.mul_comm m w2]
+    omega
+  omega
+
+/-- L-gen, second part: the symmetric middle plan stands on
+    the frontier of the three whenever it lies strictly below
+    at least one rival coordinate. Neither rival dominates
+    it, since domination would need both rival coordinates
+    at or below m, and the plan does not dominate itself. -/
+theorem symmetric {a b m : Nat} (h : m < a ∨ m < b) :
+    onFrontier [(a, b), (m, m), (b, a)] (m, m) := by
+  refine ⟨by simp, ?_⟩
+  intro q hq
+  simp at hq
+  rcases hq with rfl | rfl | rfl
+  · intro hd
+    simp only [dom, le2] at hd
+    rcases h with h | h
+    · exact Nat.not_lt_of_ge hd.1.1 h
+    · exact Nat.not_lt_of_ge hd.1.2 h
+  · intro hd
+    rcases hd.2 with hlt | hlt <;> exact Nat.lt_irrefl _ hlt
+  · intro hd
+    simp only [dom, le2] at hd
+    rcases h with h | h
+    · exact Nat.not_lt_of_ge hd.1.2 h
+    · exact Nat.not_lt_of_ge hd.1.1 h
+
+/-- The canonical segment shape of the concrete class,
+    packaged from the two general parts: for every n and
+    every k with n < 2 * k and k < n, the middle plan (k, k)
+    stands on the frontier of (0, n), (k, k), (n, 0) and is
+    selected by no positive linear weighting. The two proved
+    instances above are n = 10, k = 6 and n = 20, k = 11. -/
+theorem canonical {n k : Nat} (h1 : n < 2 * k) (h2 : k < n) :
+    onFrontier [(0, n), (k, k), (n, 0)] (k, k) ∧
+    ∀ w1 w2 : Nat, 0 < w1 → 0 < w2 →
+      ¬ (w1 * k + w2 * k < w1 * 0 + w2 * n ∧
+         w1 * k + w2 * k < w1 * n + w2 * 0) := by
+  refine ⟨symmetric (Or.inr h2), fun w1 w2 hw1 hw2 => ?_⟩
+  exact segment hw1 hw2 (by omega)
 
 /-! Section B. The break-even rule in full cost form.
     Reuse wins only when the avoided work exceeds setup,

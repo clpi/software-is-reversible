@@ -3,7 +3,7 @@
 Compiled 2026-11-20. Every theorem and lemma the algorithm system
 needs, in exactly one state. Proved here means in Reversible.lean
 at this repo's head, gate cold PASS, axiom audit printed in the
-gate log: 38 results, every axiom set a subset of the three
+gate log: 42 results, every axiom set a subset of the three
 standard axioms, none using the choice axiom at all. Cited means
 proved in the named home at the named pin and not re-proved here
 (never blindly recompute). Premise means the claim rests on the
@@ -92,14 +92,21 @@ Stop soundness, two faces (the split adopted 2026-11-20 01:17).
   by c, by b; b on frontier; b never selected). A second scale,
   (0, 20), (11, 11), (20, 0), is likewise never selected
   (b2 never selected).
-- Unidentified lemma L-gen, found during the proof attempt: the
-  fully general symmetric form — a plan whose coordinate sum
-  strictly exceeds the rivals' shared sum, at the symmetric point,
-  is never selected by positive weights. The proof needs a
-  nonlinear step the linear arithmetic solver does not close.
-  State: stated, unproved. Owner: lane 1. Closing route: a
-  two-case argument on the weight order with the product terms
-  carried explicitly, or a convexity lemma over the segment.
+- Proved here: lemma L-gen, the fully general symmetric form —
+  for rivals (a, b) and (b, a) sharing the coordinate sum
+  a + b and a symmetric middle plan (m, m) whose coordinate
+  sum 2 * m strictly exceeds it, no positive linear weighting
+  selects the middle plan (segment); the middle plan stands
+  on the frontier of the three whenever m lies strictly
+  below at least one rival coordinate (symmetric); and the
+  canonical segment shape (0, n), (k, k), (n, 0) carries both
+  parts for every k with n < 2 * k and k < n (canonical).
+  The nonlinear step the first census pass named is the
+  distributivity expansion of the products (w1 + w2) * (a + b)
+  and (w1 + w2) * (2 * m), with the product terms carried
+  explicitly; after that expansion the contradiction is
+  linear in the product atoms. This entry supersedes the
+  stated, unproved entry of the first census pass.
 - Proved, cited: weightings move order, never membership; epochs
   are reproducible and never rewrite — candidate module, frontier
   home at 60f33193.
@@ -256,13 +263,14 @@ a rule fires when its count reaches zero.
 
 ## 9. Counts
 
-Proved in this repo: 38 theorems, 0 escapes, axiom audit clean.
+Proved in this repo: 42 theorems, 0 escapes, axiom audit clean.
 Cited proved: the pipeline core (25 results and 3 controls at
 bf814c1), the candidate space core (frontier home 60f33193), the
 canonical theory (217 at 37514fb7). Premise-labeled: the register
 of section 8. Refuted controls standing: 5. Named unproved
-lemmas found by this census: L-gen, L-close. Open specification
-gaps carried: the resolution algorithm's 8. UNMEASURED empirical
+lemmas found by this census: L-close (L-gen is proved in
+section 2). Open specification gaps carried: the resolution
+algorithm's 8. UNMEASURED empirical
 cells named: execution layer reversibility (lane 4's first pass
 is its closing route), the break-even figures, the general
 subset agreement over extracts.
