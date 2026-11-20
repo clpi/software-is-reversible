@@ -1,0 +1,107 @@
+{
+  "engine": {
+    "node": "v24.22.3",
+    "v8": "13.6.233.17-node.63"
+  },
+  "sourceSha256": "0102b135bd20c4b5e3a82276e89539aadc615d7f9b03673f991457028d197751",
+  "compilerRevision": "5efca0e40430de5dfd592f534edf27f32305eb36",
+  "artifact": {
+    "bytes": 3430,
+    "sha256": "3806bcd211f200fe976732c2ddedd7e8304e2d034021dabe0610058d0555335e",
+    "secondBuildEqual": true
+  },
+  "declaredImports": [
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "fd_write",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "proc_exit",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "fd_read",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "args_sizes_get",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "args_get",
+      "kind": "function"
+    }
+  ],
+  "calledImports": [],
+  "abi": [
+    {
+      "name": "memory",
+      "kind": "memory"
+    },
+    {
+      "name": "idol_kernel__flip",
+      "kind": "function"
+    },
+    {
+      "name": "idol_kernel__clear",
+      "kind": "function"
+    },
+    {
+      "name": "idol_kernel__compare",
+      "kind": "function"
+    }
+  ],
+  "observations": {
+    "table": [
+      {
+        "input": 0,
+        "flip": 1,
+        "clear": 0
+      },
+      {
+        "input": 1,
+        "flip": 0,
+        "clear": 0
+      },
+      {
+        "input": 2,
+        "flip": 3,
+        "clear": 0
+      },
+      {
+        "input": 3,
+        "flip": 2,
+        "clear": 0
+      },
+      {
+        "input": 4,
+        "flip": 5,
+        "clear": 0
+      },
+      {
+        "input": 5,
+        "flip": 4,
+        "clear": 0
+      },
+      {
+        "input": 6,
+        "flip": 7,
+        "clear": 0
+      },
+      {
+        "input": 7,
+        "flip": 6,
+        "clear": 0
+      }
+    ],
+    "flipInvolutionCases": 8,
+    "refusalCalls": 8,
+    "comparePairs": 4761
+  },
+  "evidence": "bounded Node/V8 execution of actual Idol-generated Wasm; no browser navigation or current-main compiler claim"
+}

@@ -1,0 +1,22 @@
+flip: i32 = (value: i32)
+    if value < 0
+        return -1
+    if value > 7
+        return -1
+    if value % 2 == 0
+        return value + 1
+    value - 1
+
+clear: i32 = (value: i32)
+    if value < 0
+        return -1
+    if value > 7
+        return -1
+    0
+
+compare: i32 = (left: i32, right: i32)
+    if left < right
+        return -1
+    if left > right
+        return 1
+    0

@@ -1,0 +1,3 @@
+  > compile (kernel.id) …
+  ok compile (3 ms — reproduce.wasm)
+✓ reproduce.wasm
