@@ -1,0 +1,161 @@
+{
+  "schema": "idol-reversal-sandbox-receipt/v1",
+  "source": "reversal.id",
+  "source_sha256": "3276d7be97efa57eb00a9357d96729470c6ff55c531579e8f076f11046dc9b73",
+  "compiler_sha256": "3ba4c432cea98a0ed63652424f626a1be4c761a8b3c8abcd976f07291953469c",
+  "compiler_revision": "5efca0e40430de5dfd592f534edf27f32305eb36",
+  "wasm_sha256": "ce57c2131117edb6581a5b2090de9d6d7e15ac500bdb24927d946fadf5cbb0f2",
+  "serial_builds_byte_identical": true,
+  "domains": {
+    "plans": 120,
+    "stateValues": 8,
+    "epochs": 128,
+    "capMasks": 16
+  },
+  "dispatch": "pure target derivation; no device calls, trusted external fresh observation and retained ticket",
+  "hostImports": [
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "fd_write",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "proc_exit",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "fd_read",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "args_sizes_get",
+      "kind": "function"
+    },
+    {
+      "module": "wasi_snapshot_preview1",
+      "name": "args_get",
+      "kind": "function"
+    }
+  ],
+  "hostCalls": 0,
+  "checks": {
+    "prepare": 1966080,
+    "predecessor": 442656,
+    "advance": 442656,
+    "verify": 442656,
+    "inverse": 442656,
+    "undoverify": 442656,
+    "malformedPlan": 136,
+    "realized": 442656,
+    "inversesRealized": 52768,
+    "adversarial": 22
+  },
+  "negative": [
+    {
+      "label": "stale same-value generation",
+      "observed": -2
+    },
+    {
+      "label": "stale same-generation value",
+      "observed": -2
+    },
+    {
+      "label": "late action forbidden before target",
+      "observed": -3
+    },
+    {
+      "label": "permission revoked before target",
+      "observed": -3
+    },
+    {
+      "label": "stale forward reuse",
+      "observed": -2
+    },
+    {
+      "label": "wrong independent observed outcome",
+      "observed": -2
+    },
+    {
+      "label": "wrong independent observed undo outcome",
+      "observed": -2
+    },
+    {
+      "label": "no repeated undo after generation advances",
+      "observed": -2
+    },
+    {
+      "label": "clear grant not a restore grant",
+      "observed": -3
+    },
+    {
+      "label": "stale otherwise valid receipt",
+      "observed": -6
+    },
+    {
+      "label": "tampered otherwise valid receipt",
+      "observed": -6
+    },
+    {
+      "label": "missing clear residual",
+      "observed": -4
+    },
+    {
+      "label": "excess trailing residual",
+      "observed": -5
+    },
+    {
+      "label": "clear receipt impossible post state",
+      "observed": -5
+    },
+    {
+      "label": "unexpected residual on bijection",
+      "observed": -5
+    },
+    {
+      "label": "invalid capability mask",
+      "observed": -1
+    },
+    {
+      "label": "bad frame upper limit",
+      "observed": -1
+    },
+    {
+      "label": "negative frame",
+      "observed": -1
+    },
+    {
+      "label": "negative wire receipt",
+      "observed": -1
+    },
+    {
+      "label": "wire upper limit",
+      "observed": -1
+    },
+    {
+      "label": "forward generation exhaustion",
+      "observed": -7
+    },
+    {
+      "label": "undo generation exhaustion",
+      "observed": -7
+    }
+  ],
+  "clearCollision": {
+    "sameAfter": 16,
+    "origins": [
+      13,
+      12
+    ],
+    "retained": [
+      13438466,
+      13438210
+    ],
+    "undo": [
+      29,
+      28
+    ]
+  }
+}

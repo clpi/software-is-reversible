@@ -1,0 +1,9 @@
+'ActionConsensus.fiber_append_exact' depends on axioms: [propext]
+'ActionConsensus.append_refines' depends on axioms: [propext]
+'ActionConsensus.preserve_certified' does not depend on any axioms
+'ActionConsensus.preserved_on_append' depends on axioms: [propext]
+'ActionConsensus.stop_has_no_countermodel' does not depend on any axioms
+'ActionConsensus.nonempty_no_countermodel_exact' does not depend on any axioms
+'ActionConsensus.indivisible_fiber' does not depend on any axioms
+'ActionConsensus.incompatible_alias_obstructs_stop' does not depend on any axioms
+'ActionConsensus.whole_intent_not_required' does not depend on any axioms

@@ -1,0 +1,5 @@
+'ProductFrontier.coordinate_law' does not depend on any axioms
+'ProductFrontier.frontier_product' does not depend on any axioms
+'ProductFrontier.reuse_unchanged_slice' does not depend on any axioms
+'ProductFrontier.replay_after_independent_append' depends on axioms: [propext]
+'ProductFrontier.unsafe_product_control' depends on axioms: [propext]

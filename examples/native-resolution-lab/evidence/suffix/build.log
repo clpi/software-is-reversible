@@ -1,0 +1,3 @@
+  > compile (suffix.id) …
+  ok compile (29 ms — suffix.wasm)
+✓ suffix.wasm
