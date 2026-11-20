@@ -1,0 +1,395 @@
+{
+  "node": "v24.22.3",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "scope": "single-host systematic pair order; cold local query, preconstructed inputs; native includes packet writes and outputs; JS performs full enumeration then returns same requested page; excludes interning, input encode and browser DOM",
+  "summary": {
+    "shared": {
+      "support": 4095,
+      "suffixRows": 12,
+      "expandedRows": 4095,
+      "suffixInputBytes": 128,
+      "expandedInputBytes": 94205,
+      "medianMillis": {
+        "exhaustive": 0.044977810000000035,
+        "nativePage": 0.0035003799999998365
+      },
+      "samplesMillis": [
+        {
+          "nativePage": 0.0033603700000000456,
+          "exhaustive": 0.16601819000000007
+        },
+        {
+          "exhaustive": 0.05320801999999986,
+          "nativePage": 0.0035003799999998365
+        },
+        {
+          "nativePage": 0.00425341000000003,
+          "exhaustive": 0.049171829999999944
+        },
+        {
+          "exhaustive": 0.04584962000000019,
+          "nativePage": 0.004065029999999865
+        },
+        {
+          "nativePage": 0.006603960000000199,
+          "exhaustive": 0.049363620000000025
+        },
+        {
+          "exhaustive": 0.04459292000000005,
+          "nativePage": 0.0034629200000000538
+        },
+        {
+          "nativePage": 0.003923509999999908,
+          "exhaustive": 0.04098738999999995
+        },
+        {
+          "exhaustive": 0.042147939999999835,
+          "nativePage": 0.003273230000000069
+        },
+        {
+          "nativePage": 0.004722319999999911,
+          "exhaustive": 0.047588249999999735
+        },
+        {
+          "exhaustive": 0.04661478000000017,
+          "nativePage": 0.003548849999999959
+        },
+        {
+          "nativePage": 0.003070730000000026,
+          "exhaustive": 0.04260923999999989
+        },
+        {
+          "exhaustive": 0.044070540000000165,
+          "nativePage": 0.0032785499999999955
+        },
+        {
+          "nativePage": 0.006833300000000122,
+          "exhaustive": 0.04886707000000001
+        },
+        {
+          "exhaustive": 0.04228505000000013,
+          "nativePage": 0.003801129999999944
+        },
+        {
+          "nativePage": 0.0031833000000000312,
+          "exhaustive": 0.04333613000000014
+        },
+        {
+          "exhaustive": 0.04242675999999989,
+          "nativePage": 0.0035812000000001376
+        },
+        {
+          "nativePage": 0.004289469999999938,
+          "exhaustive": 0.044977810000000035
+        },
+        {
+          "exhaustive": 0.04538581999999991,
+          "nativePage": 0.0021909000000002263
+        },
+        {
+          "nativePage": 0.001655489999999986,
+          "exhaustive": 0.044417460000000235
+        },
+        {
+          "exhaustive": 0.04677953000000002,
+          "nativePage": 0.0018130300000001398
+        },
+        {
+          "nativePage": 0.0028523000000001274,
+          "exhaustive": 0.04238209000000012
+        }
+      ]
+    },
+    "local": {
+      "support": 4064,
+      "suffixRows": 18,
+      "expandedRows": 4064,
+      "suffixInputBytes": 200,
+      "expandedInputBytes": 93487,
+      "medianMillis": {
+        "exhaustive": 0.04196998000000008,
+        "nativePage": 0.0019960100000002965
+      },
+      "samplesMillis": [
+        {
+          "nativePage": 0.0018555899999995519,
+          "exhaustive": 0.0436818599999998
+        },
+        {
+          "exhaustive": 0.04312442000000033,
+          "nativePage": 0.001970869999999536
+        },
+        {
+          "nativePage": 0.001998209999999858,
+          "exhaustive": 0.04075003000000038
+        },
+        {
+          "exhaustive": 0.03924527000000012,
+          "nativePage": 0.0019907999999998083
+        },
+        {
+          "nativePage": 0.0018713299999996026,
+          "exhaustive": 0.04359361999999976
+        },
+        {
+          "exhaustive": 0.041778790000000184,
+          "nativePage": 0.002526300000000106
+        },
+        {
+          "nativePage": 0.0018596999999999752,
+          "exhaustive": 0.05237685999999996
+        },
+        {
+          "exhaustive": 0.05683318000000043,
+          "nativePage": 0.002455400000000054
+        },
+        {
+          "nativePage": 0.0018732299999999213,
+          "exhaustive": 0.04569378999999969
+        },
+        {
+          "exhaustive": 0.04196998000000008,
+          "nativePage": 0.002032570000000078
+        },
+        {
+          "nativePage": 0.001853189999999927,
+          "exhaustive": 0.03865797999999984
+        },
+        {
+          "exhaustive": 0.03913139000000001,
+          "nativePage": 0.0020119299999998928
+        },
+        {
+          "nativePage": 0.0018511899999998605,
+          "exhaustive": 0.041532010000000244
+        },
+        {
+          "exhaustive": 0.0413232000000005,
+          "nativePage": 0.0023429399999997714
+        },
+        {
+          "nativePage": 0.0018529000000000906,
+          "exhaustive": 0.04702679000000046
+        },
+        {
+          "exhaustive": 0.045376409999999506,
+          "nativePage": 0.0021096799999997984
+        },
+        {
+          "nativePage": 0.002253699999999981,
+          "exhaustive": 0.042281150000000024
+        },
+        {
+          "exhaustive": 0.04055274000000054,
+          "nativePage": 0.002019950000000108
+        },
+        {
+          "nativePage": 0.003794019999999705,
+          "exhaustive": 0.04191609000000028
+        },
+        {
+          "exhaustive": 0.04231829000000005,
+          "nativePage": 0.0019960100000002965
+        },
+        {
+          "nativePage": 0.0018440799999996215,
+          "exhaustive": 0.04085530000000006
+        }
+      ]
+    },
+    "rootish": {
+      "support": 3072,
+      "suffixRows": 13,
+      "expandedRows": 3072,
+      "suffixInputBytes": 140,
+      "expandedInputBytes": 70665,
+      "medianMillis": {
+        "exhaustive": 0.03803684999999973,
+        "nativePage": 0.0019063700000003792
+      },
+      "samplesMillis": [
+        {
+          "nativePage": 0.0017284100000000534,
+          "exhaustive": 0.03555950999999993
+        },
+        {
+          "exhaustive": 0.036651150000000146,
+          "nativePage": 0.0020336700000001427
+        },
+        {
+          "nativePage": 0.0018934600000000046,
+          "exhaustive": 0.037890429999999926
+        },
+        {
+          "exhaustive": 0.035978339999999776,
+          "nativePage": 0.0018974600000001374
+        },
+        {
+          "nativePage": 0.0018998599999997623,
+          "exhaustive": 0.037007690000000364
+        },
+        {
+          "exhaustive": 0.035363519999999656,
+          "nativePage": 0.00191929000000016
+        },
+        {
+          "nativePage": 0.001724399999999946,
+          "exhaustive": 0.03930976999999984
+        },
+        {
+          "exhaustive": 0.03796814999999981,
+          "nativePage": 0.0019134800000000496
+        },
+        {
+          "nativePage": 0.0017330100000003768,
+          "exhaustive": 0.04263877999999977
+        },
+        {
+          "exhaustive": 0.039338209999999665,
+          "nativePage": 0.0019213000000002011
+        },
+        {
+          "nativePage": 0.001718190000000277,
+          "exhaustive": 0.03911397000000022
+        },
+        {
+          "exhaustive": 0.04254413999999997,
+          "nativePage": 0.0019102800000001707
+        },
+        {
+          "nativePage": 0.003926119999999855,
+          "exhaustive": 0.03610803999999973
+        },
+        {
+          "exhaustive": 0.0388784099999998,
+          "nativePage": 0.0018497899999999844
+        },
+        {
+          "nativePage": 0.0020201400000001966,
+          "exhaustive": 0.03813178999999991
+        },
+        {
+          "exhaustive": 0.03695441000000017,
+          "nativePage": 0.0018582000000003519
+        },
+        {
+          "nativePage": 0.002042579999999816,
+          "exhaustive": 0.03803684999999973
+        },
+        {
+          "exhaustive": 0.038230829999999966,
+          "nativePage": 0.001920289999999909
+        },
+        {
+          "nativePage": 0.001924799999999891,
+          "exhaustive": 0.03516091000000017
+        },
+        {
+          "exhaustive": 0.03983796000000041,
+          "nativePage": 0.0019063700000003792
+        },
+        {
+          "nativePage": 0.0017774800000000823,
+          "exhaustive": 0.0417497400000002
+        }
+      ]
+    },
+    "end": {
+      "support": 4094,
+      "suffixRows": 22,
+      "expandedRows": 4094,
+      "suffixInputBytes": 240,
+      "expandedInputBytes": 94181,
+      "medianMillis": {
+        "exhaustive": 0.05081921999999963,
+        "nativePage": 0.0022761300000001938
+      },
+      "samplesMillis": [
+        {
+          "nativePage": 0.00211018000000081,
+          "exhaustive": 0.0518287399999997
+        },
+        {
+          "exhaustive": 0.05081921999999963,
+          "nativePage": 0.0028496900000004642
+        },
+        {
+          "nativePage": 0.0020560999999997874,
+          "exhaustive": 0.04748177999999939
+        },
+        {
+          "exhaustive": 0.047481679999999644,
+          "nativePage": 0.003672030000000177
+        },
+        {
+          "nativePage": 0.0033624699999995756,
+          "exhaustive": 0.045430699999999435
+        },
+        {
+          "exhaustive": 0.04781627999999955,
+          "nativePage": 0.0027146899999991093
+        },
+        {
+          "nativePage": 0.0027818899999999757,
+          "exhaustive": 0.0472859799999992
+        },
+        {
+          "exhaustive": 0.05013027999999963,
+          "nativePage": 0.0021877899999992677
+        },
+        {
+          "nativePage": 0.0020216499999992266,
+          "exhaustive": 0.050351210000000035
+        },
+        {
+          "exhaustive": 0.04886116000000015,
+          "nativePage": 0.0022761300000001938
+        },
+        {
+          "nativePage": 0.0021857899999997697,
+          "exhaustive": 0.06572277999999983
+        },
+        {
+          "exhaustive": 0.07013072999999963,
+          "nativePage": 0.0034044299999993655
+        },
+        {
+          "nativePage": 0.002040470000000596,
+          "exhaustive": 0.06953893999999991
+        },
+        {
+          "exhaustive": 0.05124215000000049,
+          "nativePage": 0.0026726299999995716
+        },
+        {
+          "nativePage": 0.002589209999999866,
+          "exhaustive": 0.05286209999999983
+        },
+        {
+          "exhaustive": 0.07086403000000019,
+          "nativePage": 0.0022740299999998116
+        },
+        {
+          "nativePage": 0.002672019999999975,
+          "exhaustive": 0.054443580000000796
+        },
+        {
+          "exhaustive": 0.04771433000000002,
+          "nativePage": 0.002228060000001051
+        },
+        {
+          "nativePage": 0.002058799999999792,
+          "exhaustive": 0.048282489999999144
+        },
+        {
+          "exhaustive": 0.054503169999999275,
+          "nativePage": 0.0026139499999999318
+        },
+        {
+          "nativePage": 0.002044789999999921,
+          "exhaustive": 0.05984331999999995
+        }
+      ]
+    }
+  }
+}
