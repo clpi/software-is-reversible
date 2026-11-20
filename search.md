@@ -429,3 +429,18 @@ its scenario families are the matched campaign's source).
   above). Gap appended: the shared touch failure's closing
   candidate (finer probe grid, or scroll and reprobe),
   owner the action model family's successor lane.
+
+## Steering hold appended 2026-11-20 (C relay via Chris, 02:01 PST)
+
+HOLD: the candidate-space round-2 ranking — jq n first, and the
+D1 layering that rests on reach figures — is SUSPENDED as
+steering input for down-selection in the meta-search program
+until reach is compiler-resolved with bindings resolved. Reason:
+C reproduced a priority flaw — retaining only the enclosing
+binding link reduces jq n's lexical reach from 48 to 3; that is
+a sensitivity check, not compiler-resolved reach. It lands on
+top of the pipeline lane's definitional reconciliation (50 =
+unblocks append delta, 48 = static reach, gaps-closed agrees
+at 1), which stands. No reach-based ranking orders the
+build-out queue while this hold stands. The rest of the
+program's method is unaffected.
