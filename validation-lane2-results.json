@@ -1,0 +1,210 @@
+{
+ "p1": {
+  "bnl_brute_agree_trials": 300,
+  "frontier_first_recovery": 695,
+  "frontier_members": 695,
+  "incremental_brute_agree_trials": 300,
+  "perm_agree": 900,
+  "perm_checks": 900,
+  "segment_middle_selected_by_any_positive_grid_weight": false,
+  "trials": 300,
+  "weight_first_recovery": 620
+ },
+ "p2": {
+  "control": {
+   "optimal": 2,
+   "plans": [
+    9,
+    2
+   ],
+   "threshold": 10,
+   "threshold_first_acceptable": 9
+  },
+  "results": {
+   "budget3": {
+    "acceptable_correct": 355,
+    "examined": 1200,
+    "false_optimal": 192,
+    "optimal_claims": 400,
+    "stops": 400
+   },
+   "optimal": {
+    "acceptable_correct": 0,
+    "examined": 2806,
+    "false_optimal": 0,
+    "optimal_claims": 400,
+    "stops": 400
+   },
+   "threshold": {
+    "acceptable_correct": 400,
+    "examined": 779,
+    "false_optimal": 0,
+    "optimal_claims": 0,
+    "stops": 400
+   },
+   "twoface": {
+    "acceptable_correct": 397,
+    "examined": 2806,
+    "false_optimal": 0,
+    "optimal_claims": 400,
+    "stops": 400
+   }
+  },
+  "trials": 400
+ },
+ "p3": {
+  "agree": {
+   "inc": 936,
+   "seminaive": 936
+  },
+  "cases": 200,
+  "contract": "append or weight-decrease epochs only",
+  "epochs_per_case": 5,
+  "executed_epochs": 936,
+  "inc_win_epochs": 933,
+  "relaxations": {
+   "inc": 2173,
+   "scratch": 17964,
+   "seminaive": 35713
+  },
+  "total_epochs": 1000
+ },
+ "p4": {
+  "checks": {
+   "naive": 48597,
+   "seminaive": 54804,
+   "worklist": 9932
+  },
+  "mismatch": {
+   "dupblind": 192,
+   "seminaive": 0,
+   "worklist": 0
+  },
+  "prefix_checks": 3208,
+  "systems": 300
+ },
+ "p5": {
+  "dense_per_query_ops_mean64": 3375.8,
+  "dense_rows": 6561,
+  "empirical_crossover_q_vs_query_only": 17,
+  "factored_per_query_ops_mean64": 16.48,
+  "factored_setup_ops": 24,
+  "fixed_ops_excl_persistence": 56408,
+  "heldout_permutation_factored_ops_equal": true,
+  "persistence_bytes_pools": 208,
+  "predicted_break_even_q": 17,
+  "regimes": {
+   "2": {
+    "crossover_q": 145,
+    "dense_per": 5.47,
+    "factored_per": 4.34,
+    "fixed_full_cost": 162,
+    "rows": 9
+   },
+   "3": {
+    "crossover_q": 47,
+    "dense_per": 12.88,
+    "factored_per": 5.94,
+    "fixed_full_cost": 323,
+    "rows": 27
+   },
+   "4": {
+    "crossover_q": 25,
+    "dense_per": 41.75,
+    "factored_per": 8.0,
+    "fixed_full_cost": 823,
+    "rows": 81
+   },
+   "6": {
+    "crossover_q": 17,
+    "dense_per": 368.0,
+    "factored_per": 12.31,
+    "fixed_full_cost": 5893,
+    "rows": 729
+   },
+   "8": {
+    "crossover_q": 15,
+    "dense_per": 2911.31,
+    "factored_per": 15.56,
+    "fixed_full_cost": 41776,
+    "rows": 6561
+   }
+  },
+  "restart_ops": 24,
+  "totals_by_q": {
+   "1": {
+    "dense_query_only_total_ops": 3375.8,
+    "dense_with_materialization_ops": 9936.8,
+    "factored_total_ops": 56450.5,
+    "factored_wins_vs_materialized": false,
+    "factored_wins_vs_query_only": false
+   },
+   "2": {
+    "dense_query_only_total_ops": 6751.6,
+    "dense_with_materialization_ops": 13312.6,
+    "factored_total_ops": 56467.0,
+    "factored_wins_vs_materialized": false,
+    "factored_wins_vs_query_only": false
+   },
+   "4": {
+    "dense_query_only_total_ops": 13503.2,
+    "dense_with_materialization_ops": 20064.2,
+    "factored_total_ops": 56499.9,
+    "factored_wins_vs_materialized": false,
+    "factored_wins_vs_query_only": false
+   },
+   "8": {
+    "dense_query_only_total_ops": 27006.4,
+    "dense_with_materialization_ops": 33567.4,
+    "factored_total_ops": 56565.9,
+    "factored_wins_vs_materialized": false,
+    "factored_wins_vs_query_only": false
+   },
+   "16": {
+    "dense_query_only_total_ops": 54012.8,
+    "dense_with_materialization_ops": 60573.8,
+    "factored_total_ops": 56697.8,
+    "factored_wins_vs_materialized": true,
+    "factored_wins_vs_query_only": false
+   },
+   "32": {
+    "dense_query_only_total_ops": 108025.5,
+    "dense_with_materialization_ops": 114586.5,
+    "factored_total_ops": 56961.5,
+    "factored_wins_vs_materialized": true,
+    "factored_wins_vs_query_only": true
+   },
+   "64": {
+    "dense_query_only_total_ops": 216051.0,
+    "dense_with_materialization_ops": 222612.0,
+    "factored_total_ops": 57489.0,
+    "factored_wins_vs_materialized": true,
+    "factored_wins_vs_query_only": true
+   },
+   "128": {
+    "dense_query_only_total_ops": 432102.0,
+    "dense_with_materialization_ops": 438663.0,
+    "factored_total_ops": 58544.0,
+    "factored_wins_vs_materialized": true,
+    "factored_wins_vs_query_only": true
+   },
+   "256": {
+    "dense_query_only_total_ops": 864204.0,
+    "dense_with_materialization_ops": 870765.0,
+    "factored_total_ops": 60654.0,
+    "factored_wins_vs_materialized": true,
+    "factored_wins_vs_query_only": true
+   },
+   "512": {
+    "dense_query_only_total_ops": 1728408.0,
+    "dense_with_materialization_ops": 1734969.0,
+    "factored_total_ops": 64874.0,
+    "factored_wins_vs_materialized": true,
+    "factored_wins_vs_query_only": true
+   }
+  },
+  "validation_ops_sample": 56360,
+  "wall_512_dense_s": 2.8407,
+  "wall_512_factored_s": 0.0014
+ }
+}
