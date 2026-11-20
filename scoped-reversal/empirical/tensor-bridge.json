@@ -1,0 +1,2700 @@
+{
+  "calibration_refusals": [
+    "singular calibration",
+    "nonrational calibration square root"
+  ],
+  "cases": [
+    {
+      "calibration_rows": 8,
+      "changed_plan_separates": true,
+      "coarse_display_equal": true,
+      "coordinate_partition": [
+        {
+          "observed": [
+            0,
+            1
+          ],
+          "residual": [
+            2
+          ]
+        },
+        {
+          "observed": [
+            0,
+            1,
+            2
+          ],
+          "residual": []
+        },
+        {
+          "observed": [
+            1,
+            2
+          ],
+          "residual": [
+            0
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "mask": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "new": "b1ccdf2a91e0c9eaa164abc4f5ec239f86deee062c0ff708aa4f5ab96df0f9f9",
+          "old": "4cc63e7006171bb985dfaf2788231e7a1762291cf0b99d85b635f1e828be3933",
+          "patches": [
+            [
+              0,
+              2,
+              [
+                -1,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              2,
+              [
+                3,
+                8
+              ],
+              [
+                -1,
+                8
+              ]
+            ]
+          ]
+        },
+        {
+          "mask": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "new": "1036b28e4a8234212fa74e1e573eae79b1c27f47575a16862a5bb99958fe2395",
+          "old": "b1ccdf2a91e0c9eaa164abc4f5ec239f86deee062c0ff708aa4f5ab96df0f9f9",
+          "patches": [
+            [
+              0,
+              2,
+              [
+                1,
+                2
+              ],
+              [
+                5,
+                8
+              ]
+            ],
+            [
+              3,
+              0,
+              [
+                5,
+                8
+              ],
+              [
+                -3,
+                8
+              ]
+            ]
+          ]
+        }
+      ],
+      "exact_whitening": 3,
+      "first_row_evidence": {
+        "changed_plan_after": [
+          [
+            0,
+            1
+          ],
+          [
+            -11,
+            16
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "changed_plan_before": [
+          [
+            0,
+            1
+          ],
+          [
+            -11,
+            16
+          ],
+          [
+            33,
+            20
+          ]
+        ],
+        "coarse_display_after": [
+          [
+            -1,
+            4
+          ],
+          [
+            -5,
+            8
+          ],
+          null
+        ],
+        "coarse_display_before": [
+          [
+            -1,
+            4
+          ],
+          [
+            -5,
+            8
+          ],
+          null
+        ],
+        "residual_after": [
+          null,
+          null,
+          [
+            -23,
+            32
+          ]
+        ],
+        "residual_before": [
+          null,
+          null,
+          [
+            -29,
+            32
+          ]
+        ],
+        "tensor_after": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            8
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "tensor_before": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            8
+          ],
+          [
+            -1,
+            4
+          ]
+        ]
+      },
+      "named_refusals": 10,
+      "normalized_observation": {
+        "base": [
+          [
+            25600,
+            87569
+          ],
+          [
+            28625,
+            87569
+          ],
+          [
+            33344,
+            87569
+          ]
+        ],
+        "joint_scale_equal": true,
+        "old_policy_exact": true,
+        "retuned": [
+          [
+            51200,
+            113169
+          ],
+          [
+            28625,
+            113169
+          ],
+          [
+            33344,
+            113169
+          ]
+        ]
+      },
+      "ordered_inverse_exact": true,
+      "plans": [
+        "c251ccf88af7cdb54664d8ed4b169b613b048659c82f5e01f202a9a2c344baca",
+        "28ca2fdb3b31535bcd8dc462bc1416e1d6680ff909a51b60507e4427b367c761",
+        "6abe7146db30bde3400f3a8e0bc29931a676e681c803a26ddd346e88950bf50c"
+      ],
+      "residual_differs": true,
+      "seed": 0,
+      "tensor_rows": 4,
+      "tensor_view_roundtrips": 9,
+      "weights": [
+        "4cc63e7006171bb985dfaf2788231e7a1762291cf0b99d85b635f1e828be3933",
+        "b1ccdf2a91e0c9eaa164abc4f5ec239f86deee062c0ff708aa4f5ab96df0f9f9",
+        "1036b28e4a8234212fa74e1e573eae79b1c27f47575a16862a5bb99958fe2395"
+      ],
+      "width": 3
+    },
+    {
+      "calibration_rows": 8,
+      "changed_plan_separates": true,
+      "coarse_display_equal": true,
+      "coordinate_partition": [
+        {
+          "observed": [
+            0,
+            1
+          ],
+          "residual": [
+            2
+          ]
+        },
+        {
+          "observed": [
+            0,
+            1,
+            2
+          ],
+          "residual": []
+        },
+        {
+          "observed": [
+            1,
+            2
+          ],
+          "residual": [
+            0
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "mask": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "new": "a8f56fa198cfb75e26263821f7b37a1f64391a0d816a811db9445b9d549ea569",
+          "old": "0631a695c09146a8b6392222e8d9ef7882b7e23979a5f845c8401556199f1825",
+          "patches": [
+            [
+              0,
+              2,
+              [
+                11,
+                8
+              ],
+              [
+                17,
+                8
+              ]
+            ],
+            [
+              1,
+              2,
+              [
+                -3,
+                8
+              ],
+              [
+                -7,
+                8
+              ]
+            ]
+          ]
+        },
+        {
+          "mask": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "new": "3a943d1c6e8f3de7503e8f4e3e4c442c2d22dd84f0a2be96abb498cb7ff4f5c2",
+          "old": "a8f56fa198cfb75e26263821f7b37a1f64391a0d816a811db9445b9d549ea569",
+          "patches": [
+            [
+              0,
+              2,
+              [
+                17,
+                8
+              ],
+              [
+                9,
+                4
+              ]
+            ],
+            [
+              3,
+              0,
+              [
+                -1,
+                8
+              ],
+              [
+                -9,
+                8
+              ]
+            ]
+          ]
+        }
+      ],
+      "exact_whitening": 3,
+      "first_row_evidence": {
+        "changed_plan_after": [
+          [
+            13,
+            24
+          ],
+          [
+            -7,
+            48
+          ],
+          [
+            -1,
+            10
+          ]
+        ],
+        "changed_plan_before": [
+          [
+            13,
+            24
+          ],
+          [
+            -7,
+            48
+          ],
+          [
+            7,
+            20
+          ]
+        ],
+        "coarse_display_after": [
+          [
+            9,
+            16
+          ],
+          [
+            -1,
+            12
+          ],
+          null
+        ],
+        "coarse_display_before": [
+          [
+            9,
+            16
+          ],
+          [
+            -1,
+            12
+          ],
+          null
+        ],
+        "residual_after": [
+          null,
+          null,
+          [
+            -73,
+            192
+          ]
+        ],
+        "residual_before": [
+          null,
+          null,
+          [
+            -109,
+            192
+          ]
+        ],
+        "tensor_after": [
+          [
+            9,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            17,
+            8
+          ]
+        ],
+        "tensor_before": [
+          [
+            9,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            11,
+            8
+          ]
+        ]
+      },
+      "named_refusals": 10,
+      "normalized_observation": {
+        "base": [
+          [
+            298000,
+            763161
+          ],
+          [
+            231625,
+            763161
+          ],
+          [
+            233536,
+            763161
+          ]
+        ],
+        "joint_scale_equal": true,
+        "old_policy_exact": true,
+        "retuned": [
+          [
+            596000,
+            1061161
+          ],
+          [
+            231625,
+            1061161
+          ],
+          [
+            233536,
+            1061161
+          ]
+        ]
+      },
+      "ordered_inverse_exact": true,
+      "plans": [
+        "c251ccf88af7cdb54664d8ed4b169b613b048659c82f5e01f202a9a2c344baca",
+        "28ca2fdb3b31535bcd8dc462bc1416e1d6680ff909a51b60507e4427b367c761",
+        "6abe7146db30bde3400f3a8e0bc29931a676e681c803a26ddd346e88950bf50c"
+      ],
+      "residual_differs": true,
+      "seed": 1,
+      "tensor_rows": 4,
+      "tensor_view_roundtrips": 9,
+      "weights": [
+        "0631a695c09146a8b6392222e8d9ef7882b7e23979a5f845c8401556199f1825",
+        "a8f56fa198cfb75e26263821f7b37a1f64391a0d816a811db9445b9d549ea569",
+        "3a943d1c6e8f3de7503e8f4e3e4c442c2d22dd84f0a2be96abb498cb7ff4f5c2"
+      ],
+      "width": 3
+    },
+    {
+      "calibration_rows": 8,
+      "changed_plan_separates": true,
+      "coarse_display_equal": true,
+      "coordinate_partition": [
+        {
+          "observed": [
+            0,
+            1
+          ],
+          "residual": [
+            2
+          ]
+        },
+        {
+          "observed": [
+            0,
+            1,
+            2
+          ],
+          "residual": []
+        },
+        {
+          "observed": [
+            1,
+            2
+          ],
+          "residual": [
+            0
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "mask": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "new": "17ca61d8c0b8bcea54c35eff989fa4e0f363751b8607ce17b4139c54e49360c9",
+          "old": "4dca79de0e25c9463eda127c31e9c9491f4df21de853c7dee817e4b8f96d1e50",
+          "patches": [
+            [
+              0,
+              2,
+              [
+                5,
+                8
+              ],
+              [
+                11,
+                8
+              ]
+            ],
+            [
+              1,
+              2,
+              [
+                5,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ]
+        },
+        {
+          "mask": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "new": "9dcfd63d2986f45c02d916a2517b0aa5355a84638d6ff5d154a834d423afd5e6",
+          "old": "17ca61d8c0b8bcea54c35eff989fa4e0f363751b8607ce17b4139c54e49360c9",
+          "patches": [
+            [
+              0,
+              2,
+              [
+                11,
+                8
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            [
+              3,
+              0,
+              [
+                -7,
+                8
+              ],
+              [
+                -15,
+                8
+              ]
+            ]
+          ]
+        }
+      ],
+      "exact_whitening": 3,
+      "first_row_evidence": {
+        "changed_plan_after": [
+          [
+            7,
+            24
+          ],
+          [
+            -19,
+            48
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "changed_plan_before": [
+          [
+            7,
+            24
+          ],
+          [
+            -19,
+            48
+          ],
+          [
+            19,
+            20
+          ]
+        ],
+        "coarse_display_after": [
+          [
+            3,
+            16
+          ],
+          [
+            -1,
+            3
+          ],
+          null
+        ],
+        "coarse_display_before": [
+          [
+            3,
+            16
+          ],
+          [
+            -1,
+            3
+          ],
+          null
+        ],
+        "residual_after": [
+          null,
+          null,
+          [
+            -103,
+            192
+          ]
+        ],
+        "residual_before": [
+          null,
+          null,
+          [
+            -139,
+            192
+          ]
+        ],
+        "tensor_after": [
+          [
+            3,
+            8
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            11,
+            8
+          ]
+        ],
+        "tensor_before": [
+          [
+            3,
+            8
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            5,
+            8
+          ]
+        ]
+      },
+      "named_refusals": 10,
+      "normalized_observation": {
+        "base": [
+          [
+            250000,
+            742929
+          ],
+          [
+            239425,
+            742929
+          ],
+          [
+            253504,
+            742929
+          ]
+        ],
+        "joint_scale_equal": true,
+        "old_policy_exact": true,
+        "retuned": [
+          [
+            500000,
+            992929
+          ],
+          [
+            239425,
+            992929
+          ],
+          [
+            253504,
+            992929
+          ]
+        ]
+      },
+      "ordered_inverse_exact": true,
+      "plans": [
+        "c251ccf88af7cdb54664d8ed4b169b613b048659c82f5e01f202a9a2c344baca",
+        "28ca2fdb3b31535bcd8dc462bc1416e1d6680ff909a51b60507e4427b367c761",
+        "6abe7146db30bde3400f3a8e0bc29931a676e681c803a26ddd346e88950bf50c"
+      ],
+      "residual_differs": true,
+      "seed": 2,
+      "tensor_rows": 4,
+      "tensor_view_roundtrips": 9,
+      "weights": [
+        "4dca79de0e25c9463eda127c31e9c9491f4df21de853c7dee817e4b8f96d1e50",
+        "17ca61d8c0b8bcea54c35eff989fa4e0f363751b8607ce17b4139c54e49360c9",
+        "9dcfd63d2986f45c02d916a2517b0aa5355a84638d6ff5d154a834d423afd5e6"
+      ],
+      "width": 3
+    },
+    {
+      "calibration_rows": 16,
+      "changed_plan_separates": true,
+      "coarse_display_equal": true,
+      "coordinate_partition": [
+        {
+          "observed": [
+            0,
+            1,
+            2
+          ],
+          "residual": [
+            3
+          ]
+        },
+        {
+          "observed": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "residual": []
+        },
+        {
+          "observed": [
+            1,
+            2,
+            3
+          ],
+          "residual": [
+            0
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "mask": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "new": "7a0727e800f5dcdbc96ad6a0c56ba1401b0aad7e281f3778d5addf88c519769d",
+          "old": "d3fba9e590d757edd5ff20d6aa084796eb8d8d8119cae98dda0c4ccaa1fa0d36",
+          "patches": [
+            [
+              0,
+              3,
+              [
+                -1,
+                8
+              ],
+              [
+                5,
+                8
+              ]
+            ],
+            [
+              1,
+              3,
+              [
+                5,
+                8
+              ],
+              [
+                1,
+                8
+              ]
+            ]
+          ]
+        },
+        {
+          "mask": [
+            [
+              0,
+              3
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "new": "46b028e51c41526f750a709e7d7879a0f6d71774c9b869ef7c2603649232fa87",
+          "old": "7a0727e800f5dcdbc96ad6a0c56ba1401b0aad7e281f3778d5addf88c519769d",
+          "patches": [
+            [
+              0,
+              3,
+              [
+                5,
+                8
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            [
+              3,
+              0,
+              [
+                5,
+                8
+              ],
+              [
+                -3,
+                8
+              ]
+            ]
+          ]
+        }
+      ],
+      "exact_whitening": 3,
+      "first_row_evidence": {
+        "changed_plan_after": [
+          [
+            0,
+            1
+          ],
+          [
+            -11,
+            16
+          ],
+          [
+            33,
+            20
+          ],
+          [
+            -191,
+            160
+          ]
+        ],
+        "changed_plan_before": [
+          [
+            0,
+            1
+          ],
+          [
+            -11,
+            16
+          ],
+          [
+            33,
+            20
+          ],
+          [
+            -231,
+            160
+          ]
+        ],
+        "coarse_display_after": [
+          [
+            -1,
+            4
+          ],
+          [
+            -5,
+            8
+          ],
+          [
+            -29,
+            32
+          ],
+          null
+        ],
+        "coarse_display_before": [
+          [
+            -1,
+            4
+          ],
+          [
+            -5,
+            8
+          ],
+          [
+            -29,
+            32
+          ],
+          null
+        ],
+        "residual_after": [
+          null,
+          null,
+          null,
+          [
+            -103,
+            160
+          ]
+        ],
+        "residual_before": [
+          null,
+          null,
+          null,
+          [
+            -127,
+            160
+          ]
+        ],
+        "tensor_after": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            8
+          ],
+          [
+            -1,
+            4
+          ],
+          [
+            5,
+            8
+          ]
+        ],
+        "tensor_before": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            8
+          ],
+          [
+            -1,
+            4
+          ],
+          [
+            -1,
+            8
+          ]
+        ]
+      },
+      "named_refusals": 10,
+      "normalized_observation": {
+        "base": [
+          [
+            102400,
+            506037
+          ],
+          [
+            114500,
+            506037
+          ],
+          [
+            133376,
+            506037
+          ],
+          [
+            155761,
+            506037
+          ]
+        ],
+        "joint_scale_equal": true,
+        "old_policy_exact": true,
+        "retuned": [
+          [
+            204800,
+            608437
+          ],
+          [
+            114500,
+            608437
+          ],
+          [
+            133376,
+            608437
+          ],
+          [
+            155761,
+            608437
+          ]
+        ]
+      },
+      "ordered_inverse_exact": true,
+      "plans": [
+        "90390cd3d5491e75b4d8ecaa78bdb2a4402b141578eb0a7da222435502b00011",
+        "2ee51ba49d14ffbf337d6e33c18eda45822cf6b884cd1747a0ef0203a3f586a9",
+        "093786de6afa9656e03304ccaed2a41ce5d7458cd6889a37cc31338b791959a6"
+      ],
+      "residual_differs": true,
+      "seed": 0,
+      "tensor_rows": 4,
+      "tensor_view_roundtrips": 9,
+      "weights": [
+        "d3fba9e590d757edd5ff20d6aa084796eb8d8d8119cae98dda0c4ccaa1fa0d36",
+        "7a0727e800f5dcdbc96ad6a0c56ba1401b0aad7e281f3778d5addf88c519769d",
+        "46b028e51c41526f750a709e7d7879a0f6d71774c9b869ef7c2603649232fa87"
+      ],
+      "width": 4
+    },
+    {
+      "calibration_rows": 16,
+      "changed_plan_separates": true,
+      "coarse_display_equal": true,
+      "coordinate_partition": [
+        {
+          "observed": [
+            0,
+            1,
+            2
+          ],
+          "residual": [
+            3
+          ]
+        },
+        {
+          "observed": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "residual": []
+        },
+        {
+          "observed": [
+            1,
+            2,
+            3
+          ],
+          "residual": [
+            0
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "mask": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "new": "5c2909f3d32a54f7394e666f295b6225d4080b30e969f0008872d5cd81b058b1",
+          "old": "31b56ede9cd0ee78c5d052230cea0a7c4b80ec75b50879b5233e64efb898d5d9",
+          "patches": [
+            [
+              0,
+              3,
+              [
+                -7,
+                8
+              ],
+              [
+                -1,
+                8
+              ]
+            ],
+            [
+              1,
+              3,
+              [
+                -1,
+                8
+              ],
+              [
+                -5,
+                8
+              ]
+            ]
+          ]
+        },
+        {
+          "mask": [
+            [
+              0,
+              3
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "new": "25a24e97d340af8cb723a62b3021876a0f115916676b550a7d1a279b0c8efe4d",
+          "old": "5c2909f3d32a54f7394e666f295b6225d4080b30e969f0008872d5cd81b058b1",
+          "patches": [
+            [
+              0,
+              3,
+              [
+                -1,
+                8
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              3,
+              0,
+              [
+                -1,
+                8
+              ],
+              [
+                -9,
+                8
+              ]
+            ]
+          ]
+        }
+      ],
+      "exact_whitening": 3,
+      "first_row_evidence": {
+        "changed_plan_after": [
+          [
+            13,
+            24
+          ],
+          [
+            -7,
+            48
+          ],
+          [
+            7,
+            20
+          ],
+          [
+            -667,
+            480
+          ]
+        ],
+        "changed_plan_before": [
+          [
+            13,
+            24
+          ],
+          [
+            -7,
+            48
+          ],
+          [
+            7,
+            20
+          ],
+          [
+            -787,
+            480
+          ]
+        ],
+        "coarse_display_after": [
+          [
+            9,
+            16
+          ],
+          [
+            -1,
+            12
+          ],
+          [
+            -109,
+            192
+          ],
+          null
+        ],
+        "coarse_display_before": [
+          [
+            9,
+            16
+          ],
+          [
+            -1,
+            12
+          ],
+          [
+            -109,
+            192
+          ],
+          null
+        ],
+        "residual_after": [
+          null,
+          null,
+          null,
+          [
+            -671,
+            960
+          ]
+        ],
+        "residual_before": [
+          null,
+          null,
+          null,
+          [
+            -163,
+            192
+          ]
+        ],
+        "tensor_after": [
+          [
+            9,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            11,
+            8
+          ],
+          [
+            -1,
+            8
+          ]
+        ],
+        "tensor_before": [
+          [
+            9,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            11,
+            8
+          ],
+          [
+            -7,
+            8
+          ]
+        ]
+      },
+      "named_refusals": 10,
+      "normalized_observation": {
+        "base": [
+          [
+            1192000,
+            4593613
+          ],
+          [
+            926500,
+            4593613
+          ],
+          [
+            934144,
+            4593613
+          ],
+          [
+            1540969,
+            4593613
+          ]
+        ],
+        "joint_scale_equal": true,
+        "old_policy_exact": true,
+        "retuned": [
+          [
+            2384000,
+            5785613
+          ],
+          [
+            926500,
+            5785613
+          ],
+          [
+            934144,
+            5785613
+          ],
+          [
+            1540969,
+            5785613
+          ]
+        ]
+      },
+      "ordered_inverse_exact": true,
+      "plans": [
+        "90390cd3d5491e75b4d8ecaa78bdb2a4402b141578eb0a7da222435502b00011",
+        "2ee51ba49d14ffbf337d6e33c18eda45822cf6b884cd1747a0ef0203a3f586a9",
+        "093786de6afa9656e03304ccaed2a41ce5d7458cd6889a37cc31338b791959a6"
+      ],
+      "residual_differs": true,
+      "seed": 1,
+      "tensor_rows": 4,
+      "tensor_view_roundtrips": 9,
+      "weights": [
+        "31b56ede9cd0ee78c5d052230cea0a7c4b80ec75b50879b5233e64efb898d5d9",
+        "5c2909f3d32a54f7394e666f295b6225d4080b30e969f0008872d5cd81b058b1",
+        "25a24e97d340af8cb723a62b3021876a0f115916676b550a7d1a279b0c8efe4d"
+      ],
+      "width": 4
+    },
+    {
+      "calibration_rows": 16,
+      "changed_plan_separates": true,
+      "coarse_display_equal": true,
+      "coordinate_partition": [
+        {
+          "observed": [
+            0,
+            1,
+            2
+          ],
+          "residual": [
+            3
+          ]
+        },
+        {
+          "observed": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "residual": []
+        },
+        {
+          "observed": [
+            1,
+            2,
+            3
+          ],
+          "residual": [
+            0
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "mask": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "new": "93252300aabeee5eb71c0274f1fc7e63bd5ac6b4641886b7e2e7c66ea3581407",
+          "old": "215e6ae97393bab9a2449c0ab0bb780d728327383db77a089f698307ebcfca11",
+          "patches": [
+            [
+              0,
+              3,
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            [
+              1,
+              3,
+              [
+                -7,
+                8
+              ],
+              [
+                -11,
+                8
+              ]
+            ]
+          ]
+        },
+        {
+          "mask": [
+            [
+              0,
+              3
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "new": "4f161bab41c5e125491fad88727366f5066a9df8bb78e139f250582caac2ec7f",
+          "old": "93252300aabeee5eb71c0274f1fc7e63bd5ac6b4641886b7e2e7c66ea3581407",
+          "patches": [
+            [
+              0,
+              3,
+              [
+                3,
+                2
+              ],
+              [
+                13,
+                8
+              ]
+            ],
+            [
+              3,
+              0,
+              [
+                -7,
+                8
+              ],
+              [
+                -15,
+                8
+              ]
+            ]
+          ]
+        }
+      ],
+      "exact_whitening": 3,
+      "first_row_evidence": {
+        "changed_plan_after": [
+          [
+            7,
+            24
+          ],
+          [
+            -19,
+            48
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            -419,
+            480
+          ]
+        ],
+        "changed_plan_before": [
+          [
+            7,
+            24
+          ],
+          [
+            -19,
+            48
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            -539,
+            480
+          ]
+        ],
+        "coarse_display_after": [
+          [
+            3,
+            16
+          ],
+          [
+            -1,
+            3
+          ],
+          [
+            -139,
+            192
+          ],
+          null
+        ],
+        "coarse_display_before": [
+          [
+            3,
+            16
+          ],
+          [
+            -1,
+            3
+          ],
+          [
+            -139,
+            192
+          ],
+          null
+        ],
+        "residual_after": [
+          null,
+          null,
+          null,
+          [
+            -401,
+            960
+          ]
+        ],
+        "residual_before": [
+          null,
+          null,
+          null,
+          [
+            -109,
+            192
+          ]
+        ],
+        "tensor_after": [
+          [
+            3,
+            8
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "tensor_before": [
+          [
+            3,
+            8
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "named_refusals": 10,
+      "normalized_observation": {
+        "base": [
+          [
+            1000000,
+            4183837
+          ],
+          [
+            957700,
+            4183837
+          ],
+          [
+            1014016,
+            4183837
+          ],
+          [
+            1212121,
+            4183837
+          ]
+        ],
+        "joint_scale_equal": true,
+        "old_policy_exact": true,
+        "retuned": [
+          [
+            2000000,
+            5183837
+          ],
+          [
+            957700,
+            5183837
+          ],
+          [
+            1014016,
+            5183837
+          ],
+          [
+            1212121,
+            5183837
+          ]
+        ]
+      },
+      "ordered_inverse_exact": true,
+      "plans": [
+        "90390cd3d5491e75b4d8ecaa78bdb2a4402b141578eb0a7da222435502b00011",
+        "2ee51ba49d14ffbf337d6e33c18eda45822cf6b884cd1747a0ef0203a3f586a9",
+        "093786de6afa9656e03304ccaed2a41ce5d7458cd6889a37cc31338b791959a6"
+      ],
+      "residual_differs": true,
+      "seed": 2,
+      "tensor_rows": 4,
+      "tensor_view_roundtrips": 9,
+      "weights": [
+        "215e6ae97393bab9a2449c0ab0bb780d728327383db77a089f698307ebcfca11",
+        "93252300aabeee5eb71c0274f1fc7e63bd5ac6b4641886b7e2e7c66ea3581407",
+        "4f161bab41c5e125491fad88727366f5066a9df8bb78e139f250582caac2ec7f"
+      ],
+      "width": 4
+    },
+    {
+      "calibration_rows": 32,
+      "changed_plan_separates": true,
+      "coarse_display_equal": true,
+      "coordinate_partition": [
+        {
+          "observed": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "residual": [
+            4
+          ]
+        },
+        {
+          "observed": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "residual": []
+        },
+        {
+          "observed": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "residual": [
+            0
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "mask": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "new": "9a55af26d4419c7418bb549ab16569d8f60f725fbe2f461f318b8ee8865ff2ba",
+          "old": "dfcde23815d546ddbfc280c4bbaa29101d08571b6ebb7f0eff8ce398357fb2e2",
+          "patches": [
+            [
+              0,
+              4,
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            [
+              1,
+              4,
+              [
+                7,
+                8
+              ],
+              [
+                3,
+                8
+              ]
+            ]
+          ]
+        },
+        {
+          "mask": [
+            [
+              0,
+              4
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "new": "fc398f4b2ccc6df6c9662c74ad0fbfc08d402816f077bfa0c335cde6ba24fa61",
+          "old": "9a55af26d4419c7418bb549ab16569d8f60f725fbe2f461f318b8ee8865ff2ba",
+          "patches": [
+            [
+              0,
+              4,
+              [
+                3,
+                4
+              ],
+              [
+                7,
+                8
+              ]
+            ],
+            [
+              3,
+              0,
+              [
+                5,
+                8
+              ],
+              [
+                -3,
+                8
+              ]
+            ]
+          ]
+        }
+      ],
+      "exact_whitening": 3,
+      "first_row_evidence": {
+        "changed_plan_after": [
+          [
+            0,
+            1
+          ],
+          [
+            -11,
+            16
+          ],
+          [
+            33,
+            20
+          ],
+          [
+            -231,
+            160
+          ],
+          [
+            4197,
+            2240
+          ]
+        ],
+        "changed_plan_before": [
+          [
+            0,
+            1
+          ],
+          [
+            -11,
+            16
+          ],
+          [
+            33,
+            20
+          ],
+          [
+            -231,
+            160
+          ],
+          [
+            4917,
+            2240
+          ]
+        ],
+        "coarse_display_after": [
+          [
+            -1,
+            4
+          ],
+          [
+            -5,
+            8
+          ],
+          [
+            -29,
+            32
+          ],
+          [
+            -127,
+            160
+          ],
+          null
+        ],
+        "coarse_display_before": [
+          [
+            -1,
+            4
+          ],
+          [
+            -5,
+            8
+          ],
+          [
+            -29,
+            32
+          ],
+          [
+            -127,
+            160
+          ],
+          null
+        ],
+        "residual_after": [
+          null,
+          null,
+          null,
+          null,
+          [
+            -59,
+            64
+          ]
+        ],
+        "residual_before": [
+          null,
+          null,
+          null,
+          null,
+          [
+            -67,
+            64
+          ]
+        ],
+        "tensor_after": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            8
+          ],
+          [
+            -1,
+            4
+          ],
+          [
+            -1,
+            8
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "tensor_before": [
+          [
+            -1,
+            2
+          ],
+          [
+            -3,
+            8
+          ],
+          [
+            -1,
+            4
+          ],
+          [
+            -1,
+            8
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "named_refusals": 10,
+      "normalized_observation": {
+        "base": [
+          [
+            2508800,
+            16249867
+          ],
+          [
+            2805250,
+            16249867
+          ],
+          [
+            3267712,
+            16249867
+          ],
+          [
+            7632289,
+            32499734
+          ],
+          [
+            7703921,
+            32499734
+          ]
+        ],
+        "joint_scale_equal": true,
+        "old_policy_exact": true,
+        "retuned": [
+          [
+            5017600,
+            18758667
+          ],
+          [
+            2805250,
+            18758667
+          ],
+          [
+            3267712,
+            18758667
+          ],
+          [
+            7632289,
+            37517334
+          ],
+          [
+            7703921,
+            37517334
+          ]
+        ]
+      },
+      "ordered_inverse_exact": true,
+      "plans": [
+        "232dbcfbdd18879d67d9e25122ccbad201b505410cf3c9f1aa3727d631067eb9",
+        "81529d7baf8d4e616fd427d5eb08a0db2e7cd35d42a8d2da2211e327157825ab",
+        "bcdb97ec0808bbb56200bfa4a1dcb7681c915f40a6609b32d958761651f8f172"
+      ],
+      "residual_differs": true,
+      "seed": 0,
+      "tensor_rows": 4,
+      "tensor_view_roundtrips": 9,
+      "weights": [
+        "dfcde23815d546ddbfc280c4bbaa29101d08571b6ebb7f0eff8ce398357fb2e2",
+        "9a55af26d4419c7418bb549ab16569d8f60f725fbe2f461f318b8ee8865ff2ba",
+        "fc398f4b2ccc6df6c9662c74ad0fbfc08d402816f077bfa0c335cde6ba24fa61"
+      ],
+      "width": 5
+    },
+    {
+      "calibration_rows": 32,
+      "changed_plan_separates": true,
+      "coarse_display_equal": true,
+      "coordinate_partition": [
+        {
+          "observed": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "residual": [
+            4
+          ]
+        },
+        {
+          "observed": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "residual": []
+        },
+        {
+          "observed": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "residual": [
+            0
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "mask": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "new": "f4e512645e3f4f9c0b353d98406bb0e8f8e7238b9e477336cc7526bfff09126e",
+          "old": "a1c3b33184fe38ed0dc941c6f5414e508c028a4b7d1f7c8a5f3aee710b6b4ea1",
+          "patches": [
+            [
+              0,
+              4,
+              [
+                -3,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              4,
+              [
+                1,
+                8
+              ],
+              [
+                -3,
+                8
+              ]
+            ]
+          ]
+        },
+        {
+          "mask": [
+            [
+              0,
+              4
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "new": "8961767b9713b7ff3a28a4769537e5fee167769be8dcf6b7074ddf39f1129f09",
+          "old": "f4e512645e3f4f9c0b353d98406bb0e8f8e7238b9e477336cc7526bfff09126e",
+          "patches": [
+            [
+              0,
+              4,
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                8
+              ]
+            ],
+            [
+              3,
+              0,
+              [
+                -1,
+                8
+              ],
+              [
+                -9,
+                8
+              ]
+            ]
+          ]
+        }
+      ],
+      "exact_whitening": 3,
+      "first_row_evidence": {
+        "changed_plan_after": [
+          [
+            13,
+            24
+          ],
+          [
+            -7,
+            48
+          ],
+          [
+            7,
+            20
+          ],
+          [
+            -787,
+            480
+          ],
+          [
+            5083,
+            2240
+          ]
+        ],
+        "changed_plan_before": [
+          [
+            13,
+            24
+          ],
+          [
+            -7,
+            48
+          ],
+          [
+            7,
+            20
+          ],
+          [
+            -787,
+            480
+          ],
+          [
+            829,
+            320
+          ]
+        ],
+        "coarse_display_after": [
+          [
+            9,
+            16
+          ],
+          [
+            -1,
+            12
+          ],
+          [
+            -109,
+            192
+          ],
+          [
+            -163,
+            192
+          ],
+          null
+        ],
+        "coarse_display_before": [
+          [
+            9,
+            16
+          ],
+          [
+            -1,
+            12
+          ],
+          [
+            -109,
+            192
+          ],
+          [
+            -163,
+            192
+          ],
+          null
+        ],
+        "residual_after": [
+          null,
+          null,
+          null,
+          null,
+          [
+            -415,
+            384
+          ]
+        ],
+        "residual_before": [
+          null,
+          null,
+          null,
+          null,
+          [
+            -463,
+            384
+          ]
+        ],
+        "tensor_after": [
+          [
+            9,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            11,
+            8
+          ],
+          [
+            -7,
+            8
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "tensor_before": [
+          [
+            9,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            11,
+            8
+          ],
+          [
+            -7,
+            8
+          ],
+          [
+            -3,
+            4
+          ]
+        ]
+      },
+      "named_refusals": 10,
+      "normalized_observation": {
+        "base": [
+          [
+            596000,
+            3101227
+          ],
+          [
+            463250,
+            3101227
+          ],
+          [
+            467072,
+            3101227
+          ],
+          [
+            1540969,
+            6202454
+          ],
+          [
+            1608841,
+            6202454
+          ]
+        ],
+        "joint_scale_equal": true,
+        "old_policy_exact": true,
+        "retuned": [
+          [
+            1192000,
+            3697227
+          ],
+          [
+            463250,
+            3697227
+          ],
+          [
+            467072,
+            3697227
+          ],
+          [
+            1540969,
+            7394454
+          ],
+          [
+            1608841,
+            7394454
+          ]
+        ]
+      },
+      "ordered_inverse_exact": true,
+      "plans": [
+        "232dbcfbdd18879d67d9e25122ccbad201b505410cf3c9f1aa3727d631067eb9",
+        "81529d7baf8d4e616fd427d5eb08a0db2e7cd35d42a8d2da2211e327157825ab",
+        "bcdb97ec0808bbb56200bfa4a1dcb7681c915f40a6609b32d958761651f8f172"
+      ],
+      "residual_differs": true,
+      "seed": 1,
+      "tensor_rows": 4,
+      "tensor_view_roundtrips": 9,
+      "weights": [
+        "a1c3b33184fe38ed0dc941c6f5414e508c028a4b7d1f7c8a5f3aee710b6b4ea1",
+        "f4e512645e3f4f9c0b353d98406bb0e8f8e7238b9e477336cc7526bfff09126e",
+        "8961767b9713b7ff3a28a4769537e5fee167769be8dcf6b7074ddf39f1129f09"
+      ],
+      "width": 5
+    },
+    {
+      "calibration_rows": 32,
+      "changed_plan_separates": true,
+      "coarse_display_equal": true,
+      "coordinate_partition": [
+        {
+          "observed": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "residual": [
+            4
+          ]
+        },
+        {
+          "observed": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "residual": []
+        },
+        {
+          "observed": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "residual": [
+            0
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "mask": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "new": "f0d79b7950af3db63e1cdcca80a9470b8fd69e934576a0211bce49701385e10c",
+          "old": "ea71cfa0f126aa44612a40ae5f11e707fedef79831b2daa9aac8d3256c1b68d4",
+          "patches": [
+            [
+              0,
+              4,
+              [
+                7,
+                8
+              ],
+              [
+                13,
+                8
+              ]
+            ],
+            [
+              1,
+              4,
+              [
+                -5,
+                8
+              ],
+              [
+                -9,
+                8
+              ]
+            ]
+          ]
+        },
+        {
+          "mask": [
+            [
+              0,
+              4
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "new": "1ccde2b8db043abfb1bcfa92317a917459b514e2410057bf1cc882c3500a7e4c",
+          "old": "f0d79b7950af3db63e1cdcca80a9470b8fd69e934576a0211bce49701385e10c",
+          "patches": [
+            [
+              0,
+              4,
+              [
+                13,
+                8
+              ],
+              [
+                7,
+                4
+              ]
+            ],
+            [
+              3,
+              0,
+              [
+                -7,
+                8
+              ],
+              [
+                -15,
+                8
+              ]
+            ]
+          ]
+        }
+      ],
+      "exact_whitening": 3,
+      "first_row_evidence": {
+        "changed_plan_after": [
+          [
+            7,
+            24
+          ],
+          [
+            -19,
+            48
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            -539,
+            480
+          ],
+          [
+            3651,
+            2240
+          ]
+        ],
+        "changed_plan_before": [
+          [
+            7,
+            24
+          ],
+          [
+            -19,
+            48
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            -539,
+            480
+          ],
+          [
+            4371,
+            2240
+          ]
+        ],
+        "coarse_display_after": [
+          [
+            3,
+            16
+          ],
+          [
+            -1,
+            3
+          ],
+          [
+            -139,
+            192
+          ],
+          [
+            -109,
+            192
+          ],
+          null
+        ],
+        "coarse_display_before": [
+          [
+            3,
+            16
+          ],
+          [
+            -1,
+            3
+          ],
+          [
+            -139,
+            192
+          ],
+          [
+            -109,
+            192
+          ],
+          null
+        ],
+        "residual_after": [
+          null,
+          null,
+          null,
+          null,
+          [
+            -305,
+            384
+          ]
+        ],
+        "residual_before": [
+          null,
+          null,
+          null,
+          null,
+          [
+            -353,
+            384
+          ]
+        ],
+        "tensor_after": [
+          [
+            3,
+            8
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            13,
+            8
+          ]
+        ],
+        "tensor_before": [
+          [
+            3,
+            8
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            7,
+            8
+          ]
+        ]
+      },
+      "named_refusals": 10,
+      "normalized_observation": {
+        "base": [
+          [
+            24500000,
+            134636027
+          ],
+          [
+            23463650,
+            134636027
+          ],
+          [
+            24843392,
+            134636027
+          ],
+          [
+            59393929,
+            269272054
+          ],
+          [
+            64264041,
+            269272054
+          ]
+        ],
+        "joint_scale_equal": true,
+        "old_policy_exact": true,
+        "retuned": [
+          [
+            49000000,
+            159136027
+          ],
+          [
+            23463650,
+            159136027
+          ],
+          [
+            24843392,
+            159136027
+          ],
+          [
+            59393929,
+            318272054
+          ],
+          [
+            64264041,
+            318272054
+          ]
+        ]
+      },
+      "ordered_inverse_exact": true,
+      "plans": [
+        "232dbcfbdd18879d67d9e25122ccbad201b505410cf3c9f1aa3727d631067eb9",
+        "81529d7baf8d4e616fd427d5eb08a0db2e7cd35d42a8d2da2211e327157825ab",
+        "bcdb97ec0808bbb56200bfa4a1dcb7681c915f40a6609b32d958761651f8f172"
+      ],
+      "residual_differs": true,
+      "seed": 2,
+      "tensor_rows": 4,
+      "tensor_view_roundtrips": 9,
+      "weights": [
+        "ea71cfa0f126aa44612a40ae5f11e707fedef79831b2daa9aac8d3256c1b68d4",
+        "f0d79b7950af3db63e1cdcca80a9470b8fd69e934576a0211bce49701385e10c",
+        "1ccde2b8db043abfb1bcfa92317a917459b514e2410057bf1cc882c3500a7e4c"
+      ],
+      "width": 5
+    }
+  ],
+  "checkpoint_bytes_read": 0,
+  "checkpoint_bytes_written": 0,
+  "model_inference_runs": 0,
+  "schema": "exact-offline-tensor-reversibility/v1",
+  "summary": {
+    "cases": 9,
+    "exact_tensor_view_roundtrips": 81,
+    "exact_white_covariance_checks": 27,
+    "named_refusals": 92
+  }
+}

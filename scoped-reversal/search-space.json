@@ -1,0 +1,26 @@
+{
+  "schema": "software-is-reversible.search-space.v1",
+  "axes": {
+    "retained_payload_bits": {"sense": "min", "scope": "declared finite projection"},
+    "retained_index_bytes": {"sense": "min", "scope": "decoder and navigation structures"},
+    "reconstruction_work": {"sense": "min", "scope": "each checked architecture"},
+    "worst_reverse_latency": {"sense": "min", "scope": "paired same-venue measurements"},
+    "blocked_contracts_closed": {"sense": "max", "scope": "typed obligations discharged, not lexical reachability"},
+    "qualified_compositions": {"sense": "max", "scope": "jointly supported consequences"},
+    "prior_work_overlap": {"status": "external evidence, not a default-zero score"},
+    "novelty": {"status": "unassessed until prior work and matched tests are independently checked"}
+  },
+  "lanes": [
+    {"id": "whole-trace-fiber", "evidence": "empirical/fibers.json", "status": "finite-width bound checked; decoder and latency not measured", "next": "charge checkpoint and index; benchmark sparse and dense historical reads"},
+    {"id": "reverse-plan-front", "evidence": "empirical/schedule.json", "status": "exact finite synthetic front; costs modeled", "next": "pair exact reverse restoration with real measured bytes and time; include growth and withdrawal"},
+    {"id": "tensor-retune", "evidence": "empirical/tensor-bridge.json", "status": "exact synthetic residual reconstruction", "next": "test model checkpoint state against real recorded probability rows; separate chooser-only weights from model edits"},
+    {"id": "obscurity-stop", "status": "open beyond existing scoped action-vector controls", "next": "verify per-axis bounds with synthetic threshold abuse and real captured row omissions; reweight with frontier retained"},
+    {"id": "native-eyes-reverse", "status": "unqualified", "next": "frozen owned pre/action/post/inverse/restored fixture, independently observed; qualify effects and versions before timing"}
+  ],
+  "policy": {
+    "partition_context": ["subject", "architecture", "projection", "observables", "venue", "axis-definition-version"],
+    "unknown_axis_is_zero": false,
+    "rank_weights_change_evidence": false,
+    "publishable_claim_requires": ["bound", "source", "independent check", "negative control"]
+  }
+}
