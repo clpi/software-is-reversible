@@ -1,0 +1,2733 @@
+{
+  "axes": [
+    "extra_stored_bits",
+    "extra_forward_cost",
+    "sum_reverse_cost",
+    "peak_reverse_cost"
+  ],
+  "cases": [
+    {
+      "case": "rot-add-alu/0",
+      "coordinate_minima": [
+        0,
+        0,
+        18,
+        4
+      ],
+      "cost_model": {
+        "read": 4,
+        "receipt_write": 2,
+        "snapshot_write": 4
+      },
+      "different_objective_vectors": 565,
+      "dp_extensions": 74,
+      "enumerated": 2048,
+      "initial": 173,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 3,
+          "backward": 1,
+          "forward": 1,
+          "kind": "rot"
+        },
+        {
+          "arg": 18,
+          "backward": 4,
+          "forward": 6,
+          "kind": "add"
+        },
+        {
+          "arg": 29,
+          "backward": 7,
+          "forward": 3,
+          "kind": "xor"
+        },
+        {
+          "arg": 40,
+          "backward": 3,
+          "forward": 8,
+          "kind": "add"
+        },
+        {
+          "arg": 3,
+          "backward": 6,
+          "forward": 5,
+          "kind": "rot"
+        },
+        {
+          "arg": 62,
+          "backward": 2,
+          "forward": 2,
+          "kind": "xor"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            0,
+            0,
+            23,
+            7
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            10,
+            4,
+            20,
+            6
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            3,
+            0,
+            3,
+            0
+          ],
+          "cost": [
+            20,
+            8,
+            18,
+            4
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            0,
+            0,
+            23,
+            7
+          ],
+          "dominated": false,
+          "one_dominator": null
+        },
+        "periodic_snapshot": {
+          "cost": [
+            10,
+            4,
+            53,
+            17
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            23,
+            7
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            83,
+            27
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            23,
+            7
+          ]
+        },
+        "snapshot_every_step": {
+          "cost": [
+            50,
+            20,
+            24,
+            4
+          ],
+          "dominated": true,
+          "one_dominator": [
+            20,
+            8,
+            18,
+            4
+          ]
+        }
+      },
+      "word_bits": 8
+    },
+    {
+      "case": "rot-add-alu/1",
+      "coordinate_minima": [
+        0,
+        0,
+        18,
+        4
+      ],
+      "cost_model": {
+        "read": 4,
+        "receipt_write": 2,
+        "snapshot_write": 4
+      },
+      "different_objective_vectors": 435,
+      "dp_extensions": 90,
+      "enumerated": 2048,
+      "initial": 172,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 1,
+          "backward": 3,
+          "forward": 2,
+          "kind": "rot"
+        },
+        {
+          "arg": 27,
+          "backward": 6,
+          "forward": 7,
+          "kind": "add"
+        },
+        {
+          "arg": 38,
+          "backward": 2,
+          "forward": 4,
+          "kind": "xor"
+        },
+        {
+          "arg": 49,
+          "backward": 5,
+          "forward": 1,
+          "kind": "add"
+        },
+        {
+          "arg": 1,
+          "backward": 1,
+          "forward": 6,
+          "kind": "rot"
+        },
+        {
+          "arg": 71,
+          "backward": 4,
+          "forward": 3,
+          "kind": "xor"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            0,
+            0,
+            21,
+            6
+          ]
+        },
+        {
+          "choices": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            10,
+            4,
+            19,
+            5
+          ]
+        },
+        {
+          "choices": [
+            0,
+            3,
+            0,
+            3,
+            0,
+            0
+          ],
+          "cost": [
+            20,
+            8,
+            18,
+            4
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            0,
+            0,
+            21,
+            6
+          ],
+          "dominated": false,
+          "one_dominator": null
+        },
+        "periodic_snapshot": {
+          "cost": [
+            10,
+            4,
+            43,
+            13
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            21,
+            6
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            82,
+            24
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            21,
+            6
+          ]
+        },
+        "snapshot_every_step": {
+          "cost": [
+            50,
+            20,
+            24,
+            4
+          ],
+          "dominated": true,
+          "one_dominator": [
+            20,
+            8,
+            18,
+            4
+          ]
+        }
+      },
+      "word_bits": 8
+    },
+    {
+      "case": "narrow-pipeline/0",
+      "coordinate_minima": [
+        0,
+        0,
+        15,
+        3
+      ],
+      "cost_model": {
+        "read": 3,
+        "receipt_write": 2,
+        "snapshot_write": 5
+      },
+      "different_objective_vectors": 1049,
+      "dp_extensions": 154,
+      "enumerated": 2048,
+      "initial": 657,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 7,
+          "backward": 1,
+          "forward": 1,
+          "kind": "add"
+        },
+        {
+          "arg": 1,
+          "backward": 4,
+          "forward": 6,
+          "kind": "keep"
+        },
+        {
+          "arg": 8,
+          "backward": 7,
+          "forward": 3,
+          "kind": "shift"
+        },
+        {
+          "arg": 40,
+          "backward": 3,
+          "forward": 8,
+          "kind": "xor"
+        },
+        {
+          "arg": 4,
+          "backward": 6,
+          "forward": 5,
+          "kind": "keep"
+        },
+        {
+          "arg": 2,
+          "backward": 2,
+          "forward": 2,
+          "kind": "rot"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cost": [
+            0,
+            0,
+            41,
+            21
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            7,
+            2,
+            26,
+            10
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            1,
+            0,
+            3,
+            0
+          ],
+          "cost": [
+            12,
+            5,
+            23,
+            10
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            16,
+            4,
+            23,
+            7
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            3,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            19,
+            7,
+            19,
+            6
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            3,
+            0,
+            3,
+            0
+          ],
+          "cost": [
+            24,
+            10,
+            16,
+            4
+          ]
+        },
+        {
+          "choices": [
+            0,
+            3,
+            3,
+            0,
+            3,
+            0
+          ],
+          "cost": [
+            36,
+            15,
+            15,
+            3
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            26,
+            6,
+            23,
+            7
+          ],
+          "dominated": true,
+          "one_dominator": [
+            16,
+            4,
+            23,
+            7
+          ]
+        },
+        "periodic_snapshot": {
+          "cost": [
+            12,
+            5,
+            47,
+            16
+          ],
+          "dominated": true,
+          "one_dominator": [
+            7,
+            2,
+            26,
+            10
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            77,
+            26
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            41,
+            21
+          ]
+        },
+        "snapshot_every_step": {
+          "cost": [
+            60,
+            25,
+            18,
+            3
+          ],
+          "dominated": true,
+          "one_dominator": [
+            36,
+            15,
+            15,
+            3
+          ]
+        }
+      },
+      "word_bits": 10
+    },
+    {
+      "case": "narrow-pipeline/1",
+      "coordinate_minima": [
+        0,
+        0,
+        15,
+        3
+      ],
+      "cost_model": {
+        "read": 3,
+        "receipt_write": 2,
+        "snapshot_write": 5
+      },
+      "different_objective_vectors": 654,
+      "dp_extensions": 186,
+      "enumerated": 2048,
+      "initial": 656,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 16,
+          "backward": 3,
+          "forward": 2,
+          "kind": "add"
+        },
+        {
+          "arg": 6,
+          "backward": 6,
+          "forward": 7,
+          "kind": "keep"
+        },
+        {
+          "arg": 4,
+          "backward": 2,
+          "forward": 4,
+          "kind": "shift"
+        },
+        {
+          "arg": 49,
+          "backward": 5,
+          "forward": 1,
+          "kind": "xor"
+        },
+        {
+          "arg": 9,
+          "backward": 1,
+          "forward": 6,
+          "kind": "keep"
+        },
+        {
+          "arg": 7,
+          "backward": 4,
+          "forward": 3,
+          "kind": "rot"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "cost": [
+            0,
+            0,
+            46,
+            17
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            2,
+            2,
+            30,
+            12
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            7,
+            4,
+            20,
+            5
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            3,
+            0,
+            0
+          ],
+          "cost": [
+            19,
+            9,
+            18,
+            5
+          ]
+        },
+        {
+          "choices": [
+            0,
+            3,
+            0,
+            3,
+            1,
+            0
+          ],
+          "cost": [
+            29,
+            12,
+            19,
+            4
+          ]
+        },
+        {
+          "choices": [
+            0,
+            3,
+            0,
+            3,
+            0,
+            0
+          ],
+          "cost": [
+            31,
+            14,
+            16,
+            4
+          ]
+        },
+        {
+          "choices": [
+            0,
+            3,
+            0,
+            3,
+            0,
+            3
+          ],
+          "cost": [
+            43,
+            19,
+            15,
+            3
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            12,
+            6,
+            21,
+            6
+          ],
+          "dominated": true,
+          "one_dominator": [
+            7,
+            4,
+            20,
+            5
+          ]
+        },
+        "periodic_snapshot": {
+          "cost": [
+            12,
+            5,
+            37,
+            12
+          ],
+          "dominated": true,
+          "one_dominator": [
+            2,
+            2,
+            30,
+            12
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            76,
+            23
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            46,
+            17
+          ]
+        },
+        "snapshot_every_step": {
+          "cost": [
+            60,
+            25,
+            18,
+            3
+          ],
+          "dominated": true,
+          "one_dominator": [
+            43,
+            19,
+            15,
+            3
+          ]
+        }
+      },
+      "word_bits": 10
+    },
+    {
+      "case": "reset-controller/0",
+      "coordinate_minima": [
+        0,
+        0,
+        23,
+        7
+      ],
+      "cost_model": {
+        "read": 9,
+        "receipt_write": 1,
+        "snapshot_write": 4
+      },
+      "different_objective_vectors": 1274,
+      "dp_extensions": 154,
+      "enumerated": 2048,
+      "initial": 3301,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 7,
+          "backward": 1,
+          "forward": 1,
+          "kind": "xor"
+        },
+        {
+          "arg": 0,
+          "backward": 4,
+          "forward": 6,
+          "kind": "zero"
+        },
+        {
+          "arg": 29,
+          "backward": 7,
+          "forward": 3,
+          "kind": "add"
+        },
+        {
+          "arg": 0,
+          "backward": 3,
+          "forward": 8,
+          "kind": "zero"
+        },
+        {
+          "arg": 51,
+          "backward": 6,
+          "forward": 5,
+          "kind": "add"
+        },
+        {
+          "arg": 5,
+          "backward": 2,
+          "forward": 2,
+          "kind": "rot"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cost": [
+            0,
+            0,
+            45,
+            19
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            13,
+            1,
+            29,
+            10
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            26,
+            2,
+            23,
+            7
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            26,
+            2,
+            23,
+            7
+          ],
+          "dominated": false,
+          "one_dominator": null
+        },
+        "periodic_snapshot": {
+          "cost": [
+            14,
+            4,
+            83,
+            22
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            45,
+            19
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            113,
+            32
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            45,
+            19
+          ]
+        },
+        "snapshot_every_step": {
+          "cost": [
+            70,
+            20,
+            54,
+            9
+          ],
+          "dominated": true,
+          "one_dominator": [
+            26,
+            2,
+            23,
+            7
+          ]
+        }
+      },
+      "word_bits": 12
+    },
+    {
+      "case": "reset-controller/1",
+      "coordinate_minima": [
+        0,
+        0,
+        21,
+        6
+      ],
+      "cost_model": {
+        "read": 9,
+        "receipt_write": 1,
+        "snapshot_write": 4
+      },
+      "different_objective_vectors": 1294,
+      "dp_extensions": 154,
+      "enumerated": 2048,
+      "initial": 3300,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 16,
+          "backward": 3,
+          "forward": 2,
+          "kind": "xor"
+        },
+        {
+          "arg": 0,
+          "backward": 6,
+          "forward": 7,
+          "kind": "zero"
+        },
+        {
+          "arg": 38,
+          "backward": 2,
+          "forward": 4,
+          "kind": "add"
+        },
+        {
+          "arg": 0,
+          "backward": 5,
+          "forward": 1,
+          "kind": "zero"
+        },
+        {
+          "arg": 60,
+          "backward": 1,
+          "forward": 6,
+          "kind": "add"
+        },
+        {
+          "arg": 10,
+          "backward": 4,
+          "forward": 3,
+          "kind": "rot"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cost": [
+            0,
+            0,
+            43,
+            22
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            13,
+            1,
+            26,
+            11
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            26,
+            2,
+            21,
+            6
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            26,
+            2,
+            21,
+            6
+          ],
+          "dominated": false,
+          "one_dominator": null
+        },
+        "periodic_snapshot": {
+          "cost": [
+            14,
+            4,
+            73,
+            18
+          ],
+          "dominated": true,
+          "one_dominator": [
+            13,
+            1,
+            26,
+            11
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            112,
+            29
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            43,
+            22
+          ]
+        },
+        "snapshot_every_step": {
+          "cost": [
+            70,
+            20,
+            54,
+            9
+          ],
+          "dominated": true,
+          "one_dominator": [
+            26,
+            2,
+            21,
+            6
+          ]
+        }
+      },
+      "word_bits": 12
+    },
+    {
+      "case": "slow-replay-fast-undo/0",
+      "coordinate_minima": [
+        0,
+        0,
+        20,
+        5
+      ],
+      "cost_model": {
+        "read": 5,
+        "receipt_write": 1,
+        "snapshot_write": 2
+      },
+      "different_objective_vectors": 1502,
+      "dp_extensions": 202,
+      "enumerated": 2048,
+      "initial": 455,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 7,
+          "backward": 1,
+          "forward": 4,
+          "kind": "add"
+        },
+        {
+          "arg": 2,
+          "backward": 4,
+          "forward": 24,
+          "kind": "keep"
+        },
+        {
+          "arg": 29,
+          "backward": 7,
+          "forward": 12,
+          "kind": "xor"
+        },
+        {
+          "arg": 8,
+          "backward": 3,
+          "forward": 32,
+          "kind": "shift"
+        },
+        {
+          "arg": 51,
+          "backward": 6,
+          "forward": 20,
+          "kind": "add"
+        },
+        {
+          "arg": 0,
+          "backward": 2,
+          "forward": 8,
+          "kind": "zero"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cost": [
+            0,
+            0,
+            165,
+            97
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cost": [
+            8,
+            1,
+            160,
+            97
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cost": [
+            9,
+            1,
+            123,
+            97
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cost": [
+            10,
+            1,
+            70,
+            45
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cost": [
+            18,
+            2,
+            65,
+            45
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            19,
+            2,
+            28,
+            9
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            27,
+            3,
+            23,
+            7
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            38,
+            5,
+            21,
+            6
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            3,
+            0,
+            3,
+            0
+          ],
+          "cost": [
+            49,
+            7,
+            20,
+            5
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            27,
+            3,
+            23,
+            7
+          ],
+          "dominated": false,
+          "one_dominator": null
+        },
+        "periodic_snapshot": {
+          "cost": [
+            11,
+            2,
+            146,
+            57
+          ],
+          "dominated": true,
+          "one_dominator": [
+            10,
+            1,
+            70,
+            45
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            266,
+            97
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            165,
+            97
+          ]
+        },
+        "snapshot_every_step": {
+          "cost": [
+            55,
+            10,
+            30,
+            5
+          ],
+          "dominated": true,
+          "one_dominator": [
+            49,
+            7,
+            20,
+            5
+          ]
+        }
+      },
+      "word_bits": 9
+    },
+    {
+      "case": "slow-replay-fast-undo/1",
+      "coordinate_minima": [
+        0,
+        0,
+        20,
+        5
+      ],
+      "cost_model": {
+        "read": 5,
+        "receipt_write": 1,
+        "snapshot_write": 2
+      },
+      "different_objective_vectors": 1506,
+      "dp_extensions": 174,
+      "enumerated": 2048,
+      "initial": 454,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 16,
+          "backward": 3,
+          "forward": 8,
+          "kind": "add"
+        },
+        {
+          "arg": 7,
+          "backward": 6,
+          "forward": 28,
+          "kind": "keep"
+        },
+        {
+          "arg": 38,
+          "backward": 2,
+          "forward": 16,
+          "kind": "xor"
+        },
+        {
+          "arg": 5,
+          "backward": 5,
+          "forward": 4,
+          "kind": "shift"
+        },
+        {
+          "arg": 60,
+          "backward": 1,
+          "forward": 24,
+          "kind": "add"
+        },
+        {
+          "arg": 0,
+          "backward": 4,
+          "forward": 12,
+          "kind": "zero"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cost": [
+            0,
+            0,
+            161,
+            85
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cost": [
+            3,
+            1,
+            154,
+            85
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cost": [
+            6,
+            1,
+            109,
+            85
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "cost": [
+            9,
+            2,
+            102,
+            85
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cost": [
+            10,
+            1,
+            80,
+            57
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            3,
+            0,
+            1
+          ],
+          "cost": [
+            11,
+            2,
+            57,
+            33
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            1
+          ],
+          "cost": [
+            14,
+            3,
+            50,
+            33
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            16,
+            2,
+            28,
+            13
+          ]
+        },
+        {
+          "choices": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            19,
+            3,
+            21,
+            6
+          ]
+        },
+        {
+          "choices": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            27,
+            4,
+            20,
+            5
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            19,
+            3,
+            21,
+            6
+          ],
+          "dominated": false,
+          "one_dominator": null
+        },
+        "periodic_snapshot": {
+          "cost": [
+            11,
+            2,
+            106,
+            41
+          ],
+          "dominated": true,
+          "one_dominator": [
+            11,
+            2,
+            57,
+            33
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            262,
+            85
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            161,
+            85
+          ]
+        },
+        "snapshot_every_step": {
+          "cost": [
+            55,
+            10,
+            30,
+            5
+          ],
+          "dominated": true,
+          "one_dominator": [
+            27,
+            4,
+            20,
+            5
+          ]
+        }
+      },
+      "word_bits": 9
+    },
+    {
+      "case": "cheap-replay-expensive-undo/0",
+      "coordinate_minima": [
+        0,
+        0,
+        6,
+        1
+      ],
+      "cost_model": {
+        "read": 1,
+        "receipt_write": 3,
+        "snapshot_write": 7
+      },
+      "different_objective_vectors": 1307,
+      "dp_extensions": 102,
+      "enumerated": 2048,
+      "initial": 1201,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 7,
+          "backward": 4,
+          "forward": 1,
+          "kind": "add"
+        },
+        {
+          "arg": 10,
+          "backward": 16,
+          "forward": 6,
+          "kind": "keep"
+        },
+        {
+          "arg": 29,
+          "backward": 28,
+          "forward": 3,
+          "kind": "xor"
+        },
+        {
+          "arg": 4,
+          "backward": 12,
+          "forward": 8,
+          "kind": "shift"
+        },
+        {
+          "arg": 51,
+          "backward": 24,
+          "forward": 5,
+          "kind": "add"
+        },
+        {
+          "arg": 0,
+          "backward": 8,
+          "forward": 2,
+          "kind": "zero"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cost": [
+            0,
+            0,
+            65,
+            24
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "cost": [
+            12,
+            3,
+            49,
+            19
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            1
+          ],
+          "cost": [
+            13,
+            7,
+            29,
+            11
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            3,
+            1,
+            1,
+            0
+          ],
+          "cost": [
+            25,
+            10,
+            28,
+            12
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            1,
+            3,
+            1,
+            0
+          ],
+          "cost": [
+            25,
+            10,
+            29,
+            9
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            3,
+            1,
+            3,
+            1
+          ],
+          "cost": [
+            26,
+            14,
+            15,
+            6
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            3,
+            1,
+            3,
+            3
+          ],
+          "cost": [
+            39,
+            21,
+            10,
+            4
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            3,
+            3,
+            3,
+            3
+          ],
+          "cost": [
+            52,
+            28,
+            7,
+            2
+          ]
+        },
+        {
+          "choices": [
+            1,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "cost": [
+            65,
+            35,
+            6,
+            1
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            19,
+            9,
+            92,
+            28
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            65,
+            24
+          ]
+        },
+        "periodic_snapshot": {
+          "cost": [
+            13,
+            7,
+            35,
+            14
+          ],
+          "dominated": true,
+          "one_dominator": [
+            13,
+            7,
+            29,
+            11
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            65,
+            24
+          ],
+          "dominated": false,
+          "one_dominator": null
+        },
+        "snapshot_every_step": {
+          "cost": [
+            65,
+            35,
+            6,
+            1
+          ],
+          "dominated": false,
+          "one_dominator": null
+        }
+      },
+      "word_bits": 11
+    },
+    {
+      "case": "cheap-replay-expensive-undo/1",
+      "coordinate_minima": [
+        0,
+        0,
+        6,
+        1
+      ],
+      "cost_model": {
+        "read": 1,
+        "receipt_write": 3,
+        "snapshot_write": 7
+      },
+      "different_objective_vectors": 906,
+      "dp_extensions": 102,
+      "enumerated": 2048,
+      "initial": 1200,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 16,
+          "backward": 12,
+          "forward": 2,
+          "kind": "add"
+        },
+        {
+          "arg": 5,
+          "backward": 24,
+          "forward": 7,
+          "kind": "keep"
+        },
+        {
+          "arg": 38,
+          "backward": 8,
+          "forward": 4,
+          "kind": "xor"
+        },
+        {
+          "arg": 9,
+          "backward": 20,
+          "forward": 1,
+          "kind": "shift"
+        },
+        {
+          "arg": 60,
+          "backward": 4,
+          "forward": 6,
+          "kind": "add"
+        },
+        {
+          "arg": 0,
+          "backward": 16,
+          "forward": 3,
+          "kind": "zero"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "cost": [
+            0,
+            0,
+            51,
+            21
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "cost": [
+            12,
+            3,
+            46,
+            16
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            0,
+            3,
+            1,
+            1
+          ],
+          "cost": [
+            13,
+            7,
+            23,
+            8
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            3,
+            1,
+            0,
+            3
+          ],
+          "cost": [
+            26,
+            14,
+            15,
+            5
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            3,
+            3,
+            1,
+            3
+          ],
+          "cost": [
+            39,
+            21,
+            9,
+            3
+          ]
+        },
+        {
+          "choices": [
+            1,
+            3,
+            3,
+            3,
+            1,
+            3
+          ],
+          "cost": [
+            52,
+            28,
+            7,
+            2
+          ]
+        },
+        {
+          "choices": [
+            1,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "cost": [
+            65,
+            35,
+            6,
+            1
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            29,
+            9,
+            84,
+            24
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            51,
+            21
+          ]
+        },
+        "periodic_snapshot": {
+          "cost": [
+            13,
+            7,
+            25,
+            10
+          ],
+          "dominated": true,
+          "one_dominator": [
+            13,
+            7,
+            23,
+            8
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            64,
+            21
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            51,
+            21
+          ]
+        },
+        "snapshot_every_step": {
+          "cost": [
+            65,
+            35,
+            6,
+            1
+          ],
+          "dominated": false,
+          "one_dominator": null
+        }
+      },
+      "word_bits": 11
+    },
+    {
+      "case": "mixed-bandwidth/0",
+      "coordinate_minima": [
+        0,
+        0,
+        15,
+        3
+      ],
+      "cost_model": {
+        "read": 3,
+        "receipt_write": 5,
+        "snapshot_write": 1
+      },
+      "different_objective_vectors": 1046,
+      "dp_extensions": 242,
+      "enumerated": 2048,
+      "initial": 111,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 3,
+          "backward": 1,
+          "forward": 1,
+          "kind": "shift"
+        },
+        {
+          "arg": 4,
+          "backward": 4,
+          "forward": 6,
+          "kind": "keep"
+        },
+        {
+          "arg": 29,
+          "backward": 7,
+          "forward": 3,
+          "kind": "add"
+        },
+        {
+          "arg": 6,
+          "backward": 3,
+          "forward": 8,
+          "kind": "rot"
+        },
+        {
+          "arg": 0,
+          "backward": 6,
+          "forward": 5,
+          "kind": "zero"
+        },
+        {
+          "arg": 62,
+          "backward": 2,
+          "forward": 2,
+          "kind": "xor"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cost": [
+            0,
+            0,
+            40,
+            21
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cost": [
+            4,
+            5,
+            38,
+            21
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            8,
+            5,
+            25,
+            7
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0
+          ],
+          "cost": [
+            9,
+            1,
+            22,
+            7
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            0,
+            0,
+            3,
+            0
+          ],
+          "cost": [
+            13,
+            6,
+            20,
+            7
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            3,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            17,
+            6,
+            21,
+            6
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            3,
+            0,
+            3,
+            0
+          ],
+          "cost": [
+            18,
+            2,
+            18,
+            4
+          ]
+        },
+        {
+          "choices": [
+            0,
+            1,
+            3,
+            0,
+            3,
+            0
+          ],
+          "cost": [
+            22,
+            7,
+            16,
+            4
+          ]
+        },
+        {
+          "choices": [
+            1,
+            3,
+            3,
+            0,
+            3,
+            0
+          ],
+          "cost": [
+            27,
+            3,
+            17,
+            3
+          ]
+        },
+        {
+          "choices": [
+            0,
+            3,
+            3,
+            0,
+            3,
+            0
+          ],
+          "cost": [
+            31,
+            8,
+            15,
+            3
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            16,
+            15,
+            23,
+            7
+          ],
+          "dominated": true,
+          "one_dominator": [
+            9,
+            1,
+            22,
+            7
+          ]
+        },
+        "periodic_snapshot": {
+          "cost": [
+            9,
+            1,
+            47,
+            16
+          ],
+          "dominated": true,
+          "one_dominator": [
+            9,
+            1,
+            22,
+            7
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            77,
+            26
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            40,
+            21
+          ]
+        },
+        "snapshot_every_step": {
+          "cost": [
+            45,
+            5,
+            18,
+            3
+          ],
+          "dominated": true,
+          "one_dominator": [
+            27,
+            3,
+            17,
+            3
+          ]
+        }
+      },
+      "word_bits": 7
+    },
+    {
+      "case": "mixed-bandwidth/1",
+      "coordinate_minima": [
+        0,
+        0,
+        15,
+        3
+      ],
+      "cost_model": {
+        "read": 3,
+        "receipt_write": 5,
+        "snapshot_write": 1
+      },
+      "different_objective_vectors": 1170,
+      "dp_extensions": 126,
+      "enumerated": 2048,
+      "initial": 110,
+      "minima_jointly_attained": false,
+      "ops": [
+        {
+          "arg": 2,
+          "backward": 3,
+          "forward": 2,
+          "kind": "shift"
+        },
+        {
+          "arg": 3,
+          "backward": 6,
+          "forward": 7,
+          "kind": "keep"
+        },
+        {
+          "arg": 38,
+          "backward": 2,
+          "forward": 4,
+          "kind": "add"
+        },
+        {
+          "arg": 5,
+          "backward": 5,
+          "forward": 1,
+          "kind": "rot"
+        },
+        {
+          "arg": 0,
+          "backward": 1,
+          "forward": 6,
+          "kind": "zero"
+        },
+        {
+          "arg": 71,
+          "backward": 4,
+          "forward": 3,
+          "kind": "xor"
+        }
+      ],
+      "pareto": [
+        {
+          "choices": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "cost": [
+            0,
+            0,
+            36,
+            17
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost": [
+            8,
+            5,
+            20,
+            5
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            0,
+            3,
+            1,
+            0
+          ],
+          "cost": [
+            9,
+            1,
+            21,
+            5
+          ]
+        },
+        {
+          "choices": [
+            1,
+            1,
+            0,
+            3,
+            0,
+            0
+          ],
+          "cost": [
+            17,
+            6,
+            18,
+            5
+          ]
+        },
+        {
+          "choices": [
+            1,
+            3,
+            0,
+            3,
+            1,
+            0
+          ],
+          "cost": [
+            18,
+            2,
+            19,
+            4
+          ]
+        },
+        {
+          "choices": [
+            1,
+            3,
+            0,
+            3,
+            0,
+            0
+          ],
+          "cost": [
+            26,
+            7,
+            16,
+            4
+          ]
+        },
+        {
+          "choices": [
+            1,
+            3,
+            0,
+            3,
+            1,
+            3
+          ],
+          "cost": [
+            27,
+            3,
+            18,
+            4
+          ]
+        },
+        {
+          "choices": [
+            1,
+            3,
+            0,
+            3,
+            0,
+            3
+          ],
+          "cost": [
+            35,
+            8,
+            15,
+            3
+          ]
+        },
+        {
+          "choices": [
+            1,
+            3,
+            0,
+            3,
+            3,
+            3
+          ],
+          "cost": [
+            36,
+            4,
+            17,
+            3
+          ]
+        }
+      ],
+      "strategy_results": {
+        "local_inverse": {
+          "cost": [
+            16,
+            15,
+            21,
+            6
+          ],
+          "dominated": true,
+          "one_dominator": [
+            8,
+            5,
+            20,
+            5
+          ]
+        },
+        "periodic_snapshot": {
+          "cost": [
+            9,
+            1,
+            37,
+            12
+          ],
+          "dominated": true,
+          "one_dominator": [
+            9,
+            1,
+            21,
+            5
+          ]
+        },
+        "replay_from_root": {
+          "cost": [
+            0,
+            0,
+            76,
+            23
+          ],
+          "dominated": true,
+          "one_dominator": [
+            0,
+            0,
+            36,
+            17
+          ]
+        },
+        "snapshot_every_step": {
+          "cost": [
+            45,
+            5,
+            18,
+            3
+          ],
+          "dominated": true,
+          "one_dominator": [
+            36,
+            4,
+            17,
+            3
+          ]
+        }
+      },
+      "word_bits": 7
+    }
+  ],
+  "controls": {
+    "exhaustive_local_input_inverse_checks": 96768,
+    "non_append_scope_change_refused": true,
+    "out_of_width_receipt_refused": true,
+    "peak_tie_erasure": true
+  },
+  "model": "synthetic conditional costs; no host data",
+  "scope": "known deterministic trace; fixed start/final values and plan metadata excluded",
+  "totals": {
+    "cases": 12,
+    "cases_with_multiple_pareto_points": 12,
+    "cold_prefix_extensions": 3488,
+    "coordinate_minima_not_jointly_attained": 12,
+    "dp_extensions": 1760,
+    "exhaustive_plans": 24576,
+    "independent_prefix_frontier_matches": 72,
+    "independently_reversed_frontier_steps": 480,
+    "local_inverse_dominated": 6,
+    "pareto_points": 80,
+    "periodic_snapshot_dominated": 12,
+    "replay_from_root_dominated": 11,
+    "resident_append_extensions": 1760,
+    "snapshot_every_step_dominated": 10
+  }
+}

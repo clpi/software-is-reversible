@@ -1,0 +1,12 @@
+'SoftwareIsReversible.rank_recovers' depends on axioms: [propext]
+'SoftwareIsReversible.rank_lt_length' depends on axioms: [propext, Quot.sound]
+'SoftwareIsReversible.rank_fiber_attainable' depends on axioms: [propext, Quot.sound]
+'SoftwareIsReversible.inverse_injective' does not depend on any axioms
+'SoftwareIsReversible.collision_impossible' does not depend on any axioms
+'SoftwareIsReversible.finite_inverse_sound' depends on axioms: [propext]
+'SoftwareIsReversible.inverse_iff_injective_finite' depends on axioms: [propext]
+'SoftwareIsReversible.compose_inverse' does not depend on any axioms
+'SoftwareIsReversible.residual_inverse' does not depend on any axioms
+'SoftwareIsReversible.fiber_lower_bound' depends on axioms: [propext, Quot.sound]
+'SoftwareIsReversible.fin_fiber_lower_bound' depends on axioms: [propext, Quot.sound]
+'SoftwareIsReversible.scoped_trace_inverse' depends on axioms: [propext]

@@ -36,3 +36,5 @@ module at its local pin bf814c1.
   as candidates, their weight-free meta-frontier, and the
   recursion discipline. Its harness is meta.py in this repo,
   with the first pass's full output in meta-results.md.
+
+- [Scoped reversal and exact reconstruction results](scoped-reversal/README.md) — constructive finite inverses, residual lower bounds, and reproducible empirical frontiers. Run `sh scoped-reversal/check.sh`.

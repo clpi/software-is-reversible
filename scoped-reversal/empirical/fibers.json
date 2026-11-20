@@ -1,0 +1,49 @@
+{
+  "cases": {
+    "alternating-lost-axes": {
+      "fibers": 2,
+      "max_fiber": 32,
+      "rank_table_bound_entries": 64,
+      "sum_of_per_step_fixed_width_bits": 10,
+      "trace_residual_bits": 5,
+      "traces_verified": 64
+    },
+    "correlated-structured-record": {
+      "fibers": 2,
+      "max_fiber": 8,
+      "rank_table_bound_entries": 16,
+      "sum_of_per_step_fixed_width_bits": 3,
+      "trace_residual_bits": 3,
+      "traces_verified": 16
+    },
+    "flat-choice": {
+      "fibers": 1,
+      "max_fiber": 64,
+      "rank_table_bound_entries": 64,
+      "sum_of_per_step_fixed_width_bits": 6,
+      "trace_residual_bits": 6,
+      "traces_verified": 64
+    },
+    "inj-xor-rotate": {
+      "fibers": 64,
+      "max_fiber": 1,
+      "rank_table_bound_entries": 64,
+      "sum_of_per_step_fixed_width_bits": 0,
+      "trace_residual_bits": 0,
+      "traces_verified": 64
+    },
+    "nibbles-projection": {
+      "fibers": 4,
+      "max_fiber": 16,
+      "rank_table_bound_entries": 64,
+      "sum_of_per_step_fixed_width_bits": 4,
+      "trace_residual_bits": 4,
+      "traces_verified": 64
+    }
+  },
+  "metrics": "residual widths for declared finite domains, not file sizes or latency",
+  "schema": "software-is-reversible.fibers.v1",
+  "scoped_round_trips": 512,
+  "synthetic_only": true,
+  "unsafe_reversals_refused": 2048
+}
