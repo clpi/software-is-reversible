@@ -429,6 +429,29 @@ its scenario families are the matched campaign's source).
   above). Gap appended: the shared touch failure's closing
   candidate (finer probe grid, or scroll and reprobe),
   owner the action model family's successor lane.
+- 2026-11-20, lane 6: the action-determination spectrum
+  (the spectrum file in this repo; its harness and results
+  file beside it) — every algorithm of lanes 1 to 4
+  constructed under each applicable route of the five-route
+  spectrum (explicit, minimization, obscurity above
+  threshold, finer-grain decomposition, the terminal
+  compressed tensor), validated on its own contract battery,
+  every route-pair equivalence disposed as proved, measured,
+  or UNMEASURED with an owner. Headlines: the obscurity and
+  combination success sets are identical on the action
+  battery (419, symmetric difference 0); a fixed minimization
+  grid closes the shared touch failure in simulation (the
+  lane 4 gap's finer-grid candidate, measured); the union of
+  the linear grid and the meta level's nonlinear
+  configurations recovers 667 of 695 frontier members, 28 by
+  none — gap appended, owner lane 1 successor; the worklist's
+  powerset closure tensor is exact and 33 times the rule
+  size (the worklist is its compression); a memorised action
+  tensor is refuted on held-out instances (move 0 of 60).
+  Gaps appended, owners in the spectrum file: the overlay
+  collapse lemma (lane 1), a terminal form for the action
+  family (its successor lane), the distance tensor's
+  many-queries regime (lane 6 successor).
 
 - 2026-11-20, lane 5 build-out and re-validation: the
   down-selected winners of lanes 1-4 consolidated into one

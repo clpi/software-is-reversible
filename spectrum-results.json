@@ -1,0 +1,516 @@
+{
+ "base_head": "baa6f258fa65dfb64457f2b184c7c11fecc6d954",
+ "batteries": {
+  "actions": {
+   "agreement": {
+    "explicit_vs_combination": {
+     "both_succeed": 391,
+     "symmetric_difference": 28
+    },
+    "explicit_vs_obscurity": {
+     "both_succeed": 391,
+     "symmetric_difference": 28
+    },
+    "obscurity_vs_combination": {
+     "both_succeed": 419,
+     "symmetric_difference": 0
+    }
+   },
+   "per_family": {
+    "automate": {
+     "combination": 60,
+     "explicit": 52,
+     "naive": 9,
+     "obscurity": 60
+    },
+    "drive": {
+     "combination": 60,
+     "explicit": 60,
+     "naive": 4,
+     "obscurity": 60
+    },
+    "jump": {
+     "combination": 60,
+     "explicit": 60,
+     "naive": 3,
+     "obscurity": 60
+    },
+    "jumpover": {
+     "combination": 60,
+     "explicit": 60,
+     "naive": 21,
+     "obscurity": 60
+    },
+    "move": {
+     "combination": 60,
+     "explicit": 60,
+     "naive": 1,
+     "obscurity": 60
+    },
+    "touch": {
+     "combination": 59,
+     "explicit": 39,
+     "naive": 6,
+     "obscurity": 59
+    },
+    "type": {
+     "combination": 60,
+     "explicit": 60,
+     "naive": 2,
+     "obscurity": 60
+    }
+   },
+   "route2": {
+    "automate": {
+     "agree_combination": 60,
+     "only_combination": [],
+     "only_route2": [],
+     "probes_total": 1089,
+     "success": 60
+    },
+    "drive": {
+     "agree_combination": 60,
+     "only_combination": [],
+     "only_route2": [],
+     "probes_total": 31510,
+     "success": 60
+    },
+    "jump": {
+     "agree_combination": 60,
+     "only_combination": [],
+     "only_route2": [],
+     "probes_total": 16860,
+     "success": 60
+    },
+    "jumpover": {
+     "agree_combination": 60,
+     "only_combination": [],
+     "only_route2": [],
+     "probes_total": 114660,
+     "success": 60
+    },
+    "move": {
+     "agree_combination": 53,
+     "only_combination": [
+      10,
+      19,
+      22,
+      28,
+      32,
+      34,
+      55
+     ],
+     "only_route2": [],
+     "probes_total": 253500,
+     "success": 53
+    },
+    "touch": {
+     "agree_combination": 59,
+     "only_combination": [],
+     "only_route2": [
+      2
+     ],
+     "probes_total": 3780,
+     "success": 60
+    },
+    "type": {
+     "agree_combination": 60,
+     "only_combination": [],
+     "only_route2": [],
+     "probes_total": 14679,
+     "success": 60
+    }
+   },
+   "route4": {
+    "automate": {
+     "agree_combination": 60,
+     "success": 60
+    },
+    "drive": {
+     "agree_combination": 60,
+     "success": 60
+    },
+    "move": {
+     "agree_combination": 60,
+     "success": 60
+    }
+   },
+   "route5_nearest_neighbour_attempt": {
+    "jump": {
+     "heldout_n": 60,
+     "heldout_success": 12
+    },
+    "move": {
+     "heldout_n": 60,
+     "heldout_success": 0
+    }
+   },
+   "totals": {
+    "combination": 419,
+    "explicit": 391,
+    "naive": 46,
+    "obscurity": 419
+   }
+  },
+  "breakeven": {
+   "dense_per_query_ops_mean64": 3375.8,
+   "dense_rows": 6561,
+   "empirical_crossover_q_vs_query_only": 17,
+   "factored_per_query_ops_mean64": 16.48,
+   "fixed_ops_excl_persistence": 56408,
+   "heldout_permutation_factored_ops_equal": true,
+   "outputs_equal_512": 512,
+   "persistence_bytes_pools": 208,
+   "predicted_break_even_q": 17,
+   "regimes": {
+    "2": {
+     "crossover_q": 145,
+     "fixed_full_cost": 162,
+     "rows": 9
+    },
+    "3": {
+     "crossover_q": 47,
+     "fixed_full_cost": 323,
+     "rows": 27
+    },
+    "4": {
+     "crossover_q": 25,
+     "fixed_full_cost": 823,
+     "rows": 81
+    },
+    "6": {
+     "crossover_q": 17,
+     "fixed_full_cost": 5893,
+     "rows": 729
+    },
+    "8": {
+     "crossover_q": 15,
+     "fixed_full_cost": 41776,
+     "rows": 6561
+    }
+   },
+   "route1_route2_choice_disagreements": [],
+   "route5_dense_tensor_bytes": 380539,
+   "route5_pools_tensor_bytes": 208
+  },
+  "decoding": {
+   "a1_archive_plain_bytes": 4488,
+   "a1_route1_exhaustive_equal_fixtures": 5,
+   "a1_route4_decomposed_equal_fixtures": 5,
+   "a1_route4_subproblems": {
+    "branch": 121,
+    "chain": 3,
+    "missing": 2,
+    "tie": 4,
+    "trap": 4
+   },
+   "a1_route5_policy_bytes": 5795,
+   "a1_route5_policy_equal_fixtures": 5,
+   "a1_route5_policy_lookups_total": 14,
+   "a8_route2_lexmin_equal_fixtures": 5,
+   "a8_route2_lexmin_perm_checks": 30,
+   "a8_route2_lexmin_perm_equal": 30,
+   "a8_route5_picktensor_bytes": 2509,
+   "a8_route5_picktensor_checks": 35,
+   "a8_route5_picktensor_equal": 35,
+   "bestfirst": {
+    "cert_sound": true,
+    "certified_fixtures": 4,
+    "gap_milli": 0,
+    "ops_total": 114,
+    "storage_bytes": 4488
+   },
+   "canonical": {
+    "gap_milli": 1700,
+    "ops_total": 24,
+    "storage_bytes": 4488
+   },
+   "lane3_frontier": [
+    "canonical",
+    "bestfirst"
+   ]
+  },
+  "frontier": {
+   "frontier_members": 695,
+   "linear_meta_recovery": 517,
+   "nonlinear_configs": 21,
+   "nonlinear_recovery": 545,
+   "nonlinear_recovery_by_family": {
+    "max": 541,
+    "overlay": 306,
+    "squared": 413
+   },
+   "perm_agree": 900,
+   "perm_checks": 900,
+   "route5_frontier_tensor_bytes_total": 4814,
+   "route5_lookup_checks": 30600,
+   "route5_lookup_equal": 30600,
+   "route5_points_bytes_total": 19100,
+   "segment_middle_selected_by_any_positive_grid_weight": false,
+   "trials": 300,
+   "union_grid_or_nonlinear_recovery": 667,
+   "weight_first_recovery": 620
+  },
+  "loop": {
+   "lane3_cert_checks": 4,
+   "lane3_cert_ok": 4,
+   "lane3_digest": "ca46229572007e598cb5aac3832ea2a6b7eaac5d3ce41aaf29f885a24f1bb5a2",
+   "route1_only_edits": 1,
+   "route1_only_equal_full": false,
+   "route1_only_final": [
+    0,
+    120,
+    -40,
+    200,
+    200,
+    160,
+    -80,
+    30,
+    0,
+    0,
+    90,
+    -150,
+    45,
+    45,
+    -20,
+    10
+   ],
+   "route1_only_stream": [
+    4,
+    0,
+    46,
+    19,
+    43,
+    48,
+    0
+   ],
+   "route2_min_cert_checks": 4,
+   "route2_min_cert_ok": 4,
+   "route2_min_equal_full": false,
+   "route2_min_final": [
+    250,
+    120,
+    -40,
+    350,
+    350,
+    160,
+    -80,
+    30,
+    0,
+    0,
+    90,
+    -150,
+    45,
+    295,
+    295,
+    10
+   ],
+   "route2_min_stream": [
+    4,
+    0,
+    46,
+    19,
+    43,
+    48,
+    0
+   ],
+   "route3_only_edits": 3,
+   "route3_only_equal_full": false,
+   "route3_only_final": [
+    150,
+    120,
+    -40,
+    350,
+    350,
+    60,
+    -80,
+    30,
+    0,
+    0,
+    90,
+    -150,
+    45,
+    195,
+    195,
+    10
+   ],
+   "route3_only_stream": [
+    4,
+    0,
+    46,
+    19,
+    43,
+    48,
+    0
+   ],
+   "route5_collapsed_bytes": 51,
+   "route5_collapsed_equal_final": true,
+   "route5_final_vector_bytes": 58,
+   "route5_inverse_restores_base": true,
+   "route5_stack_bytes": 189,
+   "variant_full_edits_equal": true,
+   "variant_full_final_equal": true,
+   "variant_full_stream_equal": true
+  },
+  "matrix": {
+   "d1_checkpoints": 3,
+   "d1_equal": 3,
+   "d1_full_work": 3652,
+   "d1_incr_work": 2448,
+   "d3_checkpoints": 10,
+   "d3_equal": 10,
+   "d3_full_work": 216721,
+   "d3_incr_work": 39450,
+   "onthefly_covered": 64,
+   "onthefly_covered_equal": true,
+   "onthefly_unresolved_printed": 192,
+   "route3_d1_above_threshold_coords": 1,
+   "route3_d1_coords": 64,
+   "route3_d1_final_equal": true,
+   "route3_d3_above_threshold_coords": 54,
+   "route3_d3_coords": 256,
+   "route3_d3_final_equal": true,
+   "route5_records_bytes": 503671,
+   "route5_tensor_bytes": 3890,
+   "route5_tensor_query_checks": 200,
+   "route5_tensor_query_equal": 200,
+   "suffix_equal": true
+  },
+  "meta": {
+   "demonstration": "max weights (1, 1)",
+   "demonstration_picks": [
+    "plan b",
+    "plan b2",
+    "balanced"
+   ],
+   "meta_frontier": 6,
+   "reach": 13,
+   "route1_direct_equal_demo": true,
+   "route1_direct_picks": [
+    "plan b",
+    "plan b2",
+    "balanced"
+   ],
+   "route4_decomposed_frontier_equal": true,
+   "route5_full_table_bytes": 3640,
+   "route5_lookup_equal": true,
+   "route5_lookup_picks": [
+    "plan b",
+    "plan b2",
+    "balanced"
+   ],
+   "route5_tensor_bytes": 213,
+   "route5_winner_tensor": [
+    "max",
+    1,
+    1
+   ]
+  },
+  "repair": {
+   "agree": {
+    "inc": 936,
+    "seminaive": 936
+   },
+   "cases": 200,
+   "executed_epochs": 936,
+   "inc_win_epochs": 933,
+   "relaxations": {
+    "inc": 2173,
+    "scratch": 17964,
+    "seminaive": 35713
+   },
+   "route2_dijkstra_agree": 936,
+   "route2_dijkstra_relaxations": 11496,
+   "route5_apsp_agree": 300,
+   "route5_build_ops": 372192,
+   "route5_edges_bytes_total": 50502,
+   "route5_subbattery_epochs": 300,
+   "route5_tensor_bytes_total": 498799,
+   "total_epochs": 1000
+  },
+  "stop": {
+   "control": {
+    "optimal": 2,
+    "plans": [
+     9,
+     2
+    ],
+    "threshold": 10,
+    "threshold_first_acceptable": 9
+   },
+   "results": {
+    "budget3": {
+     "acceptable_correct": 355,
+     "examined": 1200,
+     "false_optimal": 192,
+     "optimal_claims": 400,
+     "stops": 400
+    },
+    "optimal": {
+     "acceptable_correct": 0,
+     "examined": 2806,
+     "false_optimal": 0,
+     "optimal_claims": 400,
+     "stops": 400
+    },
+    "threshold": {
+     "acceptable_correct": 400,
+     "examined": 779,
+     "false_optimal": 0,
+     "optimal_claims": 0,
+     "stops": 400
+    },
+    "twoface": {
+     "acceptable_correct": 397,
+     "examined": 2806,
+     "false_optimal": 0,
+     "optimal_claims": 400,
+     "stops": 400
+    }
+   },
+   "route4_block_comparisons": 2806,
+   "route4_block_decisions_equal": 400,
+   "route4_full_comparisons": 2406,
+   "route5_table_acceptable": 397,
+   "route5_table_claims": 400,
+   "route5_table_claims_equal_twoface": 400,
+   "route5_table_false": 0,
+   "route5_tensor_domain_checks": 400,
+   "route5_tensor_domain_equal": 400,
+   "route5_tensor_json_bytes": 898,
+   "route5_tensor_packed_bits": 420,
+   "trials": 400
+  },
+  "worklist": {
+   "checks": {
+    "naive": 48597,
+    "priority": 54610,
+    "seminaive": 54804,
+    "worklist": 9932
+   },
+   "mismatch": {
+    "dupblind": 192,
+    "priority": 0,
+    "seminaive": 0,
+    "worklist": 0
+   },
+   "prefix_checks": 3208,
+   "route5_powerset_entries": 31136,
+   "route5_powerset_equal": 31136,
+   "route5_powerset_rules_bytes_total": 18883,
+   "route5_powerset_systems": 191,
+   "route5_powerset_tensor_bytes_total": 621479,
+   "route5_union_diff_example": {
+    "missing_term": 6,
+    "seeds": [
+     0,
+     5
+    ]
+   },
+   "route5_union_mismatch": 289,
+   "route5_union_queries": 12878,
+   "systems": 300
+  }
+ },
+ "fidelity_failures": []
+}

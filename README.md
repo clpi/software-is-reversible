@@ -47,3 +47,11 @@ module at its local pin bf814c1.
   results in revalidation-lane5-results.json).
 
 - [Resolution Lab browser demos](examples/resolution-lab/README.md) — scoped action reversal, archive-only inference search, and compositional pruning with an independently checked Lean proof.
+- spectrum.md — lane 6, the action-determination spectrum:
+  every algorithm of the program constructed under each
+  applicable route (explicit, minimization, obscurity,
+  decomposition, the terminal compressed tensor) and
+  validated on its own battery, with every route-pair
+  equivalence proved, measured, or UNMEASURED with an
+  owner. Its harness is spectrum.py in this repo, with its
+  full machine output in spectrum-results.json.
