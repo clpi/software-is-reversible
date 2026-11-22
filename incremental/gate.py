@@ -203,6 +203,32 @@ def s1_meta(meta_path):
     ok, nf = agree(insts, cfgs40)
     check(ok and full > 0, "meta: (5, 5) knocks 'balanced' off the frontier: %d selections rescored in full "
                            "(only those it had won), %d changed measures; agrees with meta.py" % (full, changed))
+    # instance joins after configurations: every split of the three instances into
+    # "before the configurations" and "after", in every order
+    import itertools
+    late_ok, late_changes, late_n = True, 0, 0
+    for perm in itertools.permutations(range(len(meta.INSTANCES))):
+        for k in range(len(perm)):
+            e2 = MS.MetaEngine(meta)
+            for i in perm[:k]:
+                e2.add_instance(*meta.INSTANCES[i])
+            for cfg in cfgs:
+                e2.join_config(cfg)
+            try:
+                for i in perm[k:]:
+                    late_changes += e2.add_instance(*meta.INSTANCES[i]) or 0
+                    late_n += 1
+                insts = [meta.INSTANCES[i] for i in perm]
+                ref, _rc, text = MS.checker(meta, insts, cfgs)
+                mine = sorted(lab(c) for c in e2.meta_front.frontier())
+                rows = all(("%-38s %-22s %-22s %-22s %s" % ((lab(c),) + tuple(e2.picks(c)) + (e2.measures[c],)))
+                           in text for c in cfgs)
+                late_ok &= mine == ref and rows
+            except KeyError:
+                late_ok = False  # a selection on the late instance was never computed
+    check(late_ok, "meta: instances joined after the configurations (every order, every split; %d instance "
+                   "joins, %d measure changes re-joined) agree with meta.py in every row and the meta-frontier"
+                   % (late_n, late_changes))
     # score changes of candidates already present (withdrawal plus join at the selection level)
     deltas = [(-2, 0), (0, -2), (2, 2), (-3, -3), (5, 0), (-1, 1)]
 

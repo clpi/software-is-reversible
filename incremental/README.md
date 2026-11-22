@@ -23,3 +23,11 @@ candidate moved six ways and restored, 100 of them leaving the frontier set
 unchanged) agree with meta.induced in all 39 selections after every move, and
 a mutant that ignores a member's own score change is caught. The spec and the other two systems are in
 clpi/software-redundant-compute-expands examples/incremental-recomputation.
+
+An instance joined after the configurations scores every configuration on the
+new frontier only and re-joins the meta frontier only where measures change;
+every order and split of the three instances agrees with meta.py. Randomized
+check: `python3 -B incremental/fuzz/fuzz_s1.py meta.py` compares the frontier
+engine (1 to 3 axes, ties and duplicate vectors) and the meta-search engine
+(moves, new candidates, late instance joins) with independent from-scratch
+references after every operation.

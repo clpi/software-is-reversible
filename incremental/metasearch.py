@@ -16,6 +16,9 @@ Cones:
   - a meta pair depends on the two configurations' measure vectors only.
 
 Joins:
+  - instance join: score every configuration on the new instance's
+    frontier only; a configuration re-joins the meta frontier only if
+    its measure vector changed;
   - configuration join: score it on each frontier, measure it, join it
     to the meta frontier (2(n-1) meta evaluations);
   - instance candidate join: join it to the instance frontier; if the
@@ -74,6 +77,18 @@ class MetaEngine:
         for c in cands:
             self.inst_vec[idx][c[0]] = (c[1], c[2])
             self.inst_front[idx].join(c[0], (c[1], c[2]))
+        # An instance joined after configurations: each configuration is
+        # scored on the new frontier only, its measures recomputed, and it
+        # re-joins the meta frontier only if they changed.
+        changed = 0
+        for cfg in self.configs:
+            self._select_full(cfg, idx)
+            mv = self._measure(cfg)
+            if mv != self.measures[cfg]:
+                self.measures[cfg] = mv
+                self.meta_front.join(cfg, mv)  # named: withdrawal plus join
+                changed += 1
+        return changed
 
     def _select_full(self, cfg, idx):
         fam, params = cfg
