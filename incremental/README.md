@@ -17,5 +17,17 @@ recompute (39 x 38), so building saves nothing; a 40th configuration 78 vs
 1,560; a dominated decoding candidate 0 and 0; a frontier-entering (3, 8) 40
 score and 156 meta evaluations, 2 configurations change measures; (5, 5),
 which knocks 'balanced' off the frontier, rescores 12 selections in full.
-Every step agrees with meta.py. The spec and the other two systems are in
+Every step agrees with meta.py. A candidate already present with a new vector
+is a withdrawal plus a join at the selection level too: 132 such moves (each
+candidate moved six ways and restored, 100 of them leaving the frontier set
+unchanged) agree with meta.induced in all 39 selections after every move, and
+a mutant that ignores a member's own score change is caught. The spec and the other two systems are in
 clpi/software-redundant-compute-expands examples/incremental-recomputation.
+
+An instance joined after the configurations scores every configuration on the
+new frontier only and re-joins the meta frontier only where measures change;
+every order and split of the three instances agrees with meta.py. Randomized
+check: `python3 -B incremental/fuzz/fuzz_s1.py meta.py` compares the frontier
+engine (1 to 3 axes, ties and duplicate vectors) and the meta-search engine
+(moves, new candidates, late instance joins) with independent from-scratch
+references after every operation.
